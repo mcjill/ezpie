@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+.nav {
+    margin-top: 50px;
+    margin-left: 180px;
+    display: flex;
+}
+.nav-link {
+    margin-left: 100px;
+    margin-top: 10px;
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.ezpie {
+    color: #004E98;
+}
+
+.main2 {
+    margin-top: 100px;
+    margin-left: 180px;
+    line-height: 60px;
+    display: flex;
+}
+
+.intro-text {
+    color: rgb(150, 150, 150);
+    line-height: 20px;
+}
+.image {
+    margin-left: 300px;
+}
+
+.foot {
+    background-color: #004E98;
+    padding-top: 100px;
+    display: flex;
+    padding-left: 180px;
+    color: white;
+}
+
+.tutorials {
+    margin-left: 300px;
+} 
+
+.tutorials > ul {
+    list-style-type: none;
+}
+
+.list-item {
+    margin: 0%;
+    line-height: 25px;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+.list-item:hover {
+    color: white;
+}
