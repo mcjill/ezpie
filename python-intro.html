@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" type="image/x-icon" href="asset/logo/logo(bigger).png">
+    <title>python getting started</title>
+</head>
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2>Python</h2>
+        <a href="python-intro.html">Getting started</a>
+        <a href="python-comment.html">comments</a>
+        <a href="python-var.html">Variables</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="home.html" class="nav-logo"><img src="asset/logo/logo.png" width="120px" height="50px"></a>
+            <a href="#" class="nav-link"  onclick="openNav()">Tutorials</a>
+            <a href="python-example.html" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <li><a class="learn active" href="python-intro.html">Python Intro</a></li>
+                    <li><a class="learn" href="python-comment.html">Python Comments</a></li>
+                    <li><a class="learn" href="python-var.html">Python Variables</a></li>
+                    <li><a class="learn" href="python-data.html">Python Data Types</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <h1 class="head">Getting started with Python</h1>
+                <p class="text">In this article you will learn how to install and run python in your computer</p><hr>
+                <p class="main-text">
+                    Before that a quick intro to Python: <br>
+                    <section class="programiz">
+                        <i>
+                            Python is a cross-platform programming language, which means that it can run on <br>
+                            multiple platforms like Windows, macOS, Linux, and has even been ported to the Java <br>
+                            and .NET virtual machines. It is free and open-source. <br>
+                            -<a href="https://www.programiz.com" class="others">programiz</a>
+                        </i>
+                    </section>
+                    <section class="wiki">
+                        <i>
+                            Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, <br>
+                            including structured (particularly procedural), object- <br>
+                            oriented and functional programming. It is often described as a "batteries included" language due to <br>
+                            its comprehensive standard library. <br>
+                            -<a class="others" href="https://en.wikipedia.org/wiki/Python_(programming_language)">wikipedia</a>
+                        </i>    
+                    </section>
+                    <section class="me">
+                        <i>
+                            Python is cross-platform so any one a use it. <br>
+                            and it is open-source (anyone can edite it) <br>
+                            -ME 
+                        </i>
+                    </section><br> <hr>
+                    <section class="install">
+                        <h1 class="head">How to Install Python</h1>
+                        <p class="text">
+                            To run Python you Have to install it from <a class="link" href="https://www.python.org">python.org</a><br>
+                            <img src="asset/img/python-page.png"height="400px" width="800px"><br>
+                            1. Download the  latest version of Python(May differ from my) <br>
+                            2. Run the python installer and follow the steps given in the installer <br>
+                            After that we will run python 
+                        </p>
+                    </section><hr>
+                    <section class="run">
+                        <h1 class="head">How to run Python(in IDLE and vscode)</h1>
+                        <p class="text">
+                            There are two ways to run python first is to use python IDLE(Integrated Development and Learning Environment) <br>
+                            or an code editer like vscode <br>
+                            I am using vscode but I will show how to use the IDLE too 
+                        </p>
+                        <h2 class="head">Running in IDLE</h2>
+                        <p class="text">
+                            To run python IDLE first open the search bar and search for idle<br>
+                            <img src="asset/img/search-bar.png" height="500px" width="700px"><br>
+                            Hit Enter and the idle will open <br>
+                            <img src="asset/img/interactive.png" height="500px" width="700px"><br>
+                            This is the interactive mode where you write code and get the result when hitting enter <br>
+                            for more details cheak other websites
+                        </p>
+                        <h2 class="head">Running in vscode</h2>
+                        <p class="text">
+                            vscode is one of the most popular code editing software made by microsoft. <br>
+                            to install vscode go <a href="https://code.visualstudio.com">here</a> <br>
+                            after installing vscode create a folder where you are going to keep your python code <br>
+                            in that folder make a file with .py <br>
+                            <img src="asset/img/vscode.png" height="400px" width="700px"><br>
+                            congratulation on setting up python on your computer
+                        </p>
+                    </section><hr>
+                    <section class="first-code">
+                        <h1 class="head">Your First Python Program</h1>
+                        <p class="text">
+                            after installing and setting things up we are going to run a simple python code <br>
+                            most beginner code starts with a simple <b>"Hello world!"</b> program <br><br>
+                            Type or copy the code given below in any code editer you have installed. <br>
+                        </p>
+                        <div class="code">
+                            <font class="s">print</font>(<font class="none-s">"Hello World!"</font>)
+                        </div>
+                        <p class="text">
+                            When you will run it, it will give the output as:
+                        </p>
+                        <div class="code">
+                            'Hello World!'
+                        </div>
+                        <p class="text">
+                            Congratulations! on writing your first program in Python!!
+                        </p>
+                    </section><hr><br>
+
+                    <section class="codeIt">
+                        <h3 class="head">Write a program to print 'Hello world!'</h3>
+                        <textarea name="program" id="program" cols="60" rows="20"></textarea><br>
+                        <h4 id="result"></h4>
+                        <button class="submit" onclick="right()">Submit</button>
+                    </section><br><hr>
+
+                    <button class="btn">
+                        <a href="python-comment.html" class="next">Next: Comments in python</a>
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/intro.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

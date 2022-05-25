@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" type="image/x-icon" href="asset/logo/logo(bigger).png">
+    <title>python Variables</title>
+</head>
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2>Python</h2>
+        <a href="python-intro.html">Getting started</a>
+        <a href="python-comment.html">comments</a>
+        <!-- TODO add links -->
+        <a href="python-var.html">Variables</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="home.html" class="nav-logo"><img src="asset/logo/logo.png" width="120px" height="50px"></a>
+            <a href="#" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="python-example.html" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4><hr>
+                    <li><a class="learn" href="python-intro.html">Python Intro</a></li>
+                    <li><a class="learn" href="python-comment.html">Python Comments</a></li>
+                    <li><a class="learn active" href="python-var.html">Python Variables</a></li>
+                    <li><a class="learn" href="python-data.html">Python Data Types</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <h1 class="head">Python Variables</h1>
+                <p class="text">In this article you will learn what's a variable</p><hr>
+                <p class="main-text">
+                    <section class="what">
+                        <h1 class="head">What's a variable?</h1>
+                        <p class="text">
+                            A variable can be taken as a box in which you have a thing for example a photo of a house <br>
+                            or an old item or anthing
+                        </p>
+                    </section><hr>
+                    <section class="how">
+                        <h1 class="head">How to declare a variable</h1>
+                        <p class="text">
+                            To declare a variable we don't have to do anything spacial (if you know any other programming language) <br>
+                            we just have to gave the variable a name and a value, simple as that. <br>
+                            and a variable can also be changed. for example:
+                        </p>
+                        <div class="code">
+                            <font class="s">#</font><font class="none-s">This is a variable called name with a value Name</font><br>
+                            <font class="s">randon</font> = <font class="none-s">20</font> <br>
+                        </div>
+                        <p class="text">
+                            Here we have declared a variable called <font class="unique">random</font> with a value of 
+                            <font class="unique">20</font>. <br>
+                            Take it in the simple way random is box 20 is photo. <br>
+                            So in that manner 20 can be replace right? <br>
+                            will yes! because 20 is photo and that photo can be replace with cloth.
+                        </p>
+                        <div class="code">
+                            <font class="s">random</font> = <font class="none-s">20</font><br>
+                            <font class="s">random</font> = <font class="none-s">413</font><br>
+                        </div>
+                        <p class="text">
+                            random is box 20 is photo and now random(box) cantains 413(cloth)!
+                        </p>
+
+                        <div class="note">
+                            <b>NOTE:</b> don't harry, remember one thing when declaring variable the variable name must be sensible <br>
+                            don't name <font class="unique">apple</font> as <font class="unique">a</font>
+                        </div>
+                    </section><hr>
+
+                    <section class="Assigning">
+                        <h1 class="head">case-sensitive</h1>
+                        <p class="text">
+                            quick thing did you thought till now that <font class="unique">Apple</font> 
+                            is same as <font class="unique">apple</font> or any?? <br>
+                            well you will be suprise to know <font class="unique">Apple</font> 
+                            is not the same as <font class="unique">apple</font> or so!?!? <br>
+                            that's because python and all other programming languages are case-sensitive 
+                            meaning lower-case is diffrent from upper-case. example:
+                        </p>
+                        <div class="code">
+                            <font class="s">Apple</font> = <font class="none-s">2</font><br>
+                            <font class="s">apple</font> = <font class="none-s">15</font>
+                        </div>
+                        <p class="text">
+                            Here <font class="unique">Apple</font> will not change to <font class="unique">15</font>
+                            as <font class="unique">Apple</font> is deffrent from <font class="unique">apple</font>
+                        </p>
+                    </section><hr>
+
+                    <section class="naming">
+                        <h1 class="head">How to name a variable</h1>
+                        <p class="text">
+                            do and don't to name a variable in python:
+                            <ul>
+                                <li>Variable name must not start with a number(1name, 23name)</li>
+                                <li>Variable name must start with latters or underscore(name, _name)</li>
+                                <li>Variable name can contain number but after a latter(name1, n1ame)</li>
+                                <li>Variable name must not have space in between(my age)</li>
+                            </ul>
+                        </p>
+                        <div class="code">
+                            <font class="s">#</font> <font class="none-s">Legal ways</font><br>
+                            <font class="s">name</font> = <font class="none-s">'Tom'</font><br>
+                            <font class="s">name_first</font> = <font class="none-s">'Tom'</font><br>
+                            <font class="s">name1</font> = <font class="none-s">'Tom'</font><br>
+                        </div>
+                        <div class="code">
+                            <font class="s">#</font> <font class="none-s">Illegal ways</font><br>
+                            <font class="s">1name</font> = <font class="none-s">'Tom'</font><br>
+                            <font class="s">name-first</font> = <font class="none-s">'Tom'</font><br>
+                            <font class="s">name first</font> = <font class="none-s">'Tom'</font><br>
+                        </div><br>
+                    </section><hr>
+
+                    <section class="mulit-word">
+                        <h1 class="head">multi-word naming</h1>
+                        <p class="text">
+                            to make it clear to read a variable programmers(a person who writes code) say that use camle-case <br>
+                            meaning all the first letter apart from the first one can be captal:
+                        </p>
+                        <div class="code">
+                            <font class="s">#</font> <font class="none-s">This is how</font><br>
+                            <font class="s">numberOfApples</font> = <font class="none-s">460</font>
+                        </div>
+                        <p class="text">
+                            personaly I don't like camle-case cause it's still a bit confusing! <br>
+                            So I personaly prefer using underscore rater camle-case.
+                        </p>
+                        <div class="code">
+                            <font class="s">#</font> <font class="none-s">my prefer style. This is also known as the Snake-Case</font><br>
+                            <font class="s">number_of_apples</font> = <font class="none-s">460</font>
+                        </div>
+                        <p class="text">
+                            but it's your choose what best is for you.
+                        </p>
+                    </section>
+
+                    <section class="codeIt">
+                        <h3 class="head">write a variable called <i>age</i> and give the max age of a dog (hit it is more then 15!)</h3>
+                        <p>
+                            <textarea name="program" id="program" cols="40" rows="1"></textarea>
+                        </p>
+                        <h4 id="result"></h4>
+                        <button class="submit" onclick="right()">Submit</button>
+                    </section><br><hr>
+
+                    <button class="btn">
+                        <a href="" class="next">Next: Variables in python</a>
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/age.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
