@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0%;
 }
 
 .nav {
@@ -166,4 +167,50 @@ body {
     line-height: 25px;
     border-radius: 5px;
     color: rgb(255, 0, 0);
+}
+
+
+.foot-main {
+    padding-top: 100px;
+    display: flex;
+    color: white;
+    padding-left: 180px;
+    margin-bottom: 60px;
+}
+
+.foot > hr {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.foot {
+    background-color: #004E98;
+    padding-bottom: 50px;
+}
+
+.tutorials {
+    margin-left: 200px;
+} 
+
+.course {
+    margin-left: 40px;
+}
+
+.examples {
+    margin-left: 20px;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.list-item {
+    margin: 0%;
+    line-height: 25px;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+.list-item:hover {
+    color: white;
 }

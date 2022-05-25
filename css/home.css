@@ -40,19 +40,37 @@ body {
     margin-left: 300px;
 }
 
-.foot {
-    background-color: #004E98;
+.foot-main {
     padding-top: 100px;
     display: flex;
-    padding-left: 180px;
     color: white;
+    padding-left: 180px;
+    margin-bottom: 60px;
+}
+
+.foot > hr {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.foot {
+    background-color: #004E98;
+    padding-bottom: 50px;
 }
 
 .tutorials {
-    margin-left: 300px;
+    margin-left: 200px;
 } 
 
-.tutorials > ul {
+.course {
+    margin-left: 40px;
+}
+
+.examples {
+    margin-left: 20px;
+}
+
+.links {
     list-style-type: none;
 }
 
