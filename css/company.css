@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@300;400&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+.nav {
+    margin-top: 50px;
+    margin-left: 180px;
+}
+.nav-link {
+    margin-left: 100px;
+    margin-top: 10px;
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: rgb(105, 105, 105);
+    line-height: 40px;
+    margin-right: 200px;
+}
+.text-main {
+    color: rgb(105, 105, 105);
+    line-height: 40px;
+}
+
+.link {
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: black;
+}
+
+.foot-main {
+    padding-top: 100px;
+    display: flex;
+    color: white;
+    padding-left: 180px;
+    margin-bottom: 60px;
+}
+
+.foot > hr {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.foot {
+    background-color: #004E98;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.tutorials {
+    margin-left: 200px;
+} 
+
+.course {
+    margin-left: 40px;
+}
+
+.examples {
+    margin-left: 20px;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.list-item {
+    margin: 0%;
+    line-height: 25px;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+.list-item:hover {
+    color: white;
+}
+
+.about {
+    margin-top: 200px;
+}
+
+.head {
+    font-size: 45px;
+}
+
+.privacy, .terms {
+    margin-left: 180px;
+}
