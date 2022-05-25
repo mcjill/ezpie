@@ -84,3 +84,26 @@ body {
 .list-item:hover {
     color: white;
 }
+
+.why {
+    margin-top: 150px;
+    margin-bottom: 220px;
+}
+
+.wrapper {
+    margin-top: 50px;
+    margin-left: 140px;
+    display: flex;
+}
+
+.simple {
+    color: rgb(163, 163, 163);
+}
+
+.text {
+    color: rgb(86, 86, 86);
+}
+
+.after {
+    margin-left: 170px;
+}
