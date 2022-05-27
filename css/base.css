@@ -6,24 +6,13 @@ body {
     margin: 0%;
 }
 
-.nav {
-    margin-top: 50px;
-    margin-left: 180px;
-}
-.nav-link {
-    margin-left: 100px;
-    margin-top: 10px;
+.nav-link{
     color: rgb(150, 150, 150);
     text-decoration: none;
-}
-
-.nav-link:hover {
-    color: rgb(0, 0, 0);
+    padding-right: 20px;
 }
 
 .main2 {
-    margin-top: 30px;
-    margin-left: 180px;
     display: flex;
 }
 
@@ -35,182 +24,226 @@ body {
     border: 1px solid rgb(171, 171, 171);
 }
 
-.learn {
-    color: rgb(150, 150, 150);
-    text-decoration: none;
-}
-
-.learn:hover {
-    color: black;
-}
-
-.active {
-    color: black;
-}
-
-.parts {
-    margin-left: 120px;
-    margin-top: 50px;
-}
-
-.text {
-    color: rgb(105, 105, 105);
-    line-height: 40px;
-}
-
-.programiz, .wiki, .me {
-    color: rgb(186, 186, 186);
-}
-
-.others {
-    line-height: 100px;
-    color: rgb(186, 186, 186);
-    text-decoration: none;
-    text-align: right;
-}
-
-.others:hover {
-    color: black;
-}
-
-.python {
-    color: rgb(186, 186, 186);
-    text-decoration: none;
-}
-
-.python:hover {
-    color:black;
-    text-decoration: underline;
-}
-
-.link {
-    color: rgb(186, 186, 186);
-    text-decoration: none;
-}
-
-.link:hover {
-    color: black;
-}
-
-.code {
-    color: white;
-    background-color: rgb(46, 46, 46);
-    padding-bottom: 50px;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-.none-s {
-    color: greenyellow;
-}
-
-.s {
-    color: rgb(165, 49, 165);
-}
-
-.btn {
-    background-color: #353cc5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: large;
-    margin-left: 600px;
-}
-
-.btn:hover {
-    background-color: #646aef;
+.nav-link:hover {
     color: rgb(0, 0, 0);
 }
 
-.codeIt {
-    background-color: greenyellow;
-    width: 850px;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 30px;
+.text {
+    color: rgb(86, 86, 86);
 }
 
-.submit {
-    background-color: #353cc5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: large;
-    margin-left: 700px;
-}
-
-.submit:hover {
-    background-color: #646aef;
-}
-
-.next{
-    color: white;
-    text-decoration: none;
-}
-
-.unique {
-    background-color: rgb(214, 214, 214);
-    font-family: 'Poiret One', cursive;
-    color: black;
-    padding: 2px;
-    border-radius: 3px;
-}
-
-.note {
-    background-color: #fefefe;
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-left: 20px;
-    border: 2px solid rgb(176, 176, 176);
-    line-height: 25px;
-    border-radius: 5px;
-    color: rgb(255, 0, 0);
-}
-
-
-.foot-main {
-    padding-top: 100px;
-    display: flex;
-    color: white;
-    padding-left: 180px;
-    margin-bottom: 60px;
-}
-
-.foot > hr {
-    margin-left: 180px;
-    margin-right: 180px;
-}
 
 .foot {
     background-color: #004E98;
     padding-bottom: 50px;
 }
 
-.tutorials {
-    margin-left: 200px;
-} 
-
-.course {
-    margin-left: 40px;
+/* NOTE this is for tabs */
+@media screen and (max-width: 1055px) {
+    .nav-link {
+        padding-left: 200px;
+    }
 }
 
-.examples {
-    margin-left: 20px;
-}
+/* NOTE this is for laptop */
+@media screen and (min-width: 1055px) {
 
-.links {
-    list-style-type: none;
-}
+    .nav {
+        margin-top: 50px;
+        margin-left: 180px;
+    }
 
-.list-item {
-    margin: 0%;
-    line-height: 25px;
-    color: rgb(210, 210, 210);
-    text-decoration: none;
-}
+    .main2 {
+        margin-top: 30px;
+        margin-left: 180px;
+    }
 
-.list-item:hover {
-    color: white;
+    .nav-link {
+        margin-left: 100px;
+        margin-top: 10px;
+        color: rgb(150, 150, 150);
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    .ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        width: 200px;
+        border: 1px solid rgb(171, 171, 171);
+    }
+
+    .learn {
+        color: rgb(150, 150, 150);
+        text-decoration: none;
+    }
+
+    .learn:hover {
+        color: black;
+    }
+
+    .active {
+        color: black;
+    }
+
+    .parts {
+        margin-left: 120px;
+        margin-top: 50px;
+    }
+
+    .text {
+        color: rgb(105, 105, 105);
+        line-height: 40px;
+    }
+
+    .programiz, .wiki, .me {
+        color: rgb(186, 186, 186);
+    }
+
+    .others {
+        line-height: 100px;
+        color: rgb(186, 186, 186);
+        text-decoration: none;
+        text-align: right;
+    }
+
+    .others:hover {
+        color: black;
+    }
+
+    .python {
+        color: rgb(186, 186, 186);
+        text-decoration: none;
+    }
+
+    .python:hover {
+        color:black;
+        text-decoration: underline;
+    }
+
+    .link {
+        color: rgb(186, 186, 186);
+        text-decoration: none;
+    }
+
+    .link:hover {
+        color: black;
+    }
+
+    .code {
+        color: white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 50px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .none-s {
+        color: greenyellow;
+    }
+
+    .s {
+        color: rgb(165, 49, 165);
+    }
+
+    .btn {
+        background-color: #353cc5;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: large;
+        margin-left: 600px;
+    }
+
+    .btn:hover {
+        background-color: #646aef;
+        color: rgb(0, 0, 0);
+    }
+
+    .codeIt {
+        background-color: greenyellow;
+        width: 850px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+
+    .submit {
+        background-color: #353cc5;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: large;
+        margin-left: 700px;
+    }
+
+    .submit:hover {
+        background-color: #646aef;
+    }
+
+    .next{
+        color: white;
+        text-decoration: none;
+    }
+
+    .unique {
+        background-color: rgb(214, 214, 214);
+        font-family: 'Poiret One', cursive;
+        color: black;
+        padding: 2px;
+        border-radius: 3px;
+    }
+
+    .note {
+        background-color: #fefefe;
+        margin-bottom: 10px;
+        padding: 10px;
+        padding-left: 20px;
+        border: 2px solid rgb(176, 176, 176);
+        line-height: 25px;
+        border-radius: 5px;
+        color: rgb(255, 0, 0);
+    }
+
+
+    /* -------------- Footer ------------------ */
+    .foot-main {
+        padding-top: 100px;
+        color: white;
+        margin-bottom: 60px;
+    }
+
+    .detail {
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .course {
+        margin-left: 40px;
+    }
+
+    .tutorials, .examples, .Company {
+        text-align: center;
+    }
+
+    .links {
+        list-style-type: none;
+    }
+
+    .list-item {
+        margin: 0%;
+        line-height: 25px;
+        color: rgb(210, 210, 210);
+        text-decoration: none;
+    }
+
+    .list-item:hover {
+        color: white;
+    }
 }

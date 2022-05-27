@@ -5,105 +5,181 @@ body {
     margin: 0%;
 }
 
-.nav {
-    margin-top: 50px;
-    margin-left: 180px;
-    display: flex;
+.foot {
+    background-color: #004E98;
+    padding-bottom: 50px;
 }
-.nav-link {
-    margin-left: 100px;
-    margin-top: 10px;
+
+.nav-link{
     color: rgb(150, 150, 150);
     text-decoration: none;
+    padding-right: 20px;
 }
 
 .nav-link:hover {
     color: rgb(0, 0, 0);
 }
 
+.text {
+    color: rgb(86, 86, 86);
+}
+
 .ezpie {
     color: #004E98;
-}
-
-.main2 {
-    margin-top: 100px;
-    margin-left: 180px;
-    line-height: 60px;
-    display: flex;
-}
-
-.intro-text {
-    color: rgb(150, 150, 150);
-    line-height: 20px;
-}
-.image {
-    margin-left: 300px;
-}
-
-.foot-main {
-    padding-top: 100px;
-    display: flex;
-    color: white;
-    padding-left: 180px;
-    margin-bottom: 60px;
-}
-
-.foot > hr {
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.foot {
-    background-color: #004E98;
-    padding-bottom: 50px;
-}
-
-.tutorials {
-    margin-left: 200px;
-} 
-
-.course {
-    margin-left: 40px;
-}
-
-.examples {
-    margin-left: 20px;
-}
-
-.links {
-    list-style-type: none;
-}
-
-.list-item {
-    margin: 0%;
-    line-height: 25px;
-    color: rgb(210, 210, 210);
-    text-decoration: none;
-}
-
-.list-item:hover {
-    color: white;
-}
-
-.why {
-    margin-top: 150px;
-    margin-bottom: 220px;
-}
-
-.wrapper {
-    margin-top: 50px;
-    margin-left: 140px;
-    display: flex;
 }
 
 .simple {
     color: rgb(163, 163, 163);
 }
 
-.text {
-    color: rgb(86, 86, 86);
+/* NOTE this is for tabs */
+@media screen and (max-width: 1055px) {
+    .image {
+        display: none;
+    }
+    .nav-link {
+        padding-left: 200px;
+    }
+    .main2 {
+        text-align: center;
+        padding-top: 40px;
+    }
+    /* -------------- Footer ------------------ */
+    .foot-main {
+        padding-top: 100px;
+        color: white;
+        margin-bottom: 60px;
+    }
+
+    .detail {
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .course {
+        margin-left: 40px;
+    }
+
+    .tutorials, .examples, .Company {
+        text-align: center;
+    }
+
+    .links {
+        list-style-type: none;
+    }
+
+    .list-item {
+        margin: 0%;
+        line-height: 25px;
+        color: rgb(210, 210, 210);
+        text-decoration: none;
+    }
+
+    .list-item:hover {
+        color: white;
+    }
+
+}
+@media screen and (max-width: 740px) {
+    .nav-link {
+        padding-left: 40px;
+    }
 }
 
-.after {
-    margin-left: 170px;
+/* NOTE this is for phone */
+@media screen and (max-width: 420px) {
+    .nav-link {
+        padding-left: 10px;
+    }
+}
+
+#main {
+    margin-bottom: 100px;
+}
+
+/* NOTE this is for laptops */
+
+@media screen and (min-width: 1055px) {
+
+    .nav {
+        margin-top: 50px;
+        margin-left: 180px;
+        display: flex;
+    }
+    .nav-link {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+    .main2 {
+        margin-top: 100px;
+        margin-left: 180px;
+        line-height: 60px;
+        display: flex;
+    }
+
+    .intro-text {
+        color: rgb(150, 150, 150);
+        line-height: 20px;
+    }
+    .image {
+        margin-left: 300px;
+    }
+
+    .foot-main {
+        padding-top: 100px;
+        display: flex;
+        color: white;
+        padding-left: 180px;
+        margin-bottom: 60px;
+    }
+
+    .foot > hr {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .tutorials {
+        margin-left: 200px;
+    } 
+
+    .course {
+        margin-left: 40px;
+    }
+
+    .examples {
+        margin-left: 20px;
+    }
+
+    .links {
+        list-style-type: none;
+    }
+
+    .list-item {
+        margin: 0%;
+        line-height: 25px;
+        color: rgb(210, 210, 210);
+        text-decoration: none;
+    }
+
+    .list-item:hover {
+        color: white;
+    }
+
+    .why {
+        margin-top: 150px;
+        margin-bottom: 220px;
+    }
+
+    .wrapper {
+        margin-top: 50px;
+        padding-left: 140px;
+        padding-right: 140px;
+        display: flex;
+    }
+
+    .after {
+        padding-left: 170px;
+    }
+
 }
