@@ -17,7 +17,7 @@ body {
 }
 
 .nav-link:hover {
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .text {
@@ -26,10 +26,6 @@ body {
 
 .ezpie {
     color: #004E98;
-}
-
-.simple {
-    color: rgb(163, 163, 163);
 }
 
 /* NOTE this is for tabs */
@@ -104,11 +100,9 @@ body {
     .nav {
         margin-top: 50px;
         margin-left: 180px;
-        display: flex;
     }
     .nav-link {
         margin-left: 100px;
-        margin-top: 10px;
     }
 
     .main2 {
@@ -166,6 +160,7 @@ body {
     .list-item:hover {
         color: white;
     }
+    /* ------------------------------------------- */
 
     .why {
         margin-top: 150px;

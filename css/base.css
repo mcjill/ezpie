@@ -4,210 +4,197 @@ body {
     margin: 0%;
 }
 
-.nav {
-    margin-top: 50px;
-    margin-left: 180px;
-}
 .nav-link {
-    margin-left: 100px;
-    margin-top: 10px;
     color: rgb(150, 150, 150);
     text-decoration: none;
+    padding-right: 20px;
 }
-
 .nav-link:hover {
-    color: rgb(0, 0, 0);
-}
-
-.main2 {
-    margin-top: 30px;
-    margin-left: 180px;
-    display: flex;
-}
-
-.ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    width: 200px;
-    border: 1px solid rgb(171, 171, 171);
-}
-
-.learn {
-    color: rgb(150, 150, 150);
-    text-decoration: none;
-}
-
-.learn:hover {
     color: black;
-}
-
-.active {
-    color: black;
-}
-
-.parts {
-    margin-left: 120px;
-    margin-top: 50px;
 }
 
 .text {
-    color: rgb(105, 105, 105);
-    line-height: 40px;
+    color: rgb(86, 86, 86);
+    line-height: 30px;
 }
 
-.programiz, .wiki, .me {
-    color: rgb(186, 186, 186);
-}
-
-.others {
-    line-height: 100px;
-    color: rgb(186, 186, 186);
-    text-decoration: none;
-    text-align: right;
-}
-
-.others:hover {
-    color: black;
-}
-
-.python {
-    color: rgb(186, 186, 186);
-    text-decoration: none;
-}
-
-.python:hover {
-    color:black;
-    text-decoration: underline;
-}
-
-.link {
-    color: rgb(186, 186, 186);
-    text-decoration: none;
-}
-
-.link:hover {
-    color: black;
-}
-
-.code {
-    color: white;
-    background-color: rgb(46, 46, 46);
-    padding-bottom: 50px;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-.none-s {
-    color: greenyellow;
-}
-
-.s {
-    color: rgb(165, 49, 165);
-}
-
-.btn {
-    background-color: #353cc5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: large;
-    margin-left: 600px;
-}
-
-.btn:hover {
-    background-color: #646aef;
-    color: rgb(0, 0, 0);
-}
-
-.codeIt {
-    background-color: greenyellow;
-    width: 850px;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-}
-
-.submit {
-    background-color: #353cc5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: large;
-    margin-left: 700px;
-}
-
-.submit:hover {
-    background-color: #646aef;
-}
-
-.next{
-    color: white;
-    text-decoration: none;
-}
-
-.unique {
-    background-color: rgb(214, 214, 214);
-    font-family: 'Poiret One', cursive;
-    color: black;
-    padding: 2px;
-    border-radius: 3px;
-}
-
-.note {
-    background-color: #fefefe;
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-left: 20px;
-    border: 2px solid rgb(176, 176, 176);
-    line-height: 25px;
-    border-radius: 5px;
-    color: rgb(255, 0, 0);
-}
-
-
-.foot-main {
-    padding-top: 100px;
-    display: flex;
-    color: white;
-    padding-left: 180px;
-    margin-bottom: 60px;
-}
-
-.foot > hr {
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.foot {
-    background-color: #004E98;
-    padding-bottom: 50px;
-}
-
-.tutorials {
-    margin-left: 200px;
-} 
-
-.course {
-    margin-left: 40px;
-}
-
-.examples {
-    margin-left: 20px;
-}
-
-.links {
+ul {
     list-style-type: none;
+    text-decoration: none;
 }
 
-.list-item {
-    margin: 0%;
-    line-height: 25px;
-    color: rgb(210, 210, 210);
+.learn, .others, .link, .list-item {
     text-decoration: none;
+    color: rgb(150, 150, 150);
 }
 
 .list-item:hover {
     color: white;
+}
+
+.learn:hover, .active, .others:hover, .link:hover {
+    color: black;
+}
+
+.programiz, .wiki, .me {
+    line-height: 30px;
+    color: rgb(150, 150, 150);
+}
+
+.code {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.print {
+    color: lightblue;
+}
+
+.str {
+    color: greenyellow;
+}
+
+.comment {
+    color: wheat;
+}
+
+.int {
+    color: orange;
+}
+
+.next {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.btn {
+    background-color: rgb(173, 216, 230);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+.btn:hover, .btn:hover > .next{
+    background-color: rgb(0, 128, 171);
+    color: white;
+}
+
+.foot {
+    background-color: #004E98;
+    max-width: 1293px;
+}
+
+.foot-main {
+    color: white;
+    padding-bottom: 120px;
+}
+
+
+/* NOTE  this is for laptops */
+@media screen and (min-width: 1055px) {
+    .nav {
+        margin-top: 50px;
+        margin-left: 180px;
+    }
+    .nav-link {
+        margin-left: 100px;
+    }
+    .main2 {
+        padding-top: 100px;
+        margin-left: 180px;
+        display: flex;
+    }
+    .parts {
+        padding-left: 100px;
+    }
+    .foot {
+        border-right: 200px solid #004E98;
+    }
+    .foot-main {
+        padding-left: 180px;
+        padding-top: 30px;
+        display: flex;
+    }
+    .tutorials, .challenges, .Company {
+        margin-left: 100px;
+        text-align: center;
+    }
+    .course {
+        margin-left: 25px;
+    }
+}
+
+/* NOTE this is for problem making screens */
+@media screen and (max-width: 1293px) {
+    .main2 {
+        display: block;
+    }
+    .lessons {
+        margin-bottom: 100px;
+        text-align: center;
+    }
+}
+
+/* NOTE this is for tabs */
+@media screen and (max-width: 1100px) {
+    *{
+        text-align: center;
+        padding: 0%;
+    }
+    .nav {
+        text-align: left;
+        margin-left: 40px;
+    }
+    .nav-link {
+        margin-left: 200px;
+    }
+    .code {
+        text-align: left;
+    }
+    .foot-main {
+        padding-top: 40px;
+        padding-left: 0%;
+        display: block;
+    }
+    .detail {
+        border-bottom: 1px solid white;
+    }
+    .detail > *{
+        margin-left: 100px;
+    }
+    .course {
+        margin-left: 1px;
+    }
+}
+
+/* NOTE this is for phone */
+@media screen and (max-width: 818px) {
+    .img {
+        max-width: 700px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .img {
+        max-width: 500px;
+    }
+    .nav-link {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav {
+        margin-left: 0%;
+    }
+    .nav-link {
+        margin-left: 1px;
+        border: 1px solid red;
+    }
+    .img {
+        max-width: 350px;
+        height: 260px;
+    }
+    .detail {
+        margin-right: 0px;
+    }
+}
