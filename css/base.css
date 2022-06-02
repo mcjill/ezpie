@@ -46,6 +46,7 @@ ul {
     background-color: black;
     color: white;
     border-radius: 5px;
+    text-align: left;
 }
 
 .print {
@@ -60,8 +61,12 @@ ul {
     color: wheat;
 }
 
-.int {
+.num {
     color: orange;
+}
+
+.bool {
+    color: lightblue;
 }
 
 .next {
@@ -89,7 +94,13 @@ ul {
     color: white;
     padding-bottom: 120px;
 }
-
+.nav-link {
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: black;
+}
 
 /* NOTE  this is for laptops */
 @media screen and (min-width: 1055px) {
@@ -143,11 +154,11 @@ ul {
         padding: 0%;
     }
     .nav {
-        text-align: left;
-        margin-left: 40px;
+        display: grid;
     }
     .nav-link {
-        margin-left: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .code {
         text-align: left;

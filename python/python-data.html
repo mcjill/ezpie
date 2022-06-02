@@ -15,7 +15,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2>Python</h2>
         <a href="python-intro.html">Getting started</a>
-        <a href="python-comment.html">comments</a>
+        <a href="python-comment.html">Comments</a>
         <!-- TODO add links -->
         <a href="python-var.html">Variables</a>
         <a href="python-data.html">Data Types</a>
@@ -41,30 +41,241 @@
 
             <div class="parts">
                 <h1 class="head">Python Data Type</h1>
-                <p class="text">In this article you will learn What are data types</p><hr>
-                <p class="main-text">
-                    <section class="what">
-                        <h1 class="head">Python Data type</h1>
-                        <p class="text">
-                            Every Variable in python have it's own data type. There are a many data type, but the most comment ones are <br>
-                            int, floating-point, string and boolean 
-                        </p>
-                    </section><hr>
-                    <section class="number">
-                        <h1 class="head">Python Number</h1>
-                        <p class="text">
-                            Integer and Floating-point are example of some Python number Data Type. 
-                            these are the most comment one used. <br>
-                            They are defined as int and float in python
-                        </p>
-                        <div class="code">
-                            <font class="s">num1</font> = <font class="int">5</font><br>
-                            <font class="s">num2</font> = <font class="int">24.23</font> <br>
-                            <font class="print">print</font>(<font class="none-s">num1,
-                            <font class="print">type</font>(<font class="none-s">num1</font>)</font>)<br>
-                        </div>
-                    </section><hr>
+                <p class="text">In this article you will learn What are data types in python</p><hr>
+                <section class="intro">
+                <p class="text">
+                    when it comes to programming data type is an importent concept. <br>
+                    As the variables we define each have a data type. <br>
+                    As of Python it has the following data types:  
                 </p>
+                <p>
+                    <b>Text type</b>: string
+                </p>
+                <p><b>Numerical type</b>: integer, floating-point, complex</p>
+                <p><b>Boolean type</b>: bool</p>
+                <p><b>Sequence type</b>: list, range, truple</p>
+                <p><b>Mapping type</b>: dict</p>
+                <p><b>None type</b>: NoneType</p>
+                <p><b>Binary type</b>: memoryview, bytearray, bytes</p>
+                <p><b>Set type</b>: frozenset, set</p>
+                <p class="text">We will go through each one but mainly those which are mainly used.</p>
+                </section><hr>
+                <section class="number">
+                    <h2 class="head">Integer</h2>
+                    <p class="text">
+                        As you saw in above The Numerical Type in python are three. Integer, floating-point and complex. <br>
+                        <b>Integers</b> are same as integers in maths, but Integers in python are only whole numbers, not <br>
+                        dacimal points.
+                    </p>
+                    <div class="code">
+                        <font class="comment"># This is a variable with data type integer</font><br>
+                        <font class="s">number</font> = <font class="num">1230</font><br>
+                        <font class="comment"># but this is not at all a variable with data type integer</font><br>
+                        <font class="s">number2</font> = <font class="num">1230.123</font>
+                    </div>
+                    <p class="text">
+                        If you want to known the data type using python, you can use the type() method.
+                    </p>
+                    <div class="code">
+                        <font class="s">number</font> = <font class="int">342</font><br>
+                        <font class="print">print</font>(<font class=print>type</font>(number))<br>
+                        <font class="s">number2</font> = <font class="int">342.34</font><br>
+                        <font class="print">print</font>(<font class=print>type</font>(number2))<br>
+                    </div>
+                    <p class="text">If you run it you will get the output as:</p>
+                    <div class="code">
+                        &lt;class 'int'&gt; <br>
+                        &lt;class 'float'&gt;
+                    </div>
+                    <p class="text">
+                        <b>NOTE:</b> Did you saw that the two variable number and number2 have same numbers but one is a whole <br>
+                         number and the other is a decimal. But still diffrent, you will see that later.
+                    </p>
+                    <p class="text">
+                        A quick think before you go for floating-point, Integers can take any length of number, as per memory. <br>
+                        As pre me floating-points can take upto 15 decimal places, and as pre google its 15 to 17
+                    </p><hr>
+                    <h2 class="head">Floating-point</h2>
+                    <p class="text">
+                        Floating-point are data-type with decimal points just like I told while explaining integer. <br>
+                        Since I have already explained we will just jump to the main part.
+                    </p>
+                    <div class="code">
+                        <font class="s">floating_Number</font> = <font class="num">1243.431</font><br>
+                        <font class="print">print</font>(<font class="print">type</font>(floating_Number))
+                    </div>
+                    <p class="text">
+                        After running it we will get the output as:
+                    </p>
+                    <div class="code">
+                        &lt;class 'float'&gt;
+                    </div><hr>
+                    <h2 class="head">Complex</h2>
+                    <p class="text">
+                        As of integer and floating-point they are in programming called real numbers. <br>
+                        but Python and other programming language they can also take complex number. <br>
+                        complex numbers are those which have one real number and one imaginary number, a+bj <br>
+                        here a is the real part while b is the imaginary part.
+                    </p>
+                    <div class="code">
+                        <font class="s">num</font> = <font class="num">3+5j</font><br>
+                        <font class="print">print</font>(<font class="print">type</font>(num))
+                    </div>
+                    <p class="text">after running this, you will get the output as:</p>
+                    <div class="code">
+                        &lt;class 'complex'&gt;
+                    </div>
+                </section><hr>
+                <section class="boolean">
+                    <h1 class="head">Boolean</h1>
+                    <p class="text">
+                        Boolean is the data type with only two values which are True and False. <br>
+                        You may have seen that I the true and false have there first latter capital, that's because <br>
+                        true and false are the only <a href="python-keyword.html" class="link">keywords</a> with capital first latters.
+                    </p>
+                    <div class="code">
+                        <font class="s">bool</font> = <font class="bool">True</font><br>
+                        <font class="print">print</font>(<font class="print">type</font>(bool))
+                    </div>
+                    <p class="text">When you will running it you will get the output as:</p>
+                    <div class="code">
+                        &lt;class 'bool'&gt;
+                    </div>
+                    <p class="text">
+                        Quick thing by now you may think that learning boolean data type is wast of time but no its not, <br>
+                        boolean data type are mostly used in databases so when you may use database in python <br>
+                        you may use boolean more often.
+                    </p>
+                </section><hr>
+                <section class="Sequence">
+                    <h1 class="head">list</h1>
+                    <p class="text">
+                        list is the data type in which you can store more then one item at a time. <br> 
+                        List are taken as vary importent when it cames to programming, cause <br> 
+                        they are vary helpful in storing large information of one object. <br>
+                    </p>
+                    <p class="text">
+                        for an example take this, you want to store a list of item to be done today, so <br>
+                        you made a program to help you. When you want to add you tell it to add something, <br>
+                        when you want to delete then you tell it to delete an item. <br> 
+                    </p>
+                    <p class="text">
+                        but most importent where to store all that? can't make a variable for each right? <br>
+                        so here cames list to help you out.
+                    </p>
+                    <div class="code">
+                        <font class="s">todo</font> = 
+                        <font class="list">
+                            [
+                            <font class="str">'wash dishs'</font>, 
+                            <font class="str">'go for a walk'</font>, 
+                            <font class="str">'make food'</font>,
+                            <font class="str">'do more things</font>
+                            ]
+                        </font>
+                    </div>
+                    <p class="text">
+                        This is how to define a list everything is going to be inside these [  ] brackets.
+                    </p><hr>
+                    <h1 class="head">Range</h1>
+                    <p class="text">
+                        Range is a <a href="python-function" class="link">function</a> which will always return a sequence of numbers <br>
+                        starting from 1 by defult but can be changed, to a number given by you as the user, <br>
+                        by 1 step by defult but again can be changed
+                    </p>
+                    <div class="code">
+                        <font class="s">numbers</font> = 
+                        <font class="range">range</font>(<font class="num">1</font>, <font class="num">10</font>,
+                        <font class="num">1</font>) <br>
+                        <font class="print">print</font>(numbers)
+                    </div>
+                    <p class="text">
+                        Here we have define a variable called numbers with a value of range(1, 10, 1). <br>
+                        May seem a bit to think but there is nothing to think, <br>
+                        cause the first 1 here is the starting point, 10 is the ending point and the last 1 is the steps to be taken.
+                    </p>
+                    <p class="text">
+                        After running this you may think that it will print 1 to 10, but try once then see.
+                    </p>
+                    <div class="code">range(1, 10)</div>
+                    <p class="text">
+                        You may think there some problem, but no there is no problem at all. <br>
+                        Let me explain this, here we defined and called the variable numbers. Python thought that <br>
+                        we are asking for numbers value so it printed that, which is range(1, 10).
+                    </p>
+                    <p class="text">
+                        but if you want to print 1 to 10 then we need to use <a href="python-for" class="link">for loop</a>. <br>
+                        I am not going to explain for loop cause its explained in future artical. But yes can show you the code.
+                    </p>
+                    <img class="img" src="../asset/img/code-for-range.png" alt="How to print a range using for loop">
+                    <p class="text">
+                        <b>NOTE:</b> the code is in image format write it instead. <br>
+                        Remamber that after the for loop the print(i) must be after pressing tab.
+                    </p><hr>
+                    <h1 class="head">Truple</h1>
+                    <p class="text">
+                        Truples are same as list, used to store multiple data in one variable. But they defer only in two things. <br>
+                        That are they are unchangeable while list are and they are define using ( ) while list are define using [ ].
+                    </p>
+                    <p class="text">Truples can have any data type in them just like list</p>
+                    <div class="code">
+                        my_truple = (<font class="num">34</font>, <font class="str">'This is a truple'</font>, <font class="bool">True</font>)
+                    </div>
+                    <p class="text">
+                        Here's a thing I have been showing how to print the output but now its your turn. <br>
+                        Try to print the output as the data type and the truple.
+                    </p>
+                    <p class="text">
+                        <b>Hint!</b> use the type function for data type. <br>
+                        <b>Answer is given in the bottom of the page.</b>
+                    </p>
+                </section><hr>
+                <section class="mapping">
+                    <h1 class="head">Dictionary</h1>
+                    <p class="text">
+                        Dictionary in programming are vary useful as they can store data in a variable with sub-variables. <br>
+                        Here's an example to tell what i mean.
+                    </p>
+                    <div class="code">
+                        my_dict = {
+                        <font class="str">'company'</font>: <font class="str">'Apple'</font>,
+                        <font class="str">'owner'</font>: <font class="str">'Tim cook'</font>
+                        } <br>
+                        <font class="print">print</font>(my_dict)
+                    </div>
+                    <p class="text">
+                        Here we have define a variable called my_dict, with the sub-variables company and owner, <br>
+                        with values Apple and Tim cook respectively. And then prints the variable.
+                    </p>
+                    <p class="text">But this will only print the dictionary which is:</p>
+                    <div class="code">
+                        {'company': 'Apple', 'owner': 'Tim cook'}
+                    </div>
+                    <p class="text">
+                        But we want the values and the good thing is we need no for loop for it. <br>
+                        We can use the sub-variables using variable name[ property ]. where variable name will be <br>
+                        my_dict and the property will be company or owner. 
+                    </p>
+                    <div class="code">
+                        my_dict = {
+                            <font class="str">'company'</font>: <font class="str">'Apple'</font>,
+                            <font class="str">'owner'</font>: <font class="str">'Tim cook'</font>
+                            } <br>
+                            <font class="print">print</font>(my_dict[company]) <br>
+                            <font class="print">print</font>(my_dict[owner])
+                    </div>
+                    <p class="text">After running it you will get what you want.</p>
+                    <div class="code">
+                        'Apple' <br>
+                        'Tim cook'
+                    </div>
+                </section><hr>
+                <section class="next">
+                    <p class="text">
+                        Now you may have the basic understading of python data types, <br>
+                        so you can use it to make some basic programes
+                    </p>
+                </section>
             </div>
         </div>
     </div>
