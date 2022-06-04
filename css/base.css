@@ -104,6 +104,10 @@ ul {
     color: black;
 }
 
+.net-icon {
+    margin-left: 10px;
+}
+
 /* NOTE  this is for laptops */
 @media screen and (min-width: 1055px) {
     .nav {
