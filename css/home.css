@@ -10,10 +10,14 @@ body {
     padding-bottom: 50px;
 }
 
+.nav {
+    display: flex;
+}
+
 .nav-link{
     color: rgb(150, 150, 150);
     text-decoration: none;
-    padding-right: 20px;
+    margin-top: 42px;
 }
 
 .nav-link:hover {
@@ -102,7 +106,7 @@ body {
         margin-left: 180px;
     }
     .nav-link {
-        margin-left: 100px;
+        margin-left: 250px;
     }
 
     .main2 {
@@ -118,6 +122,9 @@ body {
     }
     .image {
         margin-left: 300px;
+    }
+    .net-icon {
+        margin-left: 10px;
     }
 
     /* -------------- footer ----------------- */

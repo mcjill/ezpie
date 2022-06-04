@@ -7,12 +7,14 @@ body {
 .nav-link {
     color: rgb(150, 150, 150);
     text-decoration: none;
-    padding-right: 20px;
+    margin-top: 42px;
 }
 .nav-link:hover {
     color: black;
 }
-
+.nav {
+    display: flex;
+}
 .text {
     color: rgb(86, 86, 86);
     line-height: 30px;
@@ -109,7 +111,7 @@ ul {
         margin-left: 180px;
     }
     .nav-link {
-        margin-left: 100px;
+        margin-left: 250px;
     }
     .main2 {
         padding-top: 100px;
