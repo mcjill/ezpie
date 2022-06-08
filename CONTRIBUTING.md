@@ -1,7 +1,7 @@
 # welcoming you who what's to contribute
 I am very happy if you want to contribute to my website ezpie, because I am the only one here working to make a free and understadable website for all levels
 ## editing
-Editing of an file is aloud BUT don't edit does which I am working on(like not on python). But you can do on javascript tutorial, html tutorial and css tutorial.
+Editing of an file is aloud you can do on python tutorrial, javascript tutorial, html tutorial and css tutorial.
 Your name must be there as comment and email(optional)
 ## push requst
 When you do a push requst you mush make it a simple comment ex. added file_name, deleted file_name, updated file_name.
