@@ -6,3 +6,4 @@ Why not contribute my website read the contributing.md file for more detail.
 ![ezpie](https://user-images.githubusercontent.com/104765117/172398008-f0f50a3c-1a91-4ff4-80cc-ad8eaed1b354.png)
 The website is totally free! and no joke you can learn programming for totally free. In the website you can learn python, javascript, html and css. More programming languages will be added later on. If you like my work then give a star, if you want to learn from me then
 follow me on [Twitter](https://twitter.com/ezpieCo). 
+If you like my work then give it a star, If you love my work then contribute, If you realy loved my work then follow on [Twitter](https://twitter.com/ezpieCo).
