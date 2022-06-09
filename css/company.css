@@ -15,13 +15,16 @@ body {
     color: rgb(210, 210, 210);
     text-decoration: none;
 }
-
+.nav{
+    display: flex;
+}
 .list-item:hover {
     color: white;
 }
 .nav-link {
     color: rgb(150, 150, 150);
     text-decoration: none;
+    padding-top: 31px;
 }
 .nav-link:hover {
     color: rgb(0, 0, 0);
@@ -53,16 +56,27 @@ body {
     color: white;
     margin-bottom: 60px;
 }
-
+.net-icon {
+    margin-left: 10px;
+    margin-top: 16px;
+}
+.me {
+    display: flex;
+    color: white;
+    margin-left: 10px;
+}
 
 /* NOTE this is for laptops */
 @media screen and (min-width: 1205px) {
+    .net {
+        margin-left: 200px;
+    }
     .nav {
         margin-top: 50px;
         margin-left: 180px;
     }
     .nav-link {
-        margin-left: 100px;
+        margin-left: 200px;
         margin-top: 10px;
     }
     .foot-main {
@@ -104,6 +118,9 @@ body {
     .detail {
         border-bottom: 1px solid white;
     }
+    .net {
+        margin-left: 100px;
+    } 
     .foot-main {
         text-align: center;
     }
@@ -113,9 +130,10 @@ body {
     .nav {
         display: grid;
         text-align: center;
+        border-bottom: 1px solid black;
     }
     .nav-link {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }

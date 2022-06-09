@@ -103,13 +103,21 @@ ul {
 .nav-link:hover {
     color: black;
 }
-
 .net-icon {
+    margin-left: 10px;
+    margin-top: 16px;
+}
+.me {
+    display: flex;
+    color: white;
     margin-left: 10px;
 }
 
 /* NOTE  this is for laptops */
 @media screen and (min-width: 1055px) {
+    .net {
+        margin-left: 200px;
+    }    
     .nav {
         margin-top: 50px;
         margin-left: 180px;
@@ -159,6 +167,9 @@ ul {
         text-align: center;
         padding: 0%;
     }
+    .net {
+        margin-left: 100px;
+    }    
     .nav {
         display: grid;
     }
@@ -190,6 +201,9 @@ ul {
     .img {
         max-width: 700px;
     }
+    .net {
+        margin-left: 50px;
+    }    
 }
 @media screen and (max-width: 780px) {
     .img {
