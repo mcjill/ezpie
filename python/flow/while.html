@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg">
+    <title>python while loop</title>
+</head>
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../home.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg" width="100px"></a>
+            <a href="#" align="right" class="nav-link"  onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4><hr>
+                    <li><a class="learn" href="intro.html">Python Intro</a></li>
+                    <li><a class="learn" href="comment.html">Python Comments</a></li>
+                    <li><a class="learn" href="variable.html">Python Variables</a></li>
+                    <li><a class="learn" href="data-type.html">Python Data Types</a></li>
+                    <li><a class="learn" href="inOut.html">Python I/O</a></li>
+                    <li><a class="learn" href="operators.html">Operators</a></li>
+                    <li><a class="learn" href="conversion.html">type conversion</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4><hr>
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn active">while loop</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">While loop in python</h1>
+                    <p class="text">
+                        In this article you will learn how to use and what is while loop. <br>
+                        Loops are used in a programming language to repeat a specific block of code.
+                    </p>
+                </section><hr>
+                <section class="what">
+                    <h2 class="head">What's a while loop?</h2>
+                    <p class="text">
+                        While loop is used to run a specific block of code only if the condition is true.
+                    </p>
+                    <p class="text">
+                        <a href="https://www.geeksforgeeks.org/python-while-loop/" class="link">It's recomended to use this loop</a> only when you don't 
+                        known the number of times you may what to run a code again.
+                    </p>
+                    <p class="text"><b>Syntax</b></p>
+                    <img class="img" src="https://user-images.githubusercontent.com/104765117/173080610-de96b058-f3c7-48a0-8ab7-0184f52b9918.png" alt="while loop syntax by ezpie">
+                    <p class="text">
+                        In a while loop first the condition is checked, if its true then the while loop will run, if not then it will be skipped. <br>
+                        Once the condition is true then the while loop's body is entered, where after the code is run the while loop is again checked, <br>
+                        this time if the condition is false then the while loop is breaked, if not then repeat till the condition is false.
+                    </p>
+                    <p class="text">Take an example:</p>
+                    <img src="https://user-images.githubusercontent.com/104765117/173084100-7699ffff-7b0a-4fd0-955c-9ce341321fec.png" alt="example of a while loop by ezpie" class="img">
+                    <p class="text">
+                        Here we are asking the user to enter a random number in the variable num. Next we have a variable i with value 0, 
+                        <br> whose value will change in the while loop. Next we have the while loop, where we are testing if i is not equal to num, <br>
+                        if it's true that i is not equal to num then we enter the body of the while loop. Here we have first we print the value of i, <br>
+                        then we add i with 1 and set it as its new value. then repeat the while loop.
+                    </p>
+                    <p class="text">
+                        Now when the the variable i will be more then the value of num then the condition(which is i is not equal to num) is false, <br>
+                        and the while loop ends. Cool right?
+                    </p>
+                    <p class="text"><b>Output</b></p>
+                    <div class="code">
+                        i is: 0 <br>
+                        i is: 1 <br>
+                        i is: 2 <br>
+                        i is: 3 <br>
+                        i is: 4 <br>
+                        i is: 5 <br>
+                        i is: 6 <br>
+                        i is: 7 <br>
+                        i is: 8 <br>
+                        i is: 9
+                    </div>
+                </section><hr>
+                <section class="else">
+                    <h2 class="head">Else in while loop</h2>
+                    <p class="text">
+                        Just like <a href="statement.html" class="link">if statement</a> while loop can also have else block.
+                    </p>
+                    <p class="text">
+                        And like I have told in the <a href="statement.html" class="link">if statement article</a> else block is executed only when the codition is not true.
+                    </p>
+                    <p class="text">Take an example:</p>
+                    <img src="https://user-images.githubusercontent.com/104765117/173087224-9559417d-ba0c-4da1-8914-0fad11033e6e.png" alt="while loop with else block by ezpie" class="img">
+                    <p class="text">
+                        Here we have a variable called num with value 0. Next we have the while loop which sees if the codition is true or not. <br>
+                        Next in the while loop body it prints the value of num and adds 1 to it as it's new value, <br>
+                        and repeats it till condition is false. Once the condition is false it ends the while loop and continues with the else block, <br>
+                        and prints 'While loop end, else block executed'.
+                    </p>
+                    <div class="code">
+                        0 <br>
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        While loop end, else block executed
+                    </div>
+                </section><hr>
+                <section class="end">
+                    <p class="text">
+                        There is no end to this. Cause there is more you can find and learn from the internet, so go out there and check out more. <br>
+                        Here are some interasting links <a href="https://www.w3schools.com/python/python_while_loops.asp" class="link">w3schools</a>,
+                        <a href="https://www.geeksforgeeks.org/python-while-loop/" class="link">greekforgreeks</a> and 
+                        <a href="https://www.programiz.com/python-programming/while-loop" class="link">programiz</a>.
+                    </p>
+                    <button class="btn">
+                        <a href="for.html" class="next">Next: for loop in python</a>
+                    </button> 
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>   
+            <div class="tutorials">
+                <h3 class="course">Tutorials</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+                    <li><a href="#" class="list-item">Javascript</a></li>
+                    <li><a href="#" class="list-item">HTML</a></li>
+                    <li><a href="#" class="list-item">CSS</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript Challenges</a></li>
+                    <li><a href="#" class="list-item">HTML Challenges</a></li>
+                    <li><a href="#" class="list-item">CSS Challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="../company/about.html" class="list-item">About</a></li>
+                    <li><a href="../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="../company/terms.html" class="list-item">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </section><hr>
+        <section class="me">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png" alt="my github page for ezpie" width="30px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie" width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px" class="net-icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="../js/nav.js"></script>
+</body>
+</html>
