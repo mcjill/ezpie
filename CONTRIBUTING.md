@@ -3,8 +3,8 @@ I am very happy if you want to contribute to my website ezpie, because I am the 
 ## editing
 Editing of an file is aloud you can do on python tutorrial, javascript tutorial, html tutorial and css tutorial.
 Your name must be there as comment and email(optional)
-## push requst
-When you do a push requst you mush make it a simple comment ex. added file_name, deleted file_name, updated file_name.
+## pull requst
+When you do a pull requst you mush make it a simple comment ex. added file_name, deleted file_name, updated file_name. And remember to do your contribution on another branch
 ## issues
 Writing good issues is good for you and me to understand your need.
 ## will done
