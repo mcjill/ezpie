@@ -3,8 +3,8 @@ I am very happy if you want to contribute to my website ezpie, because I am the 
 ## editing
 Editing of an file is aloud you can do on python tutorrial, javascript tutorial, html tutorial and css tutorial.
 Your name must be there as comment and email(optional)
-## pull requst
-When you do a pull requst you mush make it a simple comment ex. added file_name, deleted file_name, updated file_name. And remember to do your contribution on another branch
+## commiting
+Your commit must be like added file_name, deleted file_name, updated file_name. 
 ## issues
 Writing good issues is good for you and me to understand your need.
 ## will done
@@ -16,5 +16,7 @@ I test on few things:
 5. Most importent, there sould be the same navbars and footer as other pages.
 ## congratulation
 If I like your work It will be added with your name at the end of the page!
-# Remember one thing
-Your contribution will be edited only for footer and navbars. So don't take that I didn't liked your work.
+# Things to Remember
+1. Your contribution may be edited only for footer and navbars. So don't take that I didn't liked your work.
+2. Your name must be there in the file as a comment.
+3. Do your contribution on another branch as your name.
