@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg">
+    <title>python break keyword</title>
+</head>
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg" width="100px"></a>
+            <a href="#" align="right" class="nav-link"  onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4><hr>
+                    <li><a class="learn" href="../basic/intro.html">Python Intro</a></li>
+                    <li><a class="learn" href="../basic/comment.html">Python Comments</a></li>
+                    <li><a class="learn" href="../basic/variable.html">Python Variables</a></li>
+                    <li><a class="learn" href="../basic/data-type.html">Python Data Types</a></li>
+                    <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+                    <li><a class="learn" href="../basic/operators.html">Operators</a></li>
+                    <li><a class="learn" href="../basic/conversion.html">type conversion</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4><hr>
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn">while loop</a></li>
+                    <li><a href="for.html" class="learn">for loop</a></li>
+                    <li><a href="continue.html" class="learn">continue</a></li>
+                    <li><a href="break.html" class="learn active">break</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">Break keyword in python</h1>
+                    <p class="text">In this article you will learn what is the break keyword.</p>
+                    <p class="text">
+                        Just like the continue keyword the break keyword is used to alter a loop. But using continue will only <br>
+                        skip one specific condition, while the break keyword will end the whole loop.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/173378953-2e740a0a-2dac-4d44-bbf1-9249b74204db.png" alt="break and continue flowchat" class="img">
+                    <p class="text">Try going through this flowchat and you will understand the maining of both the keywords.</p>
+                </section><hr>
+                <section class="what">
+                    <h2 class="head">What's the break keyword?</h2>
+                    <p class="text">The break keyword is used the break the loop when a condition is true.</p>
+                    <p class="text">
+                        If you use a nested loop(a loop inside a loop) the break keyword will only end the loop it is inside. <br>
+                        Like if a for loop(loop 2) is in a for loop(loop 1), and the break keyword is inside the second for loop(loop 2), <br>
+                        then the second loop will end(loop 2 not loop 1).
+                    </p>
+                    <p class="text">Take an example</p>
+                    <img src="https://user-images.githubusercontent.com/104765117/173381737-8b3daf1c-a8c2-4b11-a8dc-afe10cdb5b5d.png" alt="example of break keyword by ezpie" class="img">
+                    <p class="text">
+                        May loop really hard to understand, but if you go step by step you will get it. <br>
+                        Frist here you can see we have a for loop which is looping in a string 'apples', stores the value in i and then prints it, <br>
+                        but here we have an if statement checking if i's value is 'l', if so then it breaks the loop.
+                    </p>
+                    <p class="text"><b>Output of frist loop:</b></p>
+                    <div class="code">
+                        a <br>
+                        p <br>
+                        p <br>
+                        End of loop
+                    </div>
+                    <p class="text">
+                        OK now we now the frist loop as it was simple, but this second one may be tricky, but it's also simple. <br>
+                        Frist we have the loop 1, which is loop in a range of 5 which means, start from 0 end at 4(0, 1, 2, 3, (4 -> 5)), <br>
+                        then we have loop 2, which is looping in a string 'banana' and then we have an if statement to check if j is n, <br>
+                        if so then end the loop.
+                    </p>
+                    <p class="text"><b>Output:</b></p>
+                    <div class="code">
+                        b <br>
+                        0 <br>
+                        a <br>
+                        b <br>
+                        a <br>
+                        1 <br>
+                        b <br>
+                        a <br>
+                        2 <br>
+                        b <br>
+                        a <br>
+                        3 <br>
+                        b <br>
+                        a <br>
+                        4
+                    </div>
+                    <p class="text">
+                        We got this output because in the loop we are also printing the values, frist the loop 2 value is getting printed <br>
+                        then loop 1.
+                    </p>
+                </section><hr>
+                <section class="end">
+                    <p class="text">Good job on fineshing python flow.</p>
+                    <button class="btn">
+                        <a href="../data-type/numbers.html.html" class="next">Next: Numbers in python</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>   
+            <div class="tutorials">
+                <h3 class="course">Tutorials</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+                    <li><a href="#" class="list-item">Javascript</a></li>
+                    <li><a href="#" class="list-item">HTML</a></li>
+                    <li><a href="#" class="list-item">CSS</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript Challenges</a></li>
+                    <li><a href="#" class="list-item">HTML Challenges</a></li>
+                    <li><a href="#" class="list-item">CSS Challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="../../company/about.html" class="list-item">About</a></li>
+                    <li><a href="../../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="../../company/terms.html" class="list-item">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </section><hr>
+        <section class="me">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png" alt="my github page for ezpie" width="30px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie" width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px" class="net-icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="../../js/nav.js"></script>
+</body>
+</html>
