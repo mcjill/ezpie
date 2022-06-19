@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/nav.css" />
+  <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg" />
+  <title>python number data type</title>
+</head>
+
+<body>
+  <!-- offscreen -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../python/intro.html">Python</a>
+  </div>
+  <!-- ------------------------------------------------- -->
+  <div id="main">
+    <nav class="nav">
+      <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg"
+          width="100px" /></a>
+      <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
+      <a href="#" align="right" class="nav-link">Examples</a>
+    </nav>
+
+    <div class="main2">
+      <div class="lessons">
+        <ul class="ul">
+          <h4 class="head">Python basic</h4>
+          <hr />
+          <li>
+            <a class="learn" href="../basic/intro.html">Python Intro</a>
+          </li>
+          <li>
+            <a class="learn" href="../basic/comment.html">Python Comments</a>
+          </li>
+          <li>
+            <a class="learn" href="../basic/variable.html">Python Variables</a>
+          </li>
+          <li>
+            <a class="learn" href="../basic/data-type.html">Python Data Types</a>
+          </li>
+          <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+          <li>
+            <a class="learn" href="../basic/operators.html">Operators</a>
+          </li>
+          <li>
+            <a class="learn" href="../basic/conversion.html">type conversion</a>
+          </li>
+        </ul>
+        <ul class="ul">
+          <h4 class="head">Python flow</h4>
+          <hr />
+          <li><a href="statement.html" class="learn">If statement</a></li>
+          <li><a href="while.html" class="learn">while loop</a></li>
+          <li><a href="for.html" class="learn">for loop</a></li>
+          <li><a href="continue.html" class="learn">continue</a></li>
+          <li><a href="break.html" class="learn">break</a></li>
+        </ul>
+        <ul class="ul">
+          <h4 class="head">Data type</h4>
+          <hr />
+          <li><a href="numbers.html" class="learn active">Numbers</a></li>
+          <li><a href="string.html" class="learn">String</a></li>
+          <li><a href="set.html" class="learn">Set</a></li>
+          <li><a href="list.html" class="learn">List</a></li>
+          <li><a href="truple.html" class="learn">Truple</a></li>
+          <li><a href="dictionary.html" class="learn">Dictionary</a></li>
+        </ul>
+      </div>
+
+      <div class="parts">
+        <section class="intro">
+          <h1 class="head">Numbers in python</h1>
+          <p class="text">
+            In this article we will go deep in the data types of python. Frist
+            numbers
+          </p>
+          <p class="text">
+            You may think of skipping this step of python but in fact you don't even known well how to use data types in
+            python!
+          </p>
+        </section>
+        <hr />
+        <section class="type">
+          <h2 class="head">Python number data type</h2>
+          <p class="text">
+            There are three numeric data types in Python
+          <ul>
+            <li>Integer</li>
+            <li>Floating-point</li>
+            <li>Complex</li>
+          </ul>
+          </p>
+          <p class="text">
+            Integers and floating-points are diffrent only in one thing, that is integers don't have a decimal point and
+            floating-points <br>
+            have a decimal point. Therefore 11 is an integer while 11.0 is a float.
+          </p>
+          <p class="text">
+            Complex in the other hand are those with two parts, maining 1+5j where 1 is the real part and 5 is the
+            imaginary part.
+          </p>
+          <p class="text">
+            We can use the type() function to print the type of a variable. But when using type() you must keep it in
+            the print() <br>
+            function or in a variable and then print it.
+          </p>
+          <div class="code">
+            Integer = <font class="num">5</font><br>
+            Float = <font class="num">5.0</font><br>
+            Complex = <font class="num">1+5j</font><br>
+            <br>
+            <font class="print">print</font>(<font class="print">type</font>(Integer)) <br>
+            <br>
+            <font class="print">print</font>(<font class="print">type</font>(Float)) <br>
+            <br>
+            <Font class="print">print</Font>(<font class="print">isinstance</font>
+            (Complex, complex))
+          </div>
+          <p class="text">
+            <b>Note</b> that I have made the frist letter capital. That's cause in python <b>integer</b>,<b>float</b>
+            and <b>complex</b> are already define <br>
+            therefore you may get confused sometimes.
+          </p>
+          <p class="text"><b>Output</b></p>
+          <div class="code">
+            &lt;class 'int'&gt; <br>
+            &lt;class 'int'&gt; <br>
+            &lt;class 'int'&gt;
+          </div>
+          <p class="text">
+            There are even limits to the length of a numeric data type. Integer does not have a limit but float do, <br>
+            The accurate place is till 15.
+          </p>
+          <p class="text">
+            <b>We</b> humans use decimal system with base 10. But computers cannot understand base 10, They only
+            understand <br>
+            <b>binary</b>(base 2), <b>hexadecimal</b>(base 16) and <b>octal</b>(base 8). But infact programmers also
+            need the understanding <br>
+            of these numeric system as will, mainly embedded programmers.
+          </p>
+          <p class="text">
+            <b>Explained:</b> <br>
+            You can skip these as these is not much importent(unless you want to be a losser between programmers) <br>
+            Frist binary, binary is the 2 digit number system which you may see more in computer error outputs, <br>
+            in binary we show numbers in 0's and 1's, like 4 is showen as 0100. May look a bit confusing right? <br>
+            but go like this: <br>
+            <b>step1:</b> Get a paper and pen or open notepad in computer. <br>
+            <b>step2:</b> type this
+          </p>
+          <img
+            src="https://user-images.githubusercontent.com/104765117/174056775-031914f9-fd9c-4e65-a9d4-c365d0cd7edc.png"
+            alt="binary example" class="img">
+          <p class="text">
+            Did you saw a pattern! well yes there is one frist we had 1 then 2 then 4 and then 8. Well in binary <br>
+            we have it like this start with 1 then multiply it with 2 and then again multiply and repeat multipling <br>
+            like this you will get 1 2 4 8 16 32 and so on.
+          </p>
+          <p class="text">
+            <b>step3:</b> If in any place there is a 1 other then 0 then add it with 0 and if again there's <br>
+            another 1 then add it to the value of 0 plus the value where 1 was.
+          </p>
+          <img
+            src="https://user-images.githubusercontent.com/104765117/174057790-d25980fc-5f00-4b1d-8382-c714f8dd8260.png"
+            alt="binary example add" class="img">
+          <p class="text">
+            This will give: <br>
+            1 + 0 = 1 <br>
+            4 + 1 = 5 <br>
+            Therefore 0101 is equal to 5!! fun right? <br>
+            I want tell the others but you can sreach it on google. And yes you can do it even in python using prefix.
+            <br>
+            For binary use 0b or 0B, for hexadecimal use 0x or 0X and for octal use 0o or 0O. <br>
+            Take an example
+          </p>
+          <div class="code">
+            <font class="comment"># this is binary</font> <br>
+            <font class="print">print</font>(<font class="num">0b0101</font>) <br> <br>
+            <font class="comment"># this is hexadecimal</font> <br>
+            <font class="print">print</font>(<font class="num">0xFB</font>) <br> <br>
+            <font class="comment"># this is octal</font> <br>
+            <font class="print">print</font>(<font class="num">0o15</font>)
+          </div>
+          <p class="text"><b>Output</b></p>
+          <div class="code">
+            5 <br>
+            251 <br>
+            13
+          </div>
+        </section>
+        <hr>
+        <section class="convert">
+          <h2 class="head">Type conversion</h2>
+          <p class="text">
+            In a programming language we can change a dat type of a variable in two ways: <br>
+            one automatically can happen:
+          </p>
+          <div class="code">
+            <font class="num">100</font> + <font class="num">24.0</font>
+            <font class="comment"># output 124.0</font>
+          </div>
+          <p class="text">
+            Here we can see that one number is an integer and the other one is a float, when there is an integer and
+            <br>
+            a float python automatically convert's the output's data type to a float!
+          </p>
+          <p class="text">
+            And finally the second way to conver data type is viva bulit-in function like <b>int()</b>, <b>float()</b>
+            and <b>complex()</b> <br>
+            infact you can also convert string in a number but it mush be a number string.
+          </p>
+          <div class="code">
+            <font class="print">int</font>(<font class="num">2.32</font>) <font class="comment"># output 2</font> <br>
+            <font class="print">float</font>(<font class="num">2</font>) <font class="comment"># output 2.0</font> <br>
+            <font class="print">complex</font>(<font class="str">'2+3j'</font>)
+            <font class="comment"># output 2 + 3j</font>
+          </div>
+          <p class="text">Float to integer always result in the decimal values being removed.</p>
+        </section>
+        <hr>
+        <section class="decimal">
+          <h2 class="head">Diffrent value of decimal?</h2>
+          <p class="text">
+            In python while tring samething I found out that 1.1 + 2.2 is not realy 3.3? <br>
+            I was supriesed too, but in fact there's nothing to be supriesed.
+          </p>
+          <p class="text">
+            After a while of long google sreach it tured out that it's the computer's binary storage value. What I mean
+            is <br>
+            computers understand binary(base of 2. 0's and 1's) that means 1 is 0001 for the computer. <br>
+            therefore 1.1 is around 1.00011001100..... and since python takes only upto 15 decimal places <br>
+            it turns it up side down. Making it look like a error.
+          </p>
+          <div class="code">
+            >> 1.1 + 2.2 <br>
+            3.3000000000000003
+          </div>
+          <p class="text">
+            <!--FIXME add like to module -->
+            On conclusion you need a help of module to do this type of things.
+          </p>
+        </section>
+        <hr>
+        <section class="end">
+          <button class="btn">
+            <a href="string.html" class="next">Next: string in python</a>
+          </button>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <section class="foot-main">
+      <div class="detail">
+        <h1 class="head">Ezpie</h1>
+        <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+      </div>
+      <div class="tutorials">
+        <h3 class="course">Tutorials</h3>
+        <ul class="links">
+          <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+          <li><a href="#" class="list-item">Javascript</a></li>
+          <li><a href="#" class="list-item">HTML</a></li>
+          <li><a href="#" class="list-item">CSS</a></li>
+        </ul>
+      </div>
+      <div class="challenges">
+        <h3 class="course">Challenges</h3>
+        <!-- TODO add example links -->
+        <ul class="links">
+          <li><a href="#" class="list-item">Python Challenges</a></li>
+          <li><a href="#" class="list-item">Javascript Challenges</a></li>
+          <li><a href="#" class="list-item">HTML Challenges</a></li>
+          <li><a href="#" class="list-item">CSS Challenges</a></li>
+        </ul>
+      </div>
+
+      <div class="Company">
+        <h3 class="course">Company</h3>
+        <ul class="links">
+          <!-- TODO add links -->
+          <li>
+            <a href="../../company/about.html" class="list-item">About</a>
+          </li>
+          <li>
+            <a href="../../company/privacy.html" class="list-item">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="../../company/terms.html" class="list-item">Terms and Conditions</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section class="me">
+      <p class="copyright">Copyright (c) 2022 Ezpie</p>
+      <div class="net">
+        <a href="https://github.com/ishaan010">
+          <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+            alt="my github page for ezpie" width="30px" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100082135591250">
+          <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+            width="30px" />
+        </a>
+        <a href="https://twitter.com/EzpieCo">
+          <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+            class="net-icon" />
+        </a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="../../js/nav.js"></script>
+</body>
+
+</html>
