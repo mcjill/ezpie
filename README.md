@@ -11,3 +11,11 @@ If you like my work then contribute, If you love my work then follow on [Twitter
 My website is License under MIT License. Check the [license page](https://github.com/ishaan010/ezpie/blob/master/LICENSE) for more detail.
 ## contribute
 If you want to contribute then check the [contributing page](https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md) for more detail.
+## Why contribute? 
+You may think that why should I contribute to this website will because ezpie offers you to teach others for free and free for ever! Plus think working on a website all day long just to find that you only wrote 5 webpages! Really annoying right? So help me anyway you want, by making a webpage for any course, sharing ideas you think may help and by making sure there are no grammar errors.
+## repo map
+This repo have one home page named as 'index.html',
+one folder for css files containing three files(home.css for home page, base.css for all courses and a company.css for all terms and privacy pages), 
+One folder named python for all python articles, with sub-folders for each category, 
+One folder named company containing files for terms, about and privacy, 
+One folder which have all Javascript files.
