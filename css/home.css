@@ -1,188 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0%;
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
 }
 
 .foot {
-    background-color: #004E98;
-    padding-bottom: 50px;
+  background-color: #004e98;
+  padding-bottom: 50px;
 }
 
 .nav {
-    display: flex;
+  display: flex;
 }
 
-.nav-link{
-    color: rgb(150, 150, 150);
-    text-decoration: none;
-    margin-top: 42px;
+.nav-link {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+  margin-top: 42px;
 }
 
 .nav-link:hover {
-    color: black;
+  color: black;
 }
 
 .text {
-    color: rgb(86, 86, 86);
+  color: rgb(86, 86, 86);
 }
 
 .ezpie {
-    color: #004E98;
+  color: #004e98;
+}
+.net-icon {
+  margin-left: 10px;
+  margin-top: 16px;
+}
+.me {
+  display: flex;
+  color: white;
+  margin-left: 10px;
 }
 
 /* NOTE this is for tabs */
 @media screen and (max-width: 1055px) {
-    .image {
-        display: none;
-    }
-    .nav-link {
-        padding-left: 200px;
-    }
-    .main2 {
-        text-align: center;
-        padding-top: 40px;
-    }
-    /* -------------- Footer ------------------ */
-    .foot-main {
-        padding-top: 100px;
-        color: white;
-        margin-bottom: 60px;
-    }
+  .net {
+    margin-left: 100px;
+  }
+  .image {
+    display: none;
+  }
+  .nav-link {
+    padding-left: 200px;
+  }
+  .main2 {
+    text-align: center;
+    padding-top: 40px;
+  }
+  /* -------------- Footer ------------------ */
+  .foot-main {
+    padding-top: 100px;
+    color: white;
+    margin-bottom: 60px;
+  }
 
-    .detail {
-        text-align: center;
-        border-bottom: 1px solid white;
-    }
+  .detail {
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
 
-    .course {
-        margin-left: 40px;
-    }
+  .course {
+    margin-left: 40px;
+  }
 
-    .tutorials, .examples, .Company {
-        text-align: center;
-    }
+  .tutorials,
+  .examples,
+  .Company {
+    text-align: center;
+  }
 
-    .links {
-        list-style-type: none;
-    }
+  .links {
+    list-style-type: none;
+  }
 
-    .list-item {
-        margin: 0%;
-        line-height: 25px;
-        color: rgb(210, 210, 210);
-        text-decoration: none;
-    }
+  .list-item {
+    margin: 0%;
+    line-height: 25px;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+  }
 
-    .list-item:hover {
-        color: white;
-    }
-
+  .list-item:hover {
+    color: white;
+  }
 }
 @media screen and (max-width: 740px) {
-    .nav-link {
-        padding-left: 40px;
-    }
+  .nav-link {
+    padding-left: 40px;
+  }
 }
 
 /* NOTE this is for phone */
 @media screen and (max-width: 420px) {
-    .nav-link {
-        padding-left: 10px;
-    }
+  .net {
+    margin-left: 50px;
+  }
+  .nav-link {
+    padding-left: 10px;
+  }
 }
 
 #main {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* NOTE this is for laptops */
 
 @media screen and (min-width: 1055px) {
+  .net {
+    margin-left: 200px;
+  }
+  .nav {
+    margin-top: 50px;
+    margin-left: 180px;
+  }
+  .nav-link {
+    margin-left: 250px;
+  }
 
-    .nav {
-        margin-top: 50px;
-        margin-left: 180px;
-    }
-    .nav-link {
-        margin-left: 250px;
-    }
+  .main2 {
+    margin-top: 100px;
+    margin-left: 180px;
+    line-height: 60px;
+    display: flex;
+  }
 
-    .main2 {
-        margin-top: 100px;
-        margin-left: 180px;
-        line-height: 60px;
-        display: flex;
-    }
+  .intro-text {
+    color: rgb(150, 150, 150);
+    line-height: 20px;
+  }
+  .image {
+    margin-left: 300px;
+  }
+  .net-icon {
+    margin-left: 10px;
+  }
 
-    .intro-text {
-        color: rgb(150, 150, 150);
-        line-height: 20px;
-    }
-    .image {
-        margin-left: 300px;
-    }
-    .net-icon {
-        margin-left: 10px;
-    }
+  /* -------------- footer ----------------- */
+  .foot-main {
+    padding-top: 100px;
+    display: flex;
+    color: white;
+    padding-left: 180px;
+    margin-bottom: 60px;
+  }
 
-    /* -------------- footer ----------------- */
-    .foot-main {
-        padding-top: 100px;
-        display: flex;
-        color: white;
-        padding-left: 180px;
-        margin-bottom: 60px;
-    }
+  .foot > hr {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
 
-    .foot > hr {
-        margin-left: 180px;
-        margin-right: 180px;
-    }
+  .tutorials {
+    margin-left: 200px;
+  }
 
-    .tutorials {
-        margin-left: 200px;
-    } 
+  .course {
+    margin-left: 40px;
+  }
 
-    .course {
-        margin-left: 40px;
-    }
+  .examples {
+    margin-left: 20px;
+  }
 
-    .examples {
-        margin-left: 20px;
-    }
+  .links {
+    list-style-type: none;
+  }
 
-    .links {
-        list-style-type: none;
-    }
+  .list-item {
+    margin: 0%;
+    line-height: 25px;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+  }
 
-    .list-item {
-        margin: 0%;
-        line-height: 25px;
-        color: rgb(210, 210, 210);
-        text-decoration: none;
-    }
+  .list-item:hover {
+    color: white;
+  }
+  /* ------------------------------------------- */
 
-    .list-item:hover {
-        color: white;
-    }
-    /* ------------------------------------------- */
+  .why {
+    margin-top: 150px;
+    margin-bottom: 220px;
+  }
 
-    .why {
-        margin-top: 150px;
-        margin-bottom: 220px;
-    }
+  .wrapper {
+    margin-top: 50px;
+    padding-left: 140px;
+    padding-right: 140px;
+    display: flex;
+  }
 
-    .wrapper {
-        margin-top: 50px;
-        padding-left: 140px;
-        padding-right: 140px;
-        display: flex;
-    }
-
-    .after {
-        padding-left: 170px;
-    }
-
+  .after {
+    padding-left: 170px;
+  }
 }
