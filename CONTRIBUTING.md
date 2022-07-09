@@ -6,7 +6,7 @@ Your name must be there as comment and email(optional)
 ## commiting
 Your commit must be like added file_name, deleted file_name, updated file_name. 
 ## issues
-Writing good issues is good for you and me to understand your need.
+Writing good issues is good for you and me to understand your need. You may get the answer to your issue late but I will try not to let that happen. 
 ## will done
 I test on few things:
 1. No editing of css files.
