@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg">
     <title>python Type conversion</title>
 </head>
+
 <body>
     <!-- offscreen -->
     <div id="mySidenav" class="sidenav">
@@ -18,15 +20,17 @@
     <!-- ------------------------------------------------- -->
     <div id="main">
         <nav class="nav">
-            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg" width="100px"></a>
-            <a href="#" align="right" class="nav-link"  onclick="openNav()">Tutorials</a>
+            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg"
+                    width="100px"></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
             <a href="#" align="right" class="nav-link">Examples</a>
         </nav>
 
         <div class="main2">
             <div class="lessons">
                 <ul class="ul">
-                    <h4 class="head">Python basic</h4><hr>
+                    <h4 class="head">Python basic</h4>
+                    <hr>
                     <li><a class="learn" href="intro.html">Python Intro</a></li>
                     <li><a class="learn" href="comment.html">Python Comments</a></li>
                     <li><a class="learn" href="variable.html">Python Variables</a></li>
@@ -38,55 +42,60 @@
             </div>
 
             <div class="parts">
-               <section class="intro">
-                   <h1 class="head">Python type Conversion</h1>
-                   <p class="text">In this article you will learn what and where to use type conversion.</p>
-                   <p class="text">But you must known about <a href="data-type.html" class="link">python data type</a> first.</p>
-               </section><hr>
-               <section class="what">
+                <section class="intro">
+                    <h1 class="head">Python type Conversion</h1>
+                    <p class="text">In this article you will learn what and where to use type conversion.</p>
+                    <p class="text">But you must known about <a href="data-type.html" class="link">python data type</a>
+                        first.</p>
+                </section>
+                <hr>
+                <section class="what">
                     <h2 class="head">What is data type conversion</h2>
                     <p class="text">
                         What is data type conversion you may be thinking. Well data types I have alrady explained, <br>
                         but some times you may want to change the data type of a variable. <br>
                     </p>
                     <p class="text">
-                        Take an example, you previously learn how to ask the <a href="inOut.html" class="link">user to give an input</a>. <br>
-                        So you may have tred to make a program to take two inputs and do some maths on it like add or subtract. <br>
+                        Take an example, you previously learn how to ask the <a href="inOut.html" class="link">user to
+                            give an input</a>. <br>
+                        So you may have tred to make a program to take two inputs and do some maths on it like add or
+                        subtract. <br>
                         But you may have got some funny result like, <br>
                         the first number given is 12, and the second is 30, so if added answer will be 42 right? <br>
                         but what you got 1230? after printing it. <br>
                         What happen? will all inputs are in string data type! <br>
                         therefore we need to convert it to interger or floating-point.
                     </p>
-               </section>
-               <section class="types">
-                   <h2 class="head">Types of type conversion</h2>
-                   <p class="text">
+                </section>
+                <section class="types">
+                    <h2 class="head">Types of type conversion</h2>
+                    <p class="text">
                         But that's not it there are two types of data type conversion. <br>
                         Implicit Type Conversion <br>
                         Explicit Type Conversion <br>
                     </p>
-               </section>
-               <section class="implicit">
-                   <h2 class="head">Implicit type conversion</h2>
-                   <p class="text">implicit type conversion is when python auto converts the data type.</p>
-                   <div class="code">
-                       <font class="comment"># These are two variables with diffrent data type</font> <br>
-                       num1 = <font class="num">123</font> <br>
-                       num2 = <font class="num">431.41</font> <br>
-                       sum = num1 + num2 <br>
-                       <font class="print">print</font>(<font class="print">type</font>(sum))
-                   </div>
-                   <p class="text"><b>Output</b></p>
-                   <div class="code">&lt;class 'float'&gt;</div>
-                   <p class="text">
-                       Here we added two numbers, with diffrent data type integer and floating-point. <br>
-                       then printed the data type of sum which give class as float.
-                   </p>
-               </section><hr>
-               <section class="explicit">
-                   <h2 class="head">Explicit type conversion</h2>
-                   <p class="text">
+                </section>
+                <section class="implicit">
+                    <h2 class="head">Implicit type conversion</h2>
+                    <p class="text">implicit type conversion is when python auto converts the data type.</p>
+                    <div class="code">
+                        <font class="comment"># These are two variables with diffrent data type</font> <br>
+                        num1 = <font class="num">123</font> <br>
+                        num2 = <font class="num">431.41</font> <br>
+                        sum = num1 + num2 <br>
+                        <font class="print">print</font>(<font class="print">type</font>(sum))
+                    </div>
+                    <p class="text"><b>Output</b></p>
+                    <div class="code">&lt;class 'float'&gt;</div>
+                    <p class="text">
+                        Here we added two numbers, with diffrent data type integer and floating-point. <br>
+                        then printed the data type of sum which give class as float.
+                    </p>
+                </section>
+                <hr>
+                <section class="explicit">
+                    <h2 class="head">Explicit type conversion</h2>
+                    <p class="text">
                         Now lets add a string and an integer.
                     </p>
                     <div class="code">
@@ -117,13 +126,15 @@
                     <p class="text">
                         Here we had a string '22' which we then converted into an integer using the int function.
                     </p>
-                    <p class="text">By just typing the keyword of the data type you can convert any data type to the other.</p>
-               </section><hr>
-               <section class="end">
-                <button class="btn">
-                    <a href="../flow/statement.html" class="next">Next: If statements in python</a>
-                </button>
-               </section>
+                    <p class="text">By just typing the keyword of the data type you can convert any data type to the
+                        other.</p>
+                </section>
+                <hr>
+                <section class="end">
+                    <button class="btn">
+                        <a href="../flow/statement.html" class="next">Next: If statements in python</a>
+                    </button>
+                </section>
             </div>
         </div>
     </div>
@@ -133,7 +144,7 @@
             <div class="detail">
                 <h1 class="head">Ezpie</h1>
                 <p><strong>Email</strong>: ezpie.co@gmail.com</p>
-            </div>   
+            </div>
             <div class="tutorials">
                 <h3 class="course">Tutorials</h3>
                 <ul class="links">
@@ -163,18 +174,22 @@
                     <li><a href="../../company/terms.html" class="list-item">Terms and Conditions</a></li>
                 </ul>
             </div>
-        </section><hr>
+        </section>
+        <hr>
         <section class="me">
             <p class="copyright">Copyright (c) 2022 Ezpie</p>
             <div class="net">
                 <a href="https://github.com/ishaan010">
-                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png" alt="my github page for ezpie" width="30px">
+                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100082135591250">
-                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie" width="30px">
+                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                        width="30px">
                 </a>
                 <a href="https://twitter.com/EzpieCo">
-                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px" class="net-icon">
+                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon">
                 </a>
             </div>
         </section>
@@ -183,4 +198,5 @@
 
     <script src="../../js/nav.js"></script>
 </body>
+
 </html>

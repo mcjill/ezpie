@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/nav.css">
     <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg">
+
     <title>Operators in python</title>
 </head>
+
 <body>
     <!-- offscreen -->
     <div id="mySidenav" class="sidenav">
@@ -18,15 +21,17 @@
     <!-- ------------------------------------------------- -->
     <div id="main">
         <nav class="nav">
-            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg" width="100px"></a>
-            <a href="#" align="right" class="nav-link"  onclick="openNav()">Tutorials</a>
+            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg"
+                    width="100px"></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
             <a href="#" align="right" class="nav-link">Examples</a>
         </nav>
 
         <div class="main2">
             <div class="lessons">
                 <ul class="ul">
-                    <h4 class="head">Python basic</h4><hr>
+                    <h4 class="head">Python basic</h4>
+                    <hr>
                     <li><a class="learn" href="intro.html">Python Intro</a></li>
                     <li><a class="learn" href="comment.html">Python Comments</a></li>
                     <li><a class="learn" href="variable.html">Python Variables</a></li>
@@ -40,23 +45,29 @@
             <div class="parts">
                 <section class="intro">
                     <h1 class="head">Python Operators</h1>
-                    <p class="text">In this article you will learn about operators and how to use them.</p><hr>
+                    <p class="text">In this article you will learn about operators and how to use them.</p>
+                    <hr>
                     <h2 class="head">What are Operators</h2>
                     <p class="text">
-                        Operators are same as signs used in maths like the + operator, - operator, x operator and the ÷ operator. <br>
+                        Operators are same as signs used in maths like the + operator, - operator, x operator and the ÷
+                        operator. <br>
                         These are infact not the same way typed in any programming language.
                     </p>
                     <p class="text">
-                        To type them in a programming language you use these signs instead, but for + and - it's the same. <br>
+                        To type them in a programming language you use these signs instead, but for + and - it's the
+                        same. <br>
                         For multiplction we use the * sign, for division we use the / sign. <br>
                     </p>
                     <p class="text">
-                        But these are not all of them! programming languages also have the remander sign %, the floor-division sign //, <br>
+                        But these are not all of them! programming languages also have the remander sign %, the
+                        floor-division sign //, <br>
                         and the exponent sign **.
                     </p>
                     <p class="text">
-                        But These are not the only once, all programming languages have upto seven type of operators! <br>
-                        Arithmetic operators, Comparison operators, Logical operators, Assignment operators and bitwise operators. <br>
+                        But These are not the only once, all programming languages have upto seven type of operators!
+                        <br>
+                        Arithmetic operators, Comparison operators, Logical operators, Assignment operators and bitwise
+                        operators. <br>
                         These are infact the most common operators in python.
                     </p>
                     <p class="text">We will go through each one of them.</p>
@@ -73,23 +84,27 @@
                         sum = num1 + num2 <br>
                         diff = num1 - num2 <br>
                         multipul = num1 * num2 <br>
-                        qudrent = num1 / num2 
+                        qudrent = num1 / num2
                     </div>
                     <p class="text">
-                        Here we have two variables with two numbers 123 and 432. To add these numbers I used the + operator, <br>
+                        Here we have two variables with two numbers 123 and 432. To add these numbers I used the +
+                        operator, <br>
                         to subtract the - operator, to multiply the * operator and to Divide the / operator.
                     </p>
                     <p class="text">
                         Arithmetic operators are easy to learn so would be easy to learn the others? <br>
-                        will yes since python is quite like english so no joke, it's easy to learn the other operators as will. 
+                        will yes since python is quite like english so no joke, it's easy to learn the other operators
+                        as will.
                     </p>
-                </section><hr>
+                </section>
+                <hr>
                 <section class="comparision">
                     <h2>Comparison in python</h2>
                     <p class="text">
                         comparision operators, as it says are used to compare variables. <br>
-                        Take an example, you have one apple and one banana both are one right? but how to compare it in python? <br>
-                        will simple just use the == operator. 
+                        Take an example, you have one apple and one banana both are one right? but how to compare it in
+                        python? <br>
+                        will simple just use the == operator.
                     </p>
                     <div class="code">
                         apple = <font class="num">1</font><br>
@@ -99,7 +114,8 @@
                     <p class="text"><b>Output</b></p>
                     <div class="code">True</div>
                     <p class="text">
-                        And you get a True that means apple and banana are equal. But what if they are less or more or not equal or <br>
+                        And you get a True that means apple and banana are equal. But what if they are less or more or
+                        not equal or <br>
                         somthing somthing. While then we will use these operators.
                     </p>
                     <div class="code">
@@ -107,9 +123,9 @@
                         banana = <font class="num">2</font> <br>
                         print(apple > banana) <br>
                         print(apple < banana) <br>
-                        print(apple != banana) <br>
-                        print(apple >= banana) <br>
-                        print(apple <= banana) <br>
+                            print(apple != banana) <br>
+                            print(apple >= banana) <br>
+                            print(apple <= banana) <br>
                     </div>
                     <p class="text"><b>Output</b></p>
                     <div class="code">
@@ -121,10 +137,12 @@
                     </div>
                     <p class="text">
                         Let me explain what we did, here we used the > sign(more then), then the < sign(less then), <br>
-                        then != sign(not equal), then >=(more then or equal to) and then <=(less then or equal to) .
-                    </p>
-                    <p class="text">This may be deficult to understand but try each sign then you may get it.</p>
-                </section><hr>
+                            then != sign(not equal), then >=(more then or equal to) and then <=(less then or equal to) .
+                                </p>
+                                <p class="text">This may be deficult to understand but try each sign then you may get
+                                    it.</p>
+                </section>
+                <hr>
                 <section class="Logical">
                     <h2>Logical Operators</h2>
                     <p class="text">
@@ -150,11 +168,12 @@
                         True <br>
                         False
                     </div>
-                </section><hr>
+                </section>
+                <hr>
                 <section class="end">
                     <p class="text">
                         Although there are a lot more but this are the must used once. <br>
-                        If you want to learn more about them then vist 
+                        If you want to learn more about them then vist
                         <a href="https://www.programiz.com/python-programming/operators" class="link">Programiz</a> and
                         <a href="https://www.w3schools.com/python/python_operators.asp" class="link">W3schools</a>.
                     </p>
@@ -171,7 +190,7 @@
             <div class="detail">
                 <h1 class="head">Ezpie</h1>
                 <p><strong>Email</strong>: ezpie.co@gmail.com</p>
-            </div>   
+            </div>
             <div class="tutorials">
                 <h3 class="course">Tutorials</h3>
                 <ul class="links">
@@ -201,18 +220,22 @@
                     <li><a href="../../company/terms.html" class="list-item">Terms and Conditions</a></li>
                 </ul>
             </div>
-        </section><hr>
+        </section>
+        <hr>
         <section class="me">
             <p class="copyright">Copyright (c) 2022 Ezpie</p>
             <div class="net">
                 <a href="https://github.com/ishaan010">
-                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png" alt="my github page for ezpie" width="30px">
+                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100082135591250">
-                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie" width="30px">
+                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                        width="30px">
                 </a>
                 <a href="https://twitter.com/EzpieCo">
-                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px" class="net-icon">
+                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon">
                 </a>
             </div>
         </section>
@@ -220,5 +243,7 @@
 
 
     <script src="../../js/nav.js"></script>
+
 </body>
+
 </html>
