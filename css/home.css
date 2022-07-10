@@ -40,6 +40,13 @@ body {
   color: white;
   margin-left: 10px;
 }
+.link {
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+.beta {
+  margin-left: 180px;
+}
 
 /* NOTE this is for tabs */
 @media screen and (max-width: 1055px) {
