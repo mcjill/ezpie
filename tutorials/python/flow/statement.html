@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/nav.css">
-    <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
     <script>
@@ -17,7 +17,7 @@
 
         gtag('config', 'G-127HHJ286E');
     </script>
-    <title>python break keyword</title>
+    <title>python if statement</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <!-- ------------------------------------------------- -->
     <div id="main">
         <nav class="nav">
-            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg"
+            <a href="../../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
                     width="100px"></a>
             <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
             <a href="#" align="right" class="nav-link">Examples</a>
@@ -51,93 +51,83 @@
                 <ul class="ul">
                     <h4 class="head">Python flow</h4>
                     <hr>
-                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="statement.html" class="learn active">If statement</a></li>
                     <li><a href="while.html" class="learn">while loop</a></li>
                     <li><a href="for.html" class="learn">for loop</a></li>
                     <li><a href="continue.html" class="learn">continue</a></li>
-                    <li><a href="break.html" class="learn active">break</a></li>
+                    <li><a href="break.html" class="learn">break</a></li>
                 </ul>
             </div>
 
             <div class="parts">
                 <section class="intro">
-                    <h1 class="head">Break keyword in python</h1>
-                    <p class="text">In this article you will learn what is the break keyword.</p>
-                    <p class="text">
-                        Just like the continue keyword the break keyword is used to alter a loop. But using continue
-                        will only <br>
-                        skip one specific condition, while the break keyword will end the whole loop.
-                    </p>
-                    <img src="https://user-images.githubusercontent.com/104765117/173378953-2e740a0a-2dac-4d44-bbf1-9249b74204db.png"
-                        alt="break and continue flowchat" class="img">
-                    <p class="text">Try going through this flowchat and you will understand the maining of both the
-                        keywords.</p>
+                    <h1 class="head">Python if..elif..else statement</h1>
+                    <p class="text">In this article you will learn how to use if statements</p>
                 </section>
                 <hr>
-                <section class="what">
-                    <h2 class="head">What's the break keyword?</h2>
-                    <p class="text">The break keyword is used the break the loop when a condition is true.</p>
+                <section class="if">
+                    <h2 class="head">If statement</h2>
                     <p class="text">
-                        If you use a nested loop(a loop inside a loop) the break keyword will only end the loop it is
-                        inside. <br>
-                        Like if a for loop(loop 2) is in a for loop(loop 1), and the break keyword is inside the second
-                        for loop(loop 2), <br>
-                        then the second loop will end(loop 2 not loop 1).
+                        In programming we need to do a lots of decision making. <br>
+                        If statements are a block of code to be executed when the condition is true.
                     </p>
-                    <p class="text">Take an example</p>
-                    <img src="https://user-images.githubusercontent.com/104765117/173381737-8b3daf1c-a8c2-4b11-a8dc-afe10cdb5b5d.png"
-                        alt="example of break keyword by ezpie" class="img">
+                    <p class="text"><b>Syntax</b></p>
+                    <img src="https://user-images.githubusercontent.com/104765117/172865763-52b42d56-95da-4857-ae78-3abf0c6b4c7f.png"
+                        alt="if statement syntax" class="img">
                     <p class="text">
-                        May loop really hard to understand, but if you go step by step you will get it. <br>
-                        Frist here you can see we have a for loop which is looping in a string 'apples', stores the
-                        value in i and then prints it, <br>
-                        but here we have an if statement checking if i's value is 'l', if so then it breaks the loop.
+                        Here we have, if the condition is true then execute some code.
                     </p>
-                    <p class="text"><b>Output of frist loop:</b></p>
-                    <div class="code">
-                        a <br>
-                        p <br>
-                        p <br>
-                        End of loop
-                    </div>
+                </section>
+                <hr>
+                <section class="elif">
+                    <h2 class="head">if..elif statement</h2>
                     <p class="text">
-                        OK now we now the frist loop as it was simple, but this second one may be tricky, but it's also
-                        simple. <br>
-                        Frist we have the loop 1, which is loop in a range of 5 which means, start from 0 end at 4(0, 1,
-                        2, 3, (4 -> 5)), <br>
-                        then we have loop 2, which is looping in a string 'banana' and then we have an if statement to
-                        check if j is n, <br>
-                        if so then end the loop.
+                        Some times it's only if statement, but some times you need more then one posible chose. <br>
+                        Take an example, <br>
+                        You made a code in which if a user enters work it prints the work of the user, if the user
+                        enters hello then is prints 'hello', <br>
+                        and more. Here we need to use if..elif statement.
                     </p>
-                    <p class="text"><b>Output:</b></p>
-                    <div class="code">
-                        b <br>
-                        0 <br>
-                        a <br>
-                        b <br>
-                        a <br>
-                        1 <br>
-                        b <br>
-                        a <br>
-                        2 <br>
-                        b <br>
-                        a <br>
-                        3 <br>
-                        b <br>
-                        a <br>
-                        4
-                    </div>
+                    <p class="text"><b>Syntax</b></p>
+                    <img src="https://user-images.githubusercontent.com/104765117/172867779-4a847ff4-2f05-4e72-9d3a-b8bc840c49c7.png"
+                        alt="if..elif statement syntax" class="img">
                     <p class="text">
-                        We got this output because in the loop we are also printing the values, frist the loop 2 value
-                        is getting printed <br>
-                        then loop 1.
+                        Here we are trying to see if the condition is true then print True, and if the condition is
+                        false then see the next elif statement.
                     </p>
+                </section>
+                <hr>
+                <section class="else">
+                    <h2 class="head">if..elif..else statement</h2>
+                    <p class="text">
+                        Some times you may have a program which prints same result for most, therefore we use the else
+                        statement. <br>
+                        Take an example
+                    </p>
+                    <p class="text">
+                        You have a number between 0 and 20. You want to see what the number is by try and error. <br>
+                        So you made a program were you have a variable called num with a random value, <br>
+                        you used if statement like this:
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/172870798-157ace76-b28b-4242-9758-6650e18ca5b7.png"
+                        alt="if..elif..else statement example" class="img">
+                    <p class="text">
+                        Here we are using if statement, were if the number is more then 10 it prints 'More then 10',
+                        <br>
+                        if it's less then 10 then 'Less then 10' and lastly if it's not more not less then it's 10.
+                    </p>
+                </section>
+                <hr>
+                <section class="more">
+                    <h2 class="head">More on if statement</h2>
+                    <p class="text">You can also have an if statement inside an if statement.</p>
+                    <img src="https://user-images.githubusercontent.com/104765117/172872184-dae02b94-7a87-4d2a-994e-893986e04523.png"
+                        alt="Nasted if statement example" class="img">
                 </section>
                 <hr>
                 <section class="end">
-                    <p class="text">Good job on fineshing python flow.</p>
                     <button class="btn">
-                        <a href="../data-type/numbers.html" class="next">Next: Numbers in python</a>
+                        <a href="while.html" class="next">Next: while loop in python</a>
                     </button>
                 </section>
             </div>
