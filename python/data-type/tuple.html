@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>python number data type</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg"
+                    width="100px" /></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <hr />
+                    <li>
+                        <a class="learn" href="../basic/intro.html">Python Intro</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/comment.html">Python Comments</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/variable.html">Python Variables</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/data-type.html">Python Data Types</a>
+                    </li>
+                    <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+                    <li>
+                        <a class="learn" href="../basic/operators.html">Operators</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/conversion.html">type conversion</a>
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4>
+                    <hr />
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn">while loop</a></li>
+                    <li><a href="for.html" class="learn">for loop</a></li>
+                    <li><a href="continue.html" class="learn">continue</a></li>
+                    <li><a href="break.html" class="learn">break</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Data type</h4>
+                    <hr />
+                    <li><a href="numbers.html" class="learn">Numbers</a></li>
+                    <li><a href="string.html" class="learn">String</a></li>
+                    <li><a href="set.html" class="learn">Set</a></li>
+                    <li><a href="list.html" class="learn">List</a></li>
+                    <li><a href="tuple.html" class="learn active">tuple</a></li>
+                    <li><a href="dictionary.html" class="learn">Dictionary</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">tuples in python</h1>
+                    <p class="text">
+                        In this article you will learn about another data type like set called tuple.
+                    </p>
+                </section>
+                <hr>
+                <section class="what">
+                    <p class="text">
+                        tuples are like list but more closer to set as they are unchangeable but ordered.
+                    </p>
+                    <p class="text">
+                        They are written inside round brackets ( ). But these round brackets are optional, <br>
+                        But it is a good way of making your code look clear and at the same time simple to understand.
+                    </p>
+                    <div class="code">
+                        <font class="comment"># This is same as a = 12, 2, 15</font><br>
+                        a = (<font class="num">12</font>, <font class="num">2</font>, <font class="num">15</font>)
+                    </div>
+                </section>
+                <hr>
+                <section class="get">
+                    <h2 class="head">How to access an item in a tuple</h2>
+                    <p class="text">
+                        As I told you tuple are ordered that means we can access an item in a tuple using index <br>
+                        for which we use the square brackets [ ]
+                    </p>
+                    <p class="text">
+                        Take an example like a tuple with 5 item that means the first item starts with 0 and ends with
+                        4(recall range). <br>
+                        And if you try to get an item off range means samthing like 5 or 7 or so on will give an error
+                        called <b>IndexError</b>
+                    </p>
+                    <p class="text">
+                        And of course the index should and must be an integer so no to float and string.
+                    </p>
+                    <div class="code">
+                        a = (<font class="num">22</font>, <font class="num">19</font>, <font class="num">12</font>,
+                        <font class="num">14</font>) <br><br>
+                        <font class="comment"># now to access a value maybe like 19</font><br>
+                        a[<font class="num">1</font>] <font class="comment"># output: 19. Remember range again</font>
+                    </div>
+                    <p class="text">
+                        This in fact is also called positive indexing as we are using positive numbers like 1, 0, 4, 2.
+                        <br>
+                        But what if you want to do it the other way round? This is then called negitive indexing.
+                    </p>
+                    <h3 class="head">Negitive indexing</h3>
+                    <div class="code">
+                        <font class="comment"># the same tuple</font>
+                        a = (<font class="num">22</font>, <font class="num">19</font>, <font class="num">12</font>,
+                        <font class="num">14</font>) <br><br>
+                        <font class="comment"># now to access it in negitive indexing</font><br>
+                        a[<font class="num">-1</font>] <font class="comment"># output: 14</font>
+                    </div>
+                    <h3 class="head">Slicing</h3>
+                    <p class="text">
+                        To access a range of item on a tuple we use the slicing operator the colon <b>:</b>
+                    </p>
+                    <div class="code">
+                        a = (<font class="num">1</font>, <font class="num">11</font>, <font class="num">12</font>, <font
+                            class="num">13</font>, <font class="num">19</font>, <font class="num">16</font>) <br><br>
+
+                        <font class="comment"># lets try to get the 2nd to the 6th</font><br>
+                        a[<font class="num">1</font>:<font class="num">5</font>]
+                        <font class="comment"># output: (11, 12, 13, 19, 16)</font>
+                    </div>
+                </section>
+                <hr>
+                <section class="change">
+                    <h2 class="head">How to change a tuple</h2>
+                    <p class="text">
+                        Just like sets tuple are unchangeable. But we can change its values when its a list
+                        <br>
+                        This can be done by type casting, change the tuple into a list then add or change values <br>
+                        and again type cast it back to a tuple.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/180015466-e02757c0-39f5-4249-a145-d47fa5a9bbdb.png"
+                        alt="example of changing a tuple in python" class="img">
+                </section>
+                <hr>
+                <section class="unpack">
+                    <h2 class="head">How to unpack a tuple</h2>
+                    <p class="text">
+                        When we create a tuple we assign values to it this is called <b>'packing'</b> a tuple. <br>
+                        But what if you want to place all the items in a tuple in Variables? Then this will be called
+                        <b>'unpacking'</b>.
+                    </p>
+                    <div class="code">
+                        fruits = (<font class="num">1</font>, <font class="num">2</font>, <font class="num">3</font>)
+                        <br>
+                        (item1, item2, item3) = fruits <br><br>
+                        print(item1, item2, item3) <font class="comment"># Output: 1 2 3</font>
+                    </div>
+                </section>
+                <hr>
+                <section class="method">
+                    <h2 class="head">Methods for tuple</h2>
+                    <p class="text">
+                        Just like other data types tuple also have some methods, which are <b>index()</b> and
+                        <b>count()</b>
+                    </p>
+                    <h3 class="head">Index() method</h3>
+                    <p class="text">
+                        The index method is used to find the index of a value in a tuple.
+                    </p>
+                    <p class="text">
+                        For example: <br>
+                        if you have a tuple with values <b>('e', 'z', 'p', 'i', 'e')</b>, and you want to find the index
+                        of <b>'i'</b> <br>
+                        then we use the index() method like this:
+                    </p>
+                    <div class="code">
+                        name = (<font class="str">'e'</font>, <font class="str">'z'</font>, <font class="str">'p'</font>
+                        ,
+                        <font class="str">'i'</font>, <font class="str">'e'</font>) <br><br>
+                        <font class="comment"># now to find the index of 'i'</font><br>
+                        <font class="print">print</font>(name.index(<font class="str">'i'</font>))
+                        <font class="comment"># output: 3</font>
+                    </div>
+                    <h3 class="head">Count() method</h3>
+                    <p class="text">
+                        The count() method is used to find how many same values are there in a tuple.
+                    </p>
+                    <p class="text">
+                        For example: <br>
+                        if you have a tuple with the same values used in the first example and you want to find how many
+                        <br>
+                        <b>'e'</b> are there. Then we use the count() method.
+                    </p>
+                    <div class="code">
+                        name = (<font class="str">'e'</font>, <font class="str">'z'</font>, <font class="str">'p'</font>
+                        ,
+                        <font class="str">'i'</font>, <font class="str">'e'</font>) <br><br>
+                        <font class="comment"># now to find how many e's are there</font><br>
+                        <font class="print">print</font>(name.count(<font class="str">'e'</font>))
+                        <font class="comment"># output: 2</font>
+                    </div>
+                </section>
+                <hr>
+                <section class="end">
+                    <button class="btn">
+                        <a href="dictionary.html" class="next">Next: dictionary in python</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">Tutorials</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+                    <li><a href="#" class="list-item">Javascript</a></li>
+                    <li><a href="#" class="list-item">HTML</a></li>
+                    <li><a href="#" class="list-item">CSS</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript Challenges</a></li>
+                    <li><a href="#" class="list-item">HTML Challenges</a></li>
+                    <li><a href="#" class="list-item">CSS Challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li>
+                        <a href="../../company/about.html" class="list-item">About</a>
+                    </li>
+                    <li>
+                        <a href="../../company/privacy.html" class="list-item">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="../../company/terms.html" class="list-item">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                        width="30px" />
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../js/nav.js"></script>
+</body>
+
+</html>
