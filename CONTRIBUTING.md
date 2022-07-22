@@ -3,8 +3,8 @@ I am very happy if you want to contribute to my website ezpie, because I am the 
 ## editing
 Editing of an file is aloud you can do on python tutorrial, javascript tutorial, html tutorial and css tutorial.
 Your name must be there as comment and email(optional)
-## commiting
-Your commit must be like added file_name, deleted file_name, updated file_name. 
+
+
 ## issues
 Writing good issues is good for you and me to understand your need. You may get the answer to your issue late but I will try not to let that happen. 
 ## will done
@@ -20,3 +20,9 @@ If I like your work It will be added with your name at the end of the page!
 1. Your contribution may be edited only for footer and navbars. So don't take that I didn't liked your work.
 2. Your name must be there in the file as a comment.
 3. Do your contribution on another branch as your name.
+
+## contact me 
+To contact you can use email: **ezpie.co@gmail.com**
+
+### timings I'm available
+I live in India so the time is diffrent(if you are from other country). The best time to contact is around 3:00pm to 8:00pm as per IST(Indian standard time)
