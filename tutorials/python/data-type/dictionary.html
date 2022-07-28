@@ -17,7 +17,7 @@
 
         gtag('config', 'G-127HHJ286E');
     </script>
-    <title>python Tuple data type</title>
+    <title>python Dictionary data type</title>
 </head>
 
 <body>
@@ -76,152 +76,136 @@
                     <li><a href="string.html" class="learn">String</a></li>
                     <li><a href="set.html" class="learn">Set</a></li>
                     <li><a href="list.html" class="learn">List</a></li>
-                    <li><a href="tuple.html" class="learn active">tuple</a></li>
-                    <li><a href="dictionary.html" class="learn">Dictionary</a></li>
+                    <li><a href="tuple.html" class="learn">tuple</a></li>
+                    <li><a href="dictionary.html" class="learn active">Dictionary</a></li>
                 </ul>
             </div>
 
             <div class="parts">
                 <section class="intro">
-                    <h1 class="head">tuples in python</h1>
+                    <h1 class="head">Dictionary in python</h1>
                     <p class="text">
-                        In this article you will learn about another data type like set called tuple.
+                        In this article you will learn about a very useful data type called dictionary.
+                    </p>
+                    <p class="text">
+                        A dictionary in python is used for storing data in a way of key and value like key:value <br>
+                        A dictionary is an ordered, changeable and no to duplicate collection.
+                    </p>
+                    <p class="text">
+                        <b>Note:</b> as of python 3.7 dictionary are ordered, but python 3.6 or older are not ordered!
                     </p>
                 </section>
                 <hr>
-                <section class="what">
+                <section class="create">
+                    <h2 class="head">How to create a dictionary in python</h2>
                     <p class="text">
-                        tuples are like list but more closer to set as they are unchangeable but ordered.
+                        In python a dictionary is written with curly brackets and have keys and values.
                     </p>
                     <p class="text">
-                        They are written inside round brackets ( ). But these round brackets are optional, <br>
-                        But it is a good way of making your code look clear and at the same time simple to understand.
+                        A dictionary must have a key with a value like this <b>key:value</b>, and with multiply keys
+                        they must be separated by a comma.
+                    </p>
+                    <p class="text">
+                        Values of a key can be of any data type. BUT the key can only be of <b>string or integer</b>
+                        and must be unique.
                     </p>
                     <div class="code">
-                        <font class="comment"># This is same as a = 12, 2, 15</font><br>
-                        a = (<font class="num">12</font>, <font class="num">2</font>, <font class="num">15</font>)
+                        a = { <br>
+                        <font class="str">'company'</font>: <font class="str">'apple'</font>, <br>
+                        <font class="str">'CEO'</font>: <font class="str">'Tim cook'</font>, <br>
+                        <font class="str">'Co-founder'</font>: <font class="str">'Steve Jobs'</font>, <br>
+                        }
                     </div>
                 </section>
                 <hr>
-                <section class="get">
-                    <h2 class="head">How to access an item in a tuple</h2>
+                <section class="access">
+                    <h2 class="head">How to access an item on a dictionary</h2>
                     <p class="text">
-                        As I told you tuple are ordered that means we can access an item in a tuple using index <br>
-                        for which we use the square brackets [ ]
+                        To access an item on a dictionary we use the get() method or simple indexing.
                     </p>
                     <p class="text">
-                        Take an example like a tuple with 5 item that means the first item starts with 0 and ends with
-                        4(recall range). <br>
-                        And if you try to get an item off range means samthing like 5 or 7 or so on will give an error
-                        called <b>IndexError</b>
+                        It may not matter which to use but you must know what the difference are any way. <br>
+                        The get() method when used to access any key which does not even exist then it just prints
+                        <b>None</b>. <br>
+                        But if you used the indexing way(means the square brackets [ ]) then it will raise an error
+                        called <b>KeyError</b>.
                     </p>
-                    <p class="text">
-                        And of course the index should and must be an integer so no to float and string.
-                    </p>
-                    <div class="code">
-                        a = (<font class="num">22</font>, <font class="num">19</font>, <font class="num">12</font>,
-                        <font class="num">14</font>) <br><br>
-                        <font class="comment"># now to access a value maybe like 19</font><br>
-                        a[<font class="num">1</font>] <font class="comment"># output: 19. Remember range again</font>
-                    </div>
-                    <p class="text">
-                        This in fact is also called positive indexing as we are using positive numbers like 1, 0, 4, 2.
-                        <br>
-                        But what if you want to do it the other way round? This is then called negitive indexing.
-                    </p>
-                    <h3 class="head">Negitive indexing</h3>
-                    <div class="code">
-                        <font class="comment"># the same tuple</font>
-                        a = (<font class="num">22</font>, <font class="num">19</font>, <font class="num">12</font>,
-                        <font class="num">14</font>) <br><br>
-                        <font class="comment"># now to access it in negitive indexing</font><br>
-                        a[<font class="num">-1</font>] <font class="comment"># output: 14</font>
-                    </div>
-                    <h3 class="head">Slicing</h3>
-                    <p class="text">
-                        To access a range of item on a tuple we use the slicing operator the colon <b>:</b>
-                    </p>
-                    <div class="code">
-                        a = (<font class="num">1</font>, <font class="num">11</font>, <font class="num">12</font>, <font
-                            class="num">13</font>, <font class="num">19</font>, <font class="num">16</font>) <br><br>
-
-                        <font class="comment"># lets try to get the 2nd to the 6th</font><br>
-                        a[<font class="num">1</font>:<font class="num">5</font>]
-                        <font class="comment"># output: (11, 12, 13, 19, 16)</font>
-                    </div>
+                    <img src="https://user-images.githubusercontent.com/104765117/180715208-6eb0af33-03a3-4760-9403-ef6088ac5feb.png"
+                        alt="get vs [ ] with dictionary in python">
                 </section>
                 <hr>
                 <section class="change">
-                    <h2 class="head">How to change a tuple</h2>
+                    <h2 class="head">How to add and change item on a dictionary</h2>
                     <p class="text">
-                        Just like sets tuple are unchangeable. But we can change its values when its a list
-                        <br>
-                        This can be done by type casting, change the tuple into a list then add or change values <br>
-                        and again type cast it back to a tuple.
+                        To add a item or change the value of existing item we can use the assignment operator
                     </p>
-                    <img src="https://user-images.githubusercontent.com/104765117/180015466-e02757c0-39f5-4249-a145-d47fa5a9bbdb.png"
-                        alt="example of changing a tuple in python" class="img">
+                    <p class="text">
+                        But if a key mentioned does not exist then a new key with the value will be created.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/180720063-bbdf89ab-347f-4db5-8ff9-6dc79693f8e0.png"
+                        alt="adding and changing items in a dictionary">
                 </section>
                 <hr>
-                <section class="unpack">
-                    <h2 class="head">How to unpack a tuple</h2>
+                <section class="remove">
+                    <h2 class="head">How to remove an item from a dictionary</h2>
                     <p class="text">
-                        When we create a tuple we assign values to it this is called <b>'packing'</b> a tuple. <br>
-                        But what if you want to place all the items in a tuple in Variables? Then this will be called
-                        <b>'unpacking'</b>.
+                        Like in any other sequence data type, we can also remove items from a dictionary <br>
+                        to do this we use the <b>pop()</b> and <b>popitem()</b> methods.
+                    </p>
+                    <p class="text">
+                        The only difference between these two is that <b>pop()</b> is used to remove a value given <br>
+                        while <b>popitem()</b> is used to remove the last item on a dictionary
+                    </p>
+                    <p class="text">For example: </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/181268033-3041dbf4-0440-4e8d-96b6-482c94b7710e.png"
+                        alt="an example of pop() and popitem() methods in python to remove an item from a dictionary"
+                        class="img">
+                </section>
+                <hr>
+                <section class="check">
+                    <h2 class="head">How to check for keys in python?</h2>
+                    <p class="text">
+                        In python we can check if a given key is there in the dictionary or not, by using the <b>in</b>
+                        or <br>
+                        by combining the <b>not</b> and <b>in</b> keyword like this: <b>not in</b>
                     </p>
                     <div class="code">
-                        fruits = (<font class="num">1</font>, <font class="num">2</font>, <font class="num">3</font>)
+                        a_dict = {<font class="str">'a'</font>: <font class="str">'a'</font>, <font class="str">'b'
+                        </font>: <font class="str">'b'</font>, <font class="str">'c'</font>: <font class="str">'c'
+                        </font>, <font class="str">'d'</font>: <font class="str">'d'</font>} <br>
                         <br>
-                        (item1, item2, item3) = fruits <br><br>
-                        print(item1, item2, item3) <font class="comment"># Output: 1 2 3</font>
+                        <font class="print">print</font>(<font class="str">'a'</font>
+                        <font class="print">in</font> a_dict) <br>
+                        <font class="print">print</font>(<font class="str">'b'</font>
+                        <font class="print">not in</font> a_dict) <br>
+                        <font class="print">print</font>(<font class="str">'c'</font>
+                        <font class="print">in</font> a_dict) <br>
                     </div>
                 </section>
                 <hr>
-                <section class="method">
-                    <h2 class="head">Methods for tuple</h2>
+                <section class="loop">
+                    <h2 class="head">Looping through a dictionary</h2>
                     <p class="text">
-                        Just like other data types tuple also have some methods, which are <b>index()</b> and
-                        <b>count()</b>
+                        We can also loop through a dictionary in python using the
+                        <a href="../flow/for.html" class="link">for loop</a>.
                     </p>
-                    <h3 class="head">Index() method</h3>
-                    <p class="text">
-                        The index method is used to find the index of a value in a tuple.
-                    </p>
-                    <p class="text">
-                        For example: <br>
-                        if you have a tuple with values <b>('e', 'z', 'p', 'i', 'e')</b>, and you want to find the index
-                        of <b>'i'</b> <br>
-                        then we use the index() method like this:
-                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/181510586-e31481e5-5ab1-47d8-ba41-60170102ce24.png"
+                        alt="example of looping through dictionary using for loop" class="img">
+                    <p class="text"><b>Output:</b></p>
                     <div class="code">
-                        name = (<font class="str">'e'</font>, <font class="str">'z'</font>, <font class="str">'p'</font>
-                        ,
-                        <font class="str">'i'</font>, <font class="str">'e'</font>) <br><br>
-                        <font class="comment"># now to find the index of 'i'</font><br>
-                        <font class="print">print</font>(name.index(<font class="str">'i'</font>))
-                        <font class="comment"># output: 3</font>
+                        2 4 <br>
+                        3 9 <br>
+                        5 25 <br>
+                        7 49 <br>
+                        9 81 <br>
                     </div>
-                    <h3 class="head">Count() method</h3>
                     <p class="text">
-                        The count() method is used to find how many same values are there in a tuple.
+                        Here we have created a dictionary, then we are using the <b>for loop</b> to loop through the
+                        dictionary, <br>
+                        then we are printing the key, then we are using <b>square[i]</b> which is simply printing the
+                        value in the variable square.
                     </p>
-                    <p class="text">
-                        For example: <br>
-                        if you have a tuple with the same values used in the first example and you want to find how many
-                        <br>
-                        <b>'e'</b> are there. Then we use the count() method.
-                    </p>
-                    <div class="code">
-                        name = (<font class="str">'e'</font>, <font class="str">'z'</font>, <font class="str">'p'</font>
-                        ,
-                        <font class="str">'i'</font>, <font class="str">'e'</font>) <br><br>
-                        <font class="comment"># now to find how many e's are there</font><br>
-                        <font class="print">print</font>(name.count(<font class="str">'e'</font>))
-                        <font class="comment"># output: 2</font>
-                    </div>
                 </section>
-                <hr>
                 <section class="end">
                     <button class="btn">
                         <a href="dictionary.html" class="next">Next: dictionary in python</a>
