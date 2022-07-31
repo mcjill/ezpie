@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/base.css" />
+    <link rel="stylesheet" href="../../../css/nav.css" />
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>python Dictionary data type</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
+                    width="100px" /></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">challenges</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <hr />
+                    <li>
+                        <a class="learn" href="../basic/intro.html">Python Intro</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/comment.html">Python Comments</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/variable.html">Python Variables</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/data-type.html">Python Data Types</a>
+                    </li>
+                    <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+                    <li>
+                        <a class="learn" href="../basic/operators.html">Operators</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/conversion.html">type conversion</a>
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4>
+                    <hr />
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn">while loop</a></li>
+                    <li><a href="for.html" class="learn">for loop</a></li>
+                    <li><a href="continue.html" class="learn">continue</a></li>
+                    <li><a href="break.html" class="learn">break</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Data type</h4>
+                    <hr />
+                    <li><a href="../data-type/numbers.html" class="learn">Numbers</a></li>
+                    <li><a href="../data-type/string.html" class="learn">String</a></li>
+                    <li><a href="../data-type/set.html" class="learn">Set</a></li>
+                    <li><a href="../data-type/list.html" class="learn">List</a></li>
+                    <li><a href="../data-type/tuple.html" class="learn">tuple</a></li>
+                    <li><a href="../data-type/dictionary.html" class="learn">Dictionary</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Functions</h4>
+                    <hr />
+                    <li><a href="python-function.html" class="learn active">Python function</a></li>
+                    <li><a href="function-argument.html" class="learn">Function argument</a></li>
+                    <li><a href="recursion.html" class="learn">Python Recursion</a></li>
+                    <li><a href="lambda.html" class="learn">Lambda</a></li>
+                    <li><a href="local.html" class="learn">local and nonlocal</a></li>
+                    <li><a href="global.html" class="learn">Global Keyword</a></li>
+                    <li><a href="module" class="learn">Python Modules</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">Functions in python</h1>
+                    <p class="text">In this article you will get to know about functions</p>
+                </section>
+                <hr>
+                <section class="what">
+                    <h2 class="head">What is function?</h2>
+                    <p class="text">
+                        A function is like an <a href="../flow/statement.html" class="link">if statement</a> it will run
+                        only when it is called. It's a block of code that can be used repeatedly.
+                    </p>
+                    <p class="text">
+                        Functions help us by breaking down our program into smaller block of code, as a program gets
+                        bigger and larger <br>
+                        in size, functions are very useful. <br>
+                        And since a function runs when it's called it also stops the repeation of code and makes it
+                        reusable.
+                    </p>
+                </section>
+                <hr>
+                <section class="how">
+                    <h2 class="head">How to create a function</h2>
+                    <p class="text">To create a function we need to follow some rules, which are:</p>
+                    <ol>
+                        <li>A function must start with a <b>def</b> keyword</li>
+                        <li>A function must have a name. Example.. <b>function_name</b></li>
+                        <li>A function must have a round brackets <b>()</b></li>
+                        <li>A function may or may not have some parameters. Example.. <b>def
+                                function_name(parameter)</b></li>
+                        <li>A function when defined in the first line it must end with colon <b>:</b> Example.. <b>def
+                                function_name():</b></li>
+                        <li>A function can have a docstring which is used to describe what a function does <br>
+                            docstring are written inside triple quotes """ """
+                        </li>
+                        <li>A function may or may not have a <b>return</b> statement. <br>
+                            But it is strongly recommended to use return statement
+                        </li>
+                    </ol>
+                    <h3 class="head">Example of a function</h3>
+                    <img src="https://user-images.githubusercontent.com/104765117/181916145-13bb0c7b-7fd2-4bfb-93ad-ceb3545604bb.png"
+                        alt="an example of a function in python" class="img">
+
+                    <p class="text">
+                        <b>Note:</b> did you sow that after assigning the function <b>sum()</b> to the variable
+                        <b>Sum</b> I then printed <b>Sum</b>? <br>
+                        But what did I did that for? That's because I'm using the return statement which only returns
+                        the value <br>
+                        then we have to print it. in conclusion return is not like print.
+                    </p>
+                    <p class="text">
+                        This same can be done by print but that's to you try doing it once. If you are not able to then
+                        just leave a message
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrZNKHBrvvttvNRhmnbGFKkdmCmHXTpZDjDkNgXpjBmlXgdqvxwhRTPvKvnBQcCVvdQB"
+                            class="link">here</a>
+                    </p>
+                </section>
+                <hr>
+                <section class="call">
+                    <h2 class="head">How to call a function</h2>
+                    <p class="text">
+                        To call a function we just need to type the name of the function with parameters if given. <br>
+                        That means if I define a function called <b>name()</b> then I can called it by typing
+                        <b>name()</b>
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/181917341-d5c855c1-96ec-4098-87ce-0afb8d9b59c9.png"
+                        alt="how to call a function in python" class="img">
+                    <p class="text">
+                        Here we have define a function called <b>name()</b> which has two variable <b>name</b> <br>
+                        and <b>text</b>, with name having my name and text using the
+                        <a href="../data-type/string.html#format" class="link">format()</a> method to format a text.
+                        Then just print it. <br>
+                        Next we are simply calling the function by typing its name, that's because we are just going to
+                        print the value <br>
+                        not store it in a variable. Since we are not using the return statement.
+                    </p>
+                </section>
+                <hr>
+                <section class="docstring">
+                    <h2 class="head">Docstring in a function</h2>
+                    <p class="text">
+                        Docstring just tells us what the function does. <br>
+                        May sound waste of time but it is a good programming practice, so adding it is not bad nor good.
+                        <br>
+                        If you can remember what that function does!
+                    </p>
+                    <p class="text">
+                        Docstring are mainly written in triple quotes so that they can extend up to multiple lines. <br>
+                        we can also access what the docstring is using <b>*.__doc__</b>. <br>
+                        But if you are using a code editor like <a href="https://code.visualstudio.com"
+                            class="link">vscode</a> then
+                        if you hover over the function called, you can see the docstring. <br>
+                        But back to using <b>*.__doc__</b>
+                    </p>
+                    <div class="code">
+                        >>> <font class="print">print</font>(name.__doc__) <br>
+                        function to print some format text
+                    </div>
+                </section>
+                <hr>
+                <section class="return">
+                    <h2 class="head">The return statement</h2>
+                    <p class="text">
+                        As I said before, 'But it is strongly recommended to use return statement'. And it is that the
+                        return statement <br>
+                        helps in a lot of ways. Take for example:
+                    </p>
+                    <p class="text">
+                        You have a function to calculate the area of a square, but you also want to calculate the cost
+                        in an <a href="../flow/statement.html" class="link">if statement</a>, <br>
+                        therefore you will use the return statement to store it's value and calculate it's cost if
+                        needed or just print it.
+                    </p>
+                    <p class="text">
+                        Plus, a return statement calculates directly, means no need to store the value of an expersion
+                        in a variable <br>
+                        and then return it. Just like this: <br>
+                        <b>return <i>expersion</i></b>
+                    </p>
+                    <p class="text"><b>For example:</b></p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182027909-558efded-b576-48eb-b9c7-b2700c975081.png"
+                        alt="an example of return statement in a function" class="img">
+                </section>
+                <section class="end">
+                    <button class="btn">
+                        <a href="argument.html" class="next">Next: Function arguments</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">course</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript Challenges</a></li>
+                    <li><a href="#" class="list-item">HTML Challenges</a></li>
+                    <li><a href="#" class="list-item">CSS Challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li>
+                        <a href="../../company/about.html" class="list-item">About</a>
+                    </li>
+                    <li>
+                        <a href="../../company/privacy.html" class="list-item">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="../../company/terms.html" class="list-item">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../../asset/logo/internet/facebook.svg"
+                        alt="my facebook page for ezpie" width="30px" />
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/nav.js"></script>
+</body>
+
+</html>
