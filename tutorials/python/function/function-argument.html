@@ -17,7 +17,7 @@
 
         gtag('config', 'G-127HHJ286E');
     </script>
-    <title>Functions in python</title>
+    <title>Function argument in python</title>
 </head>
 
 <body>
@@ -82,8 +82,8 @@
                 <ul class="ul">
                     <h4 class="head">Functions</h4>
                     <hr />
-                    <li><a href="python-function.html" class="learn active">Python function</a></li>
-                    <li><a href="function-argument.html" class="learn">Function argument</a></li>
+                    <li><a href="python-function.html" class="learn">Python function</a></li>
+                    <li><a href="function-argument.html" class="learn active">Function argument</a></li>
                     <li><a href="lambda.html" class="learn">Lambda</a></li>
                     <li><a href="local.html" class="learn">local and nonlocal</a></li>
                     <li><a href="global.html" class="learn">Global Keyword</a></li>
@@ -93,130 +93,90 @@
 
             <div class="parts">
                 <section class="intro">
-                    <h1 class="head">Functions in python</h1>
-                    <p class="text">In this article you will get to know about functions</p>
+                    <h1 class="head">Arguments in a function</h1>
+                    <p class="text">In this article you will learn what and how to use an argument in a function</p>
                 </section>
                 <hr>
                 <section class="what">
-                    <h2 class="head">What is function?</h2>
+                    <h2 class="head">What is an argument?</h2>
                     <p class="text">
-                        A function is like an <a href="../flow/statement.html" class="link">if statement</a> it will run
-                        only when it is called. It's a block of code that can be used repeatedly.
+                        In a function most of the time we need to pass some information which can be passed as
+                        parameters.
                     </p>
                     <p class="text">
-                        Functions help us by breaking down our program into smaller block of code, as a program gets
-                        bigger and larger <br>
-                        in size, functions are very useful. <br>
-                        And since a function runs when it's called it also stops the repeation of code and makes it
-                        reusable.
+                        Arguments are give to a function after the function name inside the parentheses.we can add as
+                        many <br>
+                        arguments as we want, by separating them with a comma.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182171228-d22e5be8-9e41-4b03-9485-1b8d74bb2105.png"
+                        alt="example of a function with arguments" class="img">
+                </section>
+                <hr>
+                <section class="which">
+                    <h2 class="head">Parameter or Argument?</h2>
+                    <p class="text">
+                        You may have got a bet confuse of parameter or argument right? will no more now, <br>
+                        a parameter is the one inside the round brackets and argument is the value passed to the
+                        parameter. <br>
+                        <b>But infact both are the same!</b>
                     </p>
                 </section>
                 <hr>
-                <section class="how">
-                    <h2 class="head">How to create a function</h2>
-                    <p class="text">To create a function we need to follow some rules, which are:</p>
-                    <ol>
-                        <li>A function must start with a <b>def</b> keyword</li>
-                        <li>A function must have a name. Example.. <b>function_name</b></li>
-                        <li>A function must have a round brackets <b>()</b></li>
-                        <li>A function may or may not have some parameters. Example.. <b>def
-                                function_name(parameter)</b></li>
-                        <li>A function when defined in the first line it must end with colon <b>:</b> Example.. <b>def
-                                function_name():</b></li>
-                        <li>A function can have a docstring which is used to describe what a function does <br>
-                            docstring are written inside triple quotes """ """
-                        </li>
-                        <li>A function may or may not have a <b>return</b> statement. <br>
-                            But it is strongly recommended to use return statement
-                        </li>
-                    </ol>
-                    <h3 class="head">Example of a function</h3>
-                    <img src="https://user-images.githubusercontent.com/104765117/181916145-13bb0c7b-7fd2-4bfb-93ad-ceb3545604bb.png"
-                        alt="an example of a function in python" class="img">
-
+                <section class="many">
+                    <h2 class="head">Numbers of Parameters</h2>
                     <p class="text">
-                        <b>Note:</b> did you sow that after assigning the function <b>sum()</b> to the variable
-                        <b>Sum</b> I then printed <b>Sum</b>? <br>
-                        But what did I did that for? That's because I'm using the return statement which only returns
-                        the value <br>
-                        then we have to print it. in conclusion return is not like print.
-                    </p>
-                    <p class="text">
-                        This same can be done by print but that's to you try doing it once. If you are not able to then
-                        just leave a message
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrZNKHBrvvttvNRhmnbGFKkdmCmHXTpZDjDkNgXpjBmlXgdqvxwhRTPvKvnBQcCVvdQB"
-                            class="link">here</a>
-                    </p>
-                </section>
-                <hr>
-                <section class="call">
-                    <h2 class="head">How to call a function</h2>
-                    <p class="text">
-                        To call a function we just need to type the name of the function with parameters if given. <br>
-                        That means if I define a function called <b>name()</b> then I can called it by typing
-                        <b>name()</b>
-                    </p>
-                    <img src="https://user-images.githubusercontent.com/104765117/181917341-d5c855c1-96ec-4098-87ce-0afb8d9b59c9.png"
-                        alt="how to call a function in python" class="img">
-                    <p class="text">
-                        Here we have define a function called <b>name()</b> which has two variable <b>name</b> <br>
-                        and <b>text</b>, with name having my name and text using the
-                        <a href="../data-type/string.html#format" class="link">format()</a> method to format a text.
-                        Then just print it. <br>
-                        Next we are simply calling the function by typing its name, that's because we are just going to
-                        print the value <br>
-                        not store it in a variable. Since we are not using the return statement.
-                    </p>
-                </section>
-                <hr>
-                <section class="docstring">
-                    <h2 class="head">Docstring in a function</h2>
-                    <p class="text">
-                        Docstring just tells us what the function does. <br>
-                        May sound waste of time but it is a good programming practice, so adding it is not bad nor good.
+                        A function must be called with the same number of argument as the same number of parameters.
                         <br>
-                        If you can remember what that function does!
+                        Means: 2 parameters so 2 arguments.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182174510-423a54ab-e0b1-41a7-9e11-f05cb6c49c4c.png"
+                        alt="a function must be called with the same number of arguments as parameters" class="img">
+                </section>
+                <section class="arbitrary">
+                    <h2 class="head">Arbitrary for many arguments</h2>
+                    <p class="text">
+                        Imagine if you need to take 10 arguments! it would be a miss of parameters right? Will what to
+                        do then? <br>
+                        Sample use the <b>*</b> sign before a parameter.
                     </p>
                     <p class="text">
-                        Docstring are mainly written in triple quotes so that they can extend up to multiple lines. <br>
-                        we can also access what the docstring is using <b>*.__doc__</b>. <br>
-                        But if you are using a code editor like <a href="https://code.visualstudio.com"
-                            class="link">vscode</a> then
-                        if you hover over the function called, you can see the docstring. <br>
-                        But back to using <b>*.__doc__</b>
+                        This way the function will be able to take a lot of arguments an one parameter! <br>
+                        This would infact make the parameter in a <a href="../data-type/tuple.html"
+                            class="link">tuple</a>!
                     </p>
-                    <div class="code">
-                        >>> <font class="print">print</font>(name.__doc__) <br>
-                        function to print some format text
-                    </div>
+                    <p class="text"><b>example:</b></p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182177925-6f877efe-7991-4006-9fb8-8c210179e45a.png"
+                        alt="an example of arbitrary in a function" class="img">
                 </section>
                 <hr>
-                <section class="return">
-                    <h2 class="head">The return statement</h2>
+                <section class="keyword">
+                    <h2 class="head">Keyword Arguments</h2>
                     <p class="text">
-                        As I said before, 'But it is strongly recommended to use return statement'. And it is that the
-                        return statement <br>
-                        helps in a lot of ways. Take for example:
+                        we can also send arguments with the <b>key = value</b> style. This way the order of the
+                        arguments does not even matter!
                     </p>
-                    <p class="text">
-                        You have a function to calculate the area of a square, but you also want to calculate the cost
-                        in an <a href="../flow/statement.html" class="link">if statement</a>, <br>
-                        therefore you will use the return statement to store it's value and calculate it's cost if
-                        needed or just print it.
-                    </p>
-                    <p class="text">
-                        Plus, a return statement calculates directly, means no need to store the value of an expersion
-                        in a variable <br>
-                        and then return it. Just like this: <br>
-                        <b>return <i>expersion</i></b>
-                    </p>
-                    <p class="text"><b>For example:</b></p>
-                    <img src="https://user-images.githubusercontent.com/104765117/182027909-558efded-b576-48eb-b9c7-b2700c975081.png"
-                        alt="an example of return statement in a function" class="img">
+                    <img src="https://user-images.githubusercontent.com/104765117/182179875-e3f952e4-24fa-4032-b5e5-1f46f33781e3.png"
+                        alt="an example of keyword argument in function" class="img">
                 </section>
+                <hr>
+                <section class="arbitrary_keyword">
+                    <h2 class="head">Arbitrary Keyword in a function</h2>
+                    <p class="text">
+                        If we have to add many keyword arguments in a function, just add two
+                        asterisk: <b>**</b> before the parameter name.
+                    </p>
+                    <p class="text">
+                        This way that function will receive a <a href="../data-type/dictionary.html"
+                            class="link">dictionary</a>
+                        of arguments and we can access the items using indexing
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182181415-c0c8cf54-1daa-4f06-b149-dc985038ec20.png"
+                        alt="an example of Arbitrary keyword in functions" class="img">
+                </section>
+                <hr>
                 <section class="end">
                     <button class="btn">
-                        <a href="argument.html" class="next">Next: Function arguments</a>
+                        <a href="lambda.html" class="next">Next: Lambda The anonymous function</a>
                     </button>
                 </section>
             </div>
