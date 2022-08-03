@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/base.css" />
+    <link rel="stylesheet" href="../../../css/nav.css" />
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>Function argument in python</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
+                    width="100px" /></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">challenges</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <hr />
+                    <li>
+                        <a class="learn" href="../basic/intro.html">Python Intro</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/comment.html">Python Comments</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/variable.html">Python Variables</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/data-type.html">Python Data Types</a>
+                    </li>
+                    <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+                    <li>
+                        <a class="learn" href="../basic/operators.html">Operators</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/conversion.html">type conversion</a>
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4>
+                    <hr />
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn">while loop</a></li>
+                    <li><a href="for.html" class="learn">for loop</a></li>
+                    <li><a href="continue.html" class="learn">continue</a></li>
+                    <li><a href="break.html" class="learn">break</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Data type</h4>
+                    <hr />
+                    <li><a href="../data-type/numbers.html" class="learn">Numbers</a></li>
+                    <li><a href="../data-type/string.html" class="learn">String</a></li>
+                    <li><a href="../data-type/set.html" class="learn">Set</a></li>
+                    <li><a href="../data-type/list.html" class="learn">List</a></li>
+                    <li><a href="../data-type/tuple.html" class="learn">tuple</a></li>
+                    <li><a href="../data-type/dictionary.html" class="learn">Dictionary</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Functions</h4>
+                    <hr />
+                    <li><a href="python-function.html" class="learn">Python function</a></li>
+                    <li><a href="function-argument.html" class="learn">Function argument</a></li>
+                    <li><a href="lambda.html" class="learn active">Lambda</a></li>
+                    <li><a href="local.html" class="learn">local and nonlocal</a></li>
+                    <li><a href="global.html" class="learn">Global Keyword</a></li>
+                    <li><a href="module" class="learn">Python Modules</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">Lambda the anonymous function</h1>
+                    <p class="text">
+                        In This article you will get to know about one of the short form of a function in python
+                    </p>
+                </section>
+                <hr>
+                <section class="what">
+                    <h2 class="head">What is a Lambda function?</h2>
+                    <p class="text">
+                        Lambda is a tiny small anonymous function which can take any number of arguments, but only one
+                        expression
+                    </p>
+                    <p class="text">
+                        The normal functions are defined using the <b>def</b> keyword in Python, and anonymous functions
+                        are defined <br>
+                        using the <b>lambda</b> keyword.
+                    </p>
+                </section>
+                <hr>
+                <section class="how">
+                    <h2 class="head">How to define a lambda function?</h2>
+                    <p class="text">
+                        To define a lambda function we just need a variable! Yes a variable, which is going to take the
+                        keyword <b>lambda</b> <br>
+                        and with it a parameter, after which we will add a colon the an expression.
+                    </p>
+                    <p class="text"><b>Syntax</b></p>
+                    <div class="code">
+                        a_variable = <font class="print">lambda</font> arguments: expression
+                    </div>
+                    <p class="text"><b>Example:</b></p>
+                    <div class="code">
+                        sum = <font class="print">lambda</font> a, b: a+b <br>
+                        sum(<font class="num">12</font>, <font class="num">42</font>)
+                        <font class="comment"># sum will be: 54</font>
+                    </div>
+                    <p class="text">
+                        This is how it would look if you use the normal function
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182409826-fd17f768-8dcc-4104-bafb-f51da1401301.png"
+                        alt="an examplw of lambda function converted into a normal function" class="img">
+                </section>
+                <hr>
+                <section class="why">
+                    <h2 class="head">Why do we use the lambda function over normal function?</h2>
+                    <p class="text">
+                        Lambda functions are used when we require a nameless function for a short period of time. <br>
+                        Mainly it is used as an argument for a normal function. For example the <b>map()</b> function.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182627530-e687e4eb-41e6-4a52-a045-7c0964f8371a.png"
+                        alt="example of using lambda function in a normal function" class="img">
+                    <p class="text">
+                        This can be taken as:
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182643943-b37ad3ff-91b3-4a4a-867b-89af5c3bdfdb.png"
+                        alt="lambda function coverted into a normal function" class="img">
+                </section>
+                <hr>
+                <section class="end">
+                    <button class="btn">
+                        <a href="local.html" class="next">Next: local and nonlocal in python</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">course</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li>
+                        <a href="../../company/about.html" class="list-item">About</a>
+                    </li>
+                    <li>
+                        <a href="../../company/privacy.html" class="list-item">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="../../company/terms.html" class="list-item">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../../asset/logo/internet/facebook.svg"
+                        alt="my facebook page for ezpie" width="30px" />
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/nav.js"></script>
+</body>
+
+</html>
