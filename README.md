@@ -1,24 +1,40 @@
-# ezpie website to learn programming [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40ezpie)](https://twitter.com/ezpieCo) [![Facebook URL](https://img.shields.io/twitter/url?label=follow%20@ezpie&logo=facebook&style=social&url=http%3A%2F%2Ffacebook.com)](https://www.facebook.com/profile.php?id=100082135591250)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/104765117/182629208-891d16bf-a180-4d38-8091-7ac38785adec.png" width="200">
+<p><b>Learn, play challenges and master programming</b></p>
+<img src="https://img.shields.io/github/license/ishaan010/ezpie">
+<img src="https://img.shields.io/github/forks/ishaan010/ezpie?style=flat-square">
+<img src="https://img.shields.io/github/stars/ishaan010/ezpie?style=flat-square">
+</div>
+<div align="center">
+<a href="https://github.com/ishaan010/ezpie/issues/new/choose"><b>Found some error</b></a> 
+|
+<a href="https://github.com/ishaan010/ezpie/issues/new/choose"><b>Want more</b></a>
+|
+<a href="https://ishaan010.github.io/ezpie"><b>Beta version</b></a>
+</div>
 
-![license](https://img.shields.io/badge/license-MIT-green) ![price](https://img.shields.io/badge/price-FREE-blue)
+---
 
-## this is an open-source website for all levels to learn programming
 
-the website is in devolopment so wont be available before august end(may take longer then that).\
-**But beta version is!** so go and [check it out](https://ishaan010.github.io/ezpie).\
-Why not contribute my website, read the [contributing file](https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md) for more detail.
-![ezpie](https://user-images.githubusercontent.com/104765117/172398008-f0f50a3c-1a91-4ff4-80cc-ad8eaed1b354.png)
-The website is totally free! and no joke you can learn programming for totally free. In the website you can learn python. More programming languages will be added later on. If you like my work then give a star ot help by contributing
+### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px" /> Welcome to the free for ever learning platform!
+![image](https://user-images.githubusercontent.com/104765117/182635446-a9dfcc85-8771-4a17-aa9a-a15869e0d5ec.png)
+<p>
+Ezpie may not be much good for now! but so by the end of this month you will be able to learn programming for free! <br>
+Heard a lot about many free teaching websites but infact they had all the cool staf behind the pay wall! <br>
+So show your support for teaching others how to do programming by a little contribute! Don't be rude!
+</p>
 
-## License
+### BETA VERSION
+<p>
+Try the <a href="https://ishaan010.github.io/ezpie">beta version</a> for now. <br>
+Good right? Will if you like it then give a little support by giving a :star: to make ezpie a bit more popular
+</p>
 
-My website is License under MIT License. Check the [license page](https://github.com/ishaan010/ezpie/blob/master/LICENSE) for more detail.
+### :fire: Features
+Ezpie features ask and learn with email support, which is coming up soon! \
+With the challenges, you can learn programming by doing challenges hosted every once in a week!
 
-## contribute
-
-If you want to contribute then check the [contributing page](https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md) for more detail.
-
-## Why its importent
-
-Ezpie is not just importent because it's free but because
-it's all about letting users use there skills in challenges. which are going to come soon! plus ezpie is for new people trying to get into programming, so why not contribute and show your interest in letting others learn programming for free for ever!
+### :writing_hand: You can teach!
+Stop wasting your money and time on udeamy just to teach when you can do it for free!!! \
+Start today and build a better website with some contributes! \
+<b>warning This is just a recomendation don't start arguing!</b>
