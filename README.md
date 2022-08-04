@@ -35,6 +35,5 @@ Ezpie features ask and learn with email support, which is coming up soon! \
 With the challenges, you can learn programming by doing challenges hosted every once in a week!
 
 ### :writing_hand: You can teach!
-Stop wasting your money and time on udeamy just to teach when you can do it for free!!! \
-Start today and build a better website with some contributes! \
-<b>warning This is just a recomendation don't start arguing!</b>
+Stop wasting your money and time just to teach when you can do it for free! \
+From learning to teaching every thing on ezpie is free!
