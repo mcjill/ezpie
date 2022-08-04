@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/base.css" />
+    <link rel="stylesheet" href="../../../css/nav.css" />
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>Function argument in python</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
+                    width="100px" /></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">challenges</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <hr />
+                    <li>
+                        <a class="learn" href="../basic/intro.html">Python Intro</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/comment.html">Python Comments</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/variable.html">Python Variables</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/data-type.html">Python Data Types</a>
+                    </li>
+                    <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+                    <li>
+                        <a class="learn" href="../basic/operators.html">Operators</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/conversion.html">type conversion</a>
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4>
+                    <hr />
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn">while loop</a></li>
+                    <li><a href="for.html" class="learn">for loop</a></li>
+                    <li><a href="continue.html" class="learn">continue</a></li>
+                    <li><a href="break.html" class="learn">break</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Data type</h4>
+                    <hr />
+                    <li><a href="../data-type/numbers.html" class="learn">Numbers</a></li>
+                    <li><a href="../data-type/string.html" class="learn">String</a></li>
+                    <li><a href="../data-type/set.html" class="learn">Set</a></li>
+                    <li><a href="../data-type/list.html" class="learn">List</a></li>
+                    <li><a href="../data-type/tuple.html" class="learn">tuple</a></li>
+                    <li><a href="../data-type/dictionary.html" class="learn">Dictionary</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Functions</h4>
+                    <hr />
+                    <li><a href="python-function.html" class="learn">Python function</a></li>
+                    <li><a href="function-argument.html" class="learn">Function argument</a></li>
+                    <li><a href="lambda.html" class="learn">Lambda</a></li>
+                    <li><a href="local.html" class="learn active">local and nonlocal</a></li>
+                    <li><a href="global.html" class="learn">Global Keyword</a></li>
+                    <li><a href="module" class="learn">Python Modules</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">Local and non-local variables</h1>
+                    <p class="text">In this article you will get to know more about your variables you use.</p>
+                </section>
+                <hr>
+                <section class="local">
+                    <h2 class="head">What's a local variable?</h2>
+                    <p class="text">
+                        When you create a function all the variables in it are called local variables. <br>
+                        These variables are only accessible within the function and can not be therefore used outside
+                        the function.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182851207-df7035c4-d748-426e-92eb-549125713e97.png"
+                        alt="example of a local variable" class="img">
+                    <p class="text"><b>Output:</b></p>
+                    <div class="code">
+                        This is a local variable <br>
+                        NameError: name 'variable' is not defined
+                    </div>
+                    <p class="text">
+                        That gives an error as variable <b>'variable'</b> is inside function <b>do()</b>
+                        so python thinks both the variables are different.
+                    </p>
+                </section>
+                <hr>
+                <section class="non_local">
+                    <h2 class="head">What's a non-local variable?</h2>
+                    <p class="text">
+                        Non-local may sound like the variable is accessible only outside a function right? <br>
+                        But no! non-local are those which are inside a nested function(Function inside a function)
+                    </p>
+                    <p class="text">
+                        Means That non-local variables can change local variables! <br>
+                        Non-local variables are created using the <b>nonlocal</b> keyword
+                    </p>
+                    <p class="text">Take an example</p>
+                    <img src="https://user-images.githubusercontent.com/104765117/182853845-cc043470-3773-4b1a-b12c-453e10f5ce07.png"
+                        alt="example of non local variable" class="img">
+                    <p class="text">
+                        Here we have a function called <b>outer()</b> which is the main function basically.
+                        Next we have a variable <b>outer</b> <br>
+                        with value <b>'local'</b> as it's a local variable. Next we have another function
+                        <b>inner()</b>, which is having a variable outer. <br>
+                        But it's been having the keyword <b>nonlocal</b>. Means we have converted
+                        the variable outer into a nonlocal variable.
+                    </p>
+                    <p class="text">
+                        Any changes made to <b>nonlocal</b> variable <b>outer</b> will change the <b>local</b> variable
+                        <b>outer</b>.
+                    </p>
+                </section>
+                <section class="end">
+                    <button class="btn">
+                        <a href="global.html" class="next">Next: global variables</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">course</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li>
+                        <a href="../../company/about.html" class="list-item">About</a>
+                    </li>
+                    <li>
+                        <a href="../../company/privacy.html" class="list-item">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="../../company/terms.html" class="list-item">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../../asset/logo/internet/facebook.svg"
+                        alt="my facebook page for ezpie" width="30px" />
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/nav.js"></script>
+</body>
+
+</html>
