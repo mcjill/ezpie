@@ -36,4 +36,4 @@ With the challenges, you can learn programming by doing challenges hosted every 
 
 ### :writing_hand: You can teach!
 
-From learning to teaching every thing on ezpie is free!
+You can teach on ezpie any way you want from 'please make a webpage with my content' to your own creation!
