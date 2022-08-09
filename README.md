@@ -38,6 +38,6 @@ With the challenges, you can learn programming by doing challenges hosted every 
 You can teach on ezpie any way you want from 'please make a webpage with my content' to your own creation!
 
 ### Thanks for your help
-Thanks to @Zeishiin for his work, which I although could not take as it was not mobile first
+Thanks to @Zeishiin for his cool design work, which will be added on later versions
 ![image](https://user-images.githubusercontent.com/104765117/183408434-0a084838-c91f-49ec-a717-8da571359c4c.png)
-But thanks for the suggestion. Surely going to add it on up coming version!
+
