@@ -4,6 +4,9 @@
 <img src="https://img.shields.io/github/license/ishaan010/ezpie">
 <img src="https://img.shields.io/github/forks/ishaan010/ezpie?style=flat-square">
 <img src="https://img.shields.io/github/stars/ishaan010/ezpie?style=flat-square">
+<a href="https://gitter.im/EzpieCo/community">
+  <img alt="Gitter" src="https://img.shields.io/gitter/room/ishaan010/ezpie">
+</a>
 </div>
 <div align="center">
 <a href="https://github.com/ishaan010/ezpie/issues/new/choose"><b>Found some error</b></a> 
