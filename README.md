@@ -22,6 +22,7 @@
 - [**How to get started(website)?**](https://github.com/ishaan010/ezpie#website)
 - [**Report any errors**](https://github.com/ishaan010/ezpie#error)
 - [**How can I contribute?**](https://github.com/ishaan010/ezpie#contribute)
+- [**Todo happing in ezpie**](https://github.com/ishaan010/ezpie#track)
 - [**License**](https://github.com/ishaan010/ezpie#license)
 
 <div id="what">
@@ -72,6 +73,10 @@
   <h1>How to contribute</h1>
   <p>
   To contribute please read the <a href="https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md">contributing guide lines</a>
+</div>
+<div id="track">
+  <h1>Todo</h1>
+  <p>To know what's happing in ezpie go <a href="https://github.com/users/ishaan010/projects/3">here</a></p>
 </div>
 <div id="license">
   <h1>License</h1>
