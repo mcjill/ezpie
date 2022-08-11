@@ -1,30 +1,55 @@
-# welcoming you who what's to contribute
-I am very happy if you want to contribute to my website ezpie, because I am the only one here working to make a free and understadable website for all levels
+# Thanks for your contribution :smile:
+To get started with contributing to ezpie please follow the steps
 
-## editing
-Editing of an file is aloud you can do on python tutorrial. Your name must be there as comment and email(optional)
+# Not knowing how to? :confused:
+If you are contributing for the first time then this is for you :smiley:
 
-## issues
-Writing good issues is good for you and me to understand your need. You may get the answer to your issue late but I will try not to let that happen. 
+- Fork the repo ![image](https://user-images.githubusercontent.com/104765117/184096307-74df44b7-47c7-42c5-8318-4351a4a11275.png) \
+by clicking on the fork button. Now you have a clone of it in your github repo!
 
-## will done
-I test on few things:
-1. No editing of css files.
-2. No javascript code.
-3. Articles sould not be less then 1,600 words. Don't start counting them.
-4. Make it simple.
-5. Most importent, there sould be the same navbars and footer as other pages.
+- Now clone the repo into your computer, by copying the https link 
+![image](https://user-images.githubusercontent.com/104765117/184096752-f5130e16-dfbd-4845-a6c6-6380785dc6d4.png)
 
-## congratulation
-If I like your work It will be added with your name at the end of the page!
+- Open a CLI and type `git clone https://github.com/ishaan010/ezpie.git`. Now you have a local clone of my repo!
 
-# Things to Remember
-1. Your contribution may be edited only for footer, navbars and file location. So don't take that I didn't liked your work.
-2. Your name must be there in the file as a comment.
-3. Do your contribution on another branch as your name(branch will be made).
+- Now do this `git remote rename origin upstream`
 
-## contact me 
-To contact you can use email: **ezpie.co@gmail.com**
+- Now go to your github fork of my repo and copy the https url
 
-### timings I'm available
-I live in India so the time is diffrent(if you are from other country). The best time to contact is around 3:00pm to 8:00pm as per IST(Indian standard time)
+- Open the same CLI and type this `git remote add origin https://github.com/you_user_name/ezpie.git`
+
+- Bravo! you can now make changes! When ever you make some changes do this `git push origin`, after commit.
+
+- Then go to your fork and click on this
+![image](https://user-images.githubusercontent.com/104765117/184098671-6277ac1a-b403-4cfe-9fa6-78846033aa6f.png) \
+_picture from [w3schools.com](https://w3schools.com)_
+
+- And you have made your contribution!
+
+# Now how to contribute
+- [report issue](https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md#issue)
+- [How can I help you?](https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md#help)
+
+
+<div id="issue">
+  <h1>Reporting issue</h1>
+  <p>
+    Before making an issue you must make sure there is no such [issue](https://github.com/ishaan010/ezpie/issues) made already
+  </p>
+  <p>
+    If no, then make sure you give a detail describtion about the issue, like, how it happened?, was it a broken like?, did it happen many times?, did you directly         write the url?(Therefore you made a mistake!)
+  </p>
+</div>
+
+<div id="help">
+  <h1>:writing_hand: How to help</h1>
+  <p>
+    If you want to help me make my site then do any of these things:
+    <ul>
+      <li>Fix broken links</li>
+      <li>Make a webpage about any of the topic</li>
+      <li>Check grammatic errors</li>
+      <li>Convert ezpie into as many languages as you can</li>
+    </ul>
+  </p>
+</div>
