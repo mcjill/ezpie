@@ -28,7 +28,7 @@
 <div id="what">
   <h1> :confused: What is ezpie for?</h1>
   <p>
-  You may have seen many free websites to learn programming from right? or maybe even open-source, like [freecodecamp](freecodecamp.org). \
+  You may have seen many free websites to learn programming from right? or maybe even open-source, like <a href="https://www.freecodecamp.org/">FreeCodeCamp</a> .
   But have you seen an open-source website which allows you to learn by contact and do challenges with other learners? Will if no then ezpie is your answer!
   </p>
 </div>
