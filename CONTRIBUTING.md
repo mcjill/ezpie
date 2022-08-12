@@ -34,7 +34,7 @@ _picture from [w3schools.com](https://w3schools.com)_
 <div id="issue">
   <h1>Reporting issue</h1>
   <p>
-    Before making an issue you must make sure there is no such [issue](https://github.com/ishaan010/ezpie/issues) made already
+    Before making an issue you must make sure there is no such <a href="https://github.com/ishaan010/ezpie/issues">issue</a> made already
   </p>
   <p>
     If no, then make sure you give a detail describtion about the issue, like, how it happened?, was it a broken like?, did it happen many times?, did you directly         write the url?(Therefore you made a mistake!)
