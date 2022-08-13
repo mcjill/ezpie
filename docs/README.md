@@ -72,7 +72,8 @@
 <div id="contribute">
   <h1>How to contribute</h1>
   <p>
-  To contribute please read the <a href="https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md">contributing guide lines</a>
+  To contribute please read the <a href="https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md">contributing guide lines</a>.
+  Please make sure you have read the [How ezpie works](https://github.com/ishaan010/ezpie/blob/master/docs/How-ezpie-works.md)
 </div>
 <div id="track">
   <h1>Todo</h1>
