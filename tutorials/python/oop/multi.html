@@ -17,7 +17,7 @@
 
         gtag('config', 'G-127HHJ286E');
     </script>
-    <title>Inheritance in python</title>
+    <title>Multiple inheritance in python</title>
 </head>
 
 <body>
@@ -93,101 +93,108 @@
                     <h4 class="head">OOP</h4>
                     <hr />
                     <li><a href="objects.html" class="learn">Python OOP</a></li>
-                    <li><a href="inheritance.html" class="learn active">python Inheritance</a></li>
-                    <li><a href="multi.html" class="learn">multi Inheritance</a></li>
+                    <li><a href="inheritance.html" class="learn">python Inheritance</a></li>
+                    <li><a href="multi.html" class="learn active">multi Inheritance</a></li>
                 </ul>
             </div>
 
             <div class="parts">
                 <section class="intro">
-                    <h1 class="head">Python inheritance</h1>
+                    <h1 class="head">Multiple inheritance</h1>
                     <p class="text">
-                        This article you will get to know about inheritance.
+                        In this article you will get to know how to use multiple inheritance
                     </p>
                 </section>
                 <hr>
                 <section class="what">
-                    <h2 class="head">what is inheritance in python</h2>
+                    <h2 class="head">What is multiple inheritance?</h2>
                     <p class="text">
-                        Inheritance is a very usefull feature in OOP.
+                        A class in python can be derived from multiple classes. This is called multiple inheritance.
                     </p>
                     <p class="text">
-                        It means that there are two or more classes with one class taken as the base(or parent) class.
-                        And rest are the inherits <br>
-                        from the base class, and are called derived (or child) class.
-                    </p>
-                </section>
-                <hr>
-                <section class="example">
-                    <h2 class="head">python inheritance example</h2>
-                    <p class="text">
-                        Here's an example to explain it.
-                    </p>
-                    <img src="https://user-images.githubusercontent.com/104765117/184365030-3f6c210d-b8b9-4936-9029-5ae8df7c5119.png"
-                        alt="python inheritance example" class="img">
-                    <p class="text">
-                        This may look a bit dumb to do, as we could just have created an object called <b>tom</b> and
-                        did this <b>tom = Person('Tom', 'Cat')</b> <br>
-                        But why this long? Well if wanted to have a diffrent method to get the favorite thing of
-                        <b>tom</b> and a diffrent method for asking <br>
-                        the enemy of <b>jerry</b>, will you do it on the same base class? No, because it will make no
-                        sence to create two diffrent methods <br>
-                        for just two objects.
-                    </p>
-                    <img src="https://user-images.githubusercontent.com/104765117/184368412-5280a8a4-30f8-46da-a724-15453cfd0cda.png"
-                        alt="python inheritance example" class="img">
-                    <p class="text">
-                        Yes! Now you are getting into real programming! This is infact really big, but not much!
-                        (Your softwares are even bigger!)
+                        Like <a href="inheritance.html" class="link">single inheritance</a>, all the attributess in the
+                        base classes are inherit to the derived class.
                     </p>
                     <p class="text">
-                        Here we have a base(Person) class and two classes(Tom, Jerry) inherits from the base.
-                        Did you notice that we have created <br>
-                        one diffrent method in each of the child class? Well each of these methods are only accessible
-                        for it's object only.
+                        Here's how it looks
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/184902919-1efd873f-a649-4eb6-8161-c9c5246ee041.png"
+                        alt="an example of python multiple inheritance" class="img">
+                    <p class="text">
+                        Take this like a family tree. Where you have your parents at the top and you at the bottom.
                     </p>
                     <p class="text">
-                        And also because of this our classes are well in order. Which is why our base class will be
-                        short and simple.
+                        Here if the two base classes have any attributes that attributes is also available for the
+                        derived
+                        class.
                     </p>
                 </section>
                 <hr>
-                <section class="override" id="override">
-                    <h2 class="head">python override method</h2>
+                <section class="level">
+                    <h2 class="head">Multilevel Inheritance in python</h2>
                     <p class="text">
-                        So far we had the child class have all the attributes of the base class. But what if you want to
-                        change some of it? <br>
-                        This is called attributes overriding.
+                        We can, infact, inherit a class from a inheritance of another class.
                     </p>
                     <p class="text">
-                        Try to create the <b>__init__</b> method in any of the child class, try doing it in <b>Tom</b>
-                        and just type <b>pass</b> inside the method. <br>
-                        When you will run the code you will
-                        get an error saying, 'TypeError: __init__() takes 1 positional argument but 3 were given'
+                        In simple words a class can inherit from a class which is inherit from another class.
                     </p>
                     <p class="text">
-                        Here what we have done is, we created a same method which was in the base class. So when you run
-                        the code python <br>
-                        takes that method a diffrent method from the base class one, therefore instead of 3 arguments we
-                        need to give only 1. <br>
-                        Which is the object itself.
+                        Here's how it will look
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/184908066-7fc4a3a0-70a6-4529-a144-3e4cee5c4a0e.png"
+                        alt="python multiple inheritance example" class="img">
+                    <p class="text">
+                        This can be taken as, The base class as your grandparent, the next class as your parent and the
+                        last class as you.
+                    </p>
+                </section>
+                <hr>
+                <section class="why">
+                    <h2 class="head">why multiple inheritance?</h2>
+                    <p class="text">
+                        If you have though of 'why should I use multiple inheritance?' then here's why.
                     </p>
                     <p class="text">
-                        But if we want that method to be in the child class then we need to call it.
+                        Take an example: <br>
+                        If you needed to use some classes with same attributes, but you also wanted your code a bet more
+                        formed then <br>
+                        you will use multiple inheritance.
                     </p>
-                    <img src="https://user-images.githubusercontent.com/104765117/184579158-41bdbcf5-7f68-4e27-8524-53457ab47953.png"
-                        alt="How to override a method in python" class="img">
                     <p class="text">
-                        Notice I have used a function called <b>super()</b>. This function can be replaced by the name
-                        of the base class. But in case of <br>
-                        multiple inheritance it would be better to use the <b>super()</b> function as it will inherit
-                        all the attributes from all the base classes
+                        Here's how
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/184913603-81200046-da27-4e46-8747-4c539831b86c.png"
+                        alt="why multiple inheritance example" class="img">
+                    <p class="text">
+                        This is a bit confusing. But if you focus you may understand it on your own.
+                    </p>
+                    <p class="text">
+                        Here we have a class called <b>Bird</b> which just takes the name of the bird and returns it.
+                        Then we have a class called <br>
+                        <b>Type</b> which tells us that what kind of bird it is. Lets go through each class.
+                    </p>
+                    <p class="text">
+                        First the <b>Bird</b> class. Here we are using the <b>__init__()</b> function to take in the
+                        name of the bird. After which it returns a <br>
+                        text like this 'Hi (name of bird)'.
+                    </p>
+                    <p class="text">
+                        Next is the <b>Type</b> class, which tells us what kind of bird it is, by it's eating habits.
+                    </p>
+                    <p class="text">
+                        Then we have a class called <b>Eagle</b>(You can create any bird). Which is inherit from the two
+                        classes above. Using the <br>
+                        <a href="inheritance.html#override" class="link">super()</a> function. And the name which is
+                        passed to the <b>Eagle</b> class is passed to the <b>Bird</b> class.
+                    </p>
+                    <p class="text">
+                        This makes our code easy to read and simple to understand.
                     </p>
                 </section>
                 <hr>
                 <section class="end">
                     <button class="btn">
-                        <a href="multi.html" class="next">Next: Multiple inheritance in python</a>
+                        <a href="../file/file.html" class="next">Next: Operations in file</a>
                     </button>
                 </section>
             </div>
