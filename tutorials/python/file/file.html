@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/base.css" />
+    <link rel="stylesheet" href="../../../css/nav.css" />
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>Multiple inheritance in python</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../python/intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
+                    width="100px" /></a>
+            <a href="#" align="right" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" align="right" class="nav-link">challenges</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <hr />
+                    <li>
+                        <a class="learn" href="../basic/intro.html">Python Intro</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/comment.html">Python Comments</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/variable.html">Python Variables</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/data-type.html">Python Data Types</a>
+                    </li>
+                    <li><a class="learn" href="../basic/inOut.html">Python I/O</a></li>
+                    <li>
+                        <a class="learn" href="../basic/operators.html">Operators</a>
+                    </li>
+                    <li>
+                        <a class="learn" href="../basic/conversion.html">type conversion</a>
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Python flow</h4>
+                    <hr />
+                    <li><a href="statement.html" class="learn">If statement</a></li>
+                    <li><a href="while.html" class="learn">while loop</a></li>
+                    <li><a href="for.html" class="learn">for loop</a></li>
+                    <li><a href="continue.html" class="learn">continue</a></li>
+                    <li><a href="break.html" class="learn">break</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Data type</h4>
+                    <hr />
+                    <li><a href="../data-type/numbers.html" class="learn">Numbers</a></li>
+                    <li><a href="../data-type/string.html" class="learn">String</a></li>
+                    <li><a href="../data-type/set.html" class="learn">Set</a></li>
+                    <li><a href="../data-type/list.html" class="learn">List</a></li>
+                    <li><a href="../data-type/tuple.html" class="learn">tuple</a></li>
+                    <li><a href="../data-type/dictionary.html" class="learn">Dictionary</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Functions</h4>
+                    <hr />
+                    <li><a href="../function/python-function.html" class="learn">Python function</a></li>
+                    <li><a href="../function/function-argument.html" class="learn">Function argument</a></li>
+                    <li><a href="../function/lambda.html" class="learn">Lambda</a></li>
+                    <li><a href="../function/local.html" class="learn">local and nonlocal</a></li>
+                    <li><a href="../function/global.html" class="learn">Global Keyword</a></li>
+                    <li><a href="../function/module.html" class="learn">Python Modules</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">OOP</h4>
+                    <hr />
+                    <li><a href="../oop/objects.html" class="learn">Python OOP</a></li>
+                    <li><a href="../oop/inheritance.html" class="learn">python Inheritance</a></li>
+                    <li><a href="../oop/multi.html" class="learn">multi Inheritance</a></li>
+                </ul>
+                <ul class="ul">
+                    <h4 class="head">Files and exceptions</h4>
+                    <hr />
+                    <li><a href="file.html" class="learn active">Operations in file</a></li>
+                    <li><a href="os.html" class="learn">Operating system</a></li>
+                    <li><a href="exceptions.html" class="learn">Exceptions</a></li>
+                    <li><a href="handle-exceptions.html" class="learn">Handle exceptions</a></li>
+                    <li><a href="user-exceptions.html" class="learn">User exceptions</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <section class="intro">
+                    <h1 class="head">Operations in file</h1>
+                    <p class="text">
+                        In this article you will get to know one of the awsome things you can do using python.
+                    </p>
+                </section>
+                <section class="files">
+                    <h2 class="head">Files in python</h2>
+                    <p class="text">
+                        As we know that RAM(Random Access Memory) is only one sesson use. Means that the data stored in
+                        it will be <br>
+                        deleted once the device is turned off.
+                        Therefore we use files to store data forever(till you delete it)
+                    </p>
+                    <p class="text">
+                        Just like how we do things to a file the same way is using python: <br>
+                    <ol>
+                        <li>Open the file</li>
+                        <li>Make edits to the file</li>
+                        <li>Close the file</li>
+                    </ol>
+                    </p>
+                    <p class="text">
+                        We will go through each stage one by one.
+                    </p>
+                </section>
+                <hr>
+                <section class="opening">
+                    <h2 class="head">python open file</h2>
+                    <p class="text">
+                        First we need to open a file, so we can make edits to it.
+                    </p>
+                    <p class="text">
+                        Luckly, python has a build-in-function called <b>open()</b> to open a file. This function
+                        create's the variable, which is used, <br>
+                        into an object, which is then used to make edits.
+                    </p>
+                    <div class="code">
+                        file = <font class="print">open</font>(<font class="str">"file.txt"</font>) <br>
+                        file = <font class="print">open</font>(<font class="str">"C:\ezpie-python\file.txt"</font>)
+                    </div>
+                    <p class="text">
+                        The first one is used in case we have a file were our python file is. And the second one is used
+                        to define the exact <br>
+                        location of the file.
+                    </p>
+                    <p class="text">
+                        When using python for using files, we need to also define how we are going to use that file.
+                        Means that, are we going <br>
+                        to read from it? or are we going to write to it?
+                    </p>
+                    <p class="text">
+                        We can do this by telling what mode it is. We just need to specify what way the file will be
+                        used, read(r), write(w), or <br>
+                        append(add more, a). We can also tell weather it is to be in text or binary mode.
+                    </p>
+                    <div class="code">
+                        f = <font class="print">open</font>(<font class="str">"file.txt"</font>)
+                        <font class="comment"># read in text mode</font><br>
+                        f = <font class="print">open</font>(<font class="str">"file.txt", "w"</font>)
+                        <font class="comment"># write in text mode</font><br>
+                        f = <font class="print">open</font>(<font class="str">"img.jpg", "r+b"</font>)
+                        <font class="comment"># read and write in binary mode</font>
+                    </div>
+                </section>
+                <hr>
+                <section class="close">
+                    <h2 class="head">python close file</h2>
+                    <p class="text">
+                        Like we close a file after using it, we also need to do the same while using python.
+                    </p>
+                    <p class="text">
+                        To close a file in python we use the <b>close()</b> method in python.
+                    </p>
+                    <div class="code">
+                        f = <font class="print">open</font>(<font class="str">"test.txt", "r"</font>) <br>
+                        <font class="comment"># Now close the file after reading it</font> <br>
+                        f.close()
+                    </div>
+                    <p class="text">
+                        <b>NOTE TO BE NOTED:</b> This is not a safe way as this can give us an exception, which in ture
+                        can stop the operation and <br>
+                        the code will stop without closing the file!
+                    </p>
+                    <p class="text">
+                        <!-- FIXME Replace with link -->
+                        But python has a quite safer way, which is <b>try...finally block</b>.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/185933260-ffc4f094-a6a1-4bf6-9dde-2936d8f5f311.png"
+                        alt="try finally block example" class="img">
+                    <p class="text">
+                        Like the to words say, try to execute some code and finally end up by executing these codes.
+                    </p>
+                    <p class="text">
+                        Like this one thing is sure, that even if a exception occur then also the finally block will be
+                        executed, therefore our file <br>
+                        will be closed!
+                    </p>
+                    <p class="text">
+                        But still the best way is only the <b>with statement's</b> way!
+                    </p>
+                    <p class="text">
+                        This way it's ensure that the file is closed when the block inside the with statement is
+                        executed. We don't even need <br>
+                        to call the close() method. It is done by the with statement itself.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/185935941-75c1ba36-bf7e-453c-8490-a067a3de65d4.png"
+                        alt="python with statement" class="img">
+                </section>
+                <hr>
+                <section class="write">
+                    <h2 class="head">How to write to file</h2>
+                    <p class="text">
+                        When writing to a file we need to mention, do we need to write to a file? Or add more text to a
+                        file?
+                    </p>
+                    <p class="text">
+                        <b>Note:</b> Writing to a file is deffirent from appending to a file. Writing will remove all
+                        present data in a file with newly <br>
+                        typed data. While appending will add the typed text to the file instand of replacing it.
+                    </p>
+                    <p class="text">
+                        <b>More info:</b> With write as the mode, if a file named mentioned does not exist then python
+                        will create a new file with that <br>
+                        name and data!
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/186438397-108c4c63-aea9-43e8-b38a-e4f4a614537c.png"
+                        alt="python write to file example" class="img">
+                    <p class="text">
+                        Here we simply are tring to open a non-existing file called <b>does-not-exist.txt</b>
+                        (The name means it). But like I said, "if a file <br>
+                        named mentioned does not exist then python will create a new file with that name and data" <br>
+                        And therefore when you will see your folder where your python file is located, there will be a
+                        file named ''does-not-exist.txt".
+                    </p>
+                    <p class="text">
+                        Next we are using a method called <b>write</b>, this method is used to write to a file with data
+                        typed in the round bracket. And <br>
+                        you may have notice the <b>\n</b>, this is just a simple way of saying next line or new line.
+                        Since python will not understand where <br>
+                        it needs to give a new line we just need to type it in.
+                    </p>
+                </section>
+                <hr>
+                <section class="read">
+                    <h2 class="head">Reading a file in python</h2>
+                    <p class="text">
+                        To read a file in python we must set the mode to <b>r(read)</b>
+                    </p>
+                    <p class="text">
+                        With this mode we use the <b>read</b> method which can take argument or be empty. With no
+                        argument the method will return <br>
+                        the whole data stored in the file. But with argument it will return the number of characters.
+                    </p>
+                    <p class="text">
+                        Take for example, if you pass the argument as <b>4</b> then it will return the first 4
+                        characters in the file(counting spaces)
+                    </p>
+                    <p class="text">
+                        With this we also need to store the value in a variable so we can print it.
+                    </p>
+                    <img src="https://user-images.githubusercontent.com/104765117/186443964-7cf58858-f2a7-4166-b7f3-e63ffbb5cd93.png"
+                        alt="reading file in python example" class="img">
+                    <p class="text">
+                        Here we are trying to read what's inside the file
+                    </p>
+                </section>
+                <hr>
+                <section class="end">
+                    <button class="btn">
+                        <a href="os.html" class="next">Next: Operating system</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">course</h3>
+                <ul class="links">
+                    <li><a href="../basic/intro.html" class="list-item">Python</a></li>
+
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li>
+                        <a href="../../company/about.html" class="list-item">About</a>
+                    </li>
+                    <li>
+                        <a href="../../company/privacy.html" class="list-item">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="../../company/terms.html" class="list-item">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../../asset/logo/internet/facebook.svg"
+                        alt="my facebook page for ezpie" width="30px" />
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/nav.js"></script>
+</body>
+
+</html>
