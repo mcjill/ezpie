@@ -28,20 +28,20 @@
 <div id="what">
   <h1> :confused: What is ezpie for?</h1>
   <p>
-  You may have seen many free websites to learn programming from right? or maybe even open-source, like <a href="https://www.freecodecamp.org/">FreeCodeCamp</a> .
-  But have you seen an open-source website which allows you to learn by contact and do challenges with other learners? Will if no then ezpie is your answer!
+  You may have seen many free websites to learn programming from right? or maybe even open-source, like <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>.
+  But have you seen an open-source website which allows you to learn by contact and do challenges with other learners? Well if no then ezpie is your answer!
   </p>
 </div>
 <div>
   <h1> :thinking: Why only ezpie?</h1>
   <p>
-    Ezpie may not be the good choose, but what all you can learn from ezpie is worth a lot! From challenges to free 1 on 1 gmail contact learning!
+    Ezpie may not be the good choose, but what you can learn from ezpie is worth a lot! From challenges to free 1 on 1 gmail contact learning!
   </p>
 </div>
 <div id"local">
   <h1>:computer: How to get started(locally)?</h1>
   <p>
-    Yes! you can learn ezpie directly from your laptop or any other device(not mobile of course!). To get started follow the steps below: 
+    Yes! you can learn ezpie directly from your laptop or any other device (not mobile of course!). To get started follow the steps below: 
     <ol>
       <li>
         clone the repo in your computer: <code>git clone https://github.com/ishaan010/ezpie.git</code>
@@ -58,13 +58,13 @@
 <div id="website">
   <h1> :computer: How to get started(website)?</h1>
   <p>
-    Ezpie is right now at <a href="https://ishaan010.github.io/ezpie">beta version</a>, So data may get updated as per version update of a programming language.
+    Ezpie is right now at <a href="https://ishaan010.github.io/ezpie">beta version</a>, so data may get updated as per version update of a programming language.
   </p>
 </div>
 <div id="error">
   <h1>Report any errors</h1>
   <p>
-    Before you can jump into reporting, make sure that no one else have made an <a href="https://github.com/ishaan010/ezpie/issues?q=is%3Aopen+is%3Aissue>issue</a> on       it. <br>
+    Before you can jump into reporting, make sure that no one else has raised an <a href="https://github.com/ishaan010/ezpie/issues?q=is%3Aopen+is%3Aissue>issue</a> about it. <br>
     If there is no such issue already, then create an
     <a href="https://github.com/ishaan010/ezpie/issues/new?assignees=&labels=&template=bug_report.md&title=">issue</a>
   </p>
@@ -73,7 +73,7 @@
   <h1>How to contribute</h1>
   <p>
   To contribute please read the <a href="https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md">contributing guide lines</a>.
-  Please make sure you have read the <a href="https://github.com/ishaan010/ezpie/blob/master/docs/How-ezpie-works.md">How ezpie works</a>
+  Please make sure you have read <a href="https://github.com/ishaan010/ezpie/blob/master/docs/How-ezpie-works.md">How ezpie works</a>
 </div>
 <div id="track">
   <h1>Todo</h1>
