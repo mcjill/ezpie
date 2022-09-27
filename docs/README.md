@@ -10,7 +10,7 @@
 </div>
 <div align="center">
 <img src="https://img.shields.io/badge/Friendly--level->98.9%25-limegreen?style=flat-square">
-<img src="https://img.shields.io/badge/newbie--contribute-accepted-limegreen?style=flat-square">
+<img src="https://img.shields.io/badge/PRs-accepted-limegreen?style=flat-square">
 </div>
 
 ---
