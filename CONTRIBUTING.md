@@ -12,28 +12,28 @@ Contributing to Ezpie
 
 
 ## terms of contribution
-we're very happy if you want to contribute to  ezpie
+We're very happy if you want to contribute to ezpie
 - don't edit css files 
 
 ## articles
 ### What kind of article do we accept
-Articles sould not be less then 1,600 words. Don't start counting them.
+Articles sould not be less than 1,600 words. Don't start counting them.
 
 ### Add article
-if you want  to add a new article create a pull request with the following label: <br>
+If you want to add a new article create, a pull request with the following label: <br>
 ```new article:<name>```
 ### Requesting an article
 
-if you want to suggest adding a new article create   an issue with the following label:
+If you want to suggest adding a new article create an issue with the following label:
 <br>
 
 ```new article:<name>```
 
 ### Update an article
 
-if you want  to update an existing article create a pull request with the following label <br>
-```update article:<name>```
-Editing of an file is aloud you can do on python tutorrial. Your name must be there as comment and email(optional) 
+If you want to update an existing article create a pull request with the following label <br>
+```update article:<name>```  
+Editing of a file is allowed. You can do on python tutorial. Your name must be there as a comment. It would be good to add your email, too, but that is optional.
 
 
 
