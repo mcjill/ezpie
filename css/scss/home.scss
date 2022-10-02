@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+$Primary_color: #ffffff;
+$Secondary_color: #61cbf2;
+$Font_family: "IBM Plex Mono", monospace;
+$Text_color: #000000;
+$link_color: #5322fd;
+$link_hovered: #9577ff;
+
 body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: #ffffff;
+  font-family: $Font_family;
+  background-color: $Primary_color;
   margin: 0%;
 }
 
 .foot {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   padding-bottom: 50px;
 }
 
 .text {
-  color: #000000;
+  color: $Text_color;
 }
 
 .net-icon {
   margin-left: 10px;
   margin-top: 16px;
 }
-
 .me {
   display: flex;
   color: white;
@@ -30,7 +37,7 @@ body {
 }
 
 .why {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -39,7 +46,7 @@ body {
 .list-item {
   margin: 0%;
   line-height: 25px;
-  color: #000000;
+  color: $Text_color;
   text-decoration: none;
 }
 
@@ -62,7 +69,7 @@ body {
 }
 
 .about {
-  color: #000000;
+  color: $Text_color;
   margin-left: 10%;
   display: flex;
 }
@@ -73,16 +80,16 @@ body {
 }
 
 .text-black {
-  color: #000000;
+  color: $Text_color;
 }
 
 .link {
-  color: #5322fd;
+  color: $link_color;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #9577ff;
+  color: $link_hovered;
   text-decoration: underline;
 }
 
@@ -98,27 +105,33 @@ body {
     color: black;
     margin-bottom: 60px;
   }
+
   .detail {
     text-align: center;
     border-bottom: 1px solid white;
   }
+
   .Header {
     margin-left: 40px;
   }
+
   .tags,
-.challenges,
-.Company {
+  .challenges,
+  .Company {
     text-align: center;
   }
+
   .list-item {
     margin: 0%;
     line-height: 25px;
-    color: #000000;
+    color: $Text_color;
     text-decoration: none;
   }
+
   .list-item:hover {
     color: white;
   }
+
   .info {
     display: flex;
     position: absolute;
@@ -130,6 +143,7 @@ body {
     padding-left: 40px;
   }
 }
+
 @media screen and (max-width: 532px) {
   .info {
     display: block;
@@ -137,21 +151,26 @@ body {
     text-align: center;
   }
 }
+
 /* NOTE this is for laptops */
+
 @media screen and (min-width: 1055px) {
   .net {
     margin-left: 200px;
   }
+
   .main2 {
     margin-top: 100px;
     margin-left: 180px;
     line-height: 60px;
     display: flex;
   }
+
   .net-icon {
     text-decoration: none;
     margin-left: 10px;
   }
+
   /* -------------- footer ----------------- */
   .foot-main {
     padding-top: 100px;
@@ -159,28 +178,34 @@ body {
     padding-left: 180px;
     margin-bottom: 60px;
   }
+
   .tags {
     margin-left: 200px;
   }
+
   .challenges {
     margin-left: 20px;
   }
+
   /* ------------------------------------------- */
+
   .why-wrapper {
     margin-top: 50px;
     padding-left: 140px;
     padding-right: 140px;
     display: flex;
   }
+
   .after {
     margin-left: 170px;
   }
   #main {
     margin-bottom: 100px;
   }
+
   .info {
     display: flex;
     position: absolute;
     left: 10%;
   }
-}/*# sourceMappingURL=home.css.map */
+}
