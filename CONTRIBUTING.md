@@ -9,7 +9,7 @@ At ezpie you must follow the following rules for making sure that your article i
 - Do not create an custom css or edit the _.css files(basically the _.scss files)
 - Make sure your article contains proper formatting and no confusing text.
 - Make sure that the article is at least 16,000 words long.
-- Follow the [style guidelines](https://github.com/ishaan010/ezpie/blob/master/docs/style-guide.md) so your article fits in.
+- Follow the [style guidelines](https://github.com/ishaan010/ezpie/blob/new-ezpie/docs/style-guide.md) so your article fits in.
 
 ## Creating a new article
 
