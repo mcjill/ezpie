@@ -13,7 +13,7 @@ async function renderArticles() {
   let html = "";
   articles.forEach((article) => {
     let htmlSegment = `
-                            <a href="${article.url}" class="article-link">
+                            <a href="${article.url}.html" class="article-link">
                             <div class="article">
                                 <h1>${article.title}.html</h1>
                                 <p>${article.description} </p>
