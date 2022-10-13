@@ -11,6 +11,17 @@ At ezpie you must follow the following rules for making sure that your article i
 - Make sure that the article is at least 16,000 words long.
 - Follow the [style guidelines](https://github.com/ishaan010/ezpie/blob/master/docs/style-guide.md) so your article fits in.
 
+## Creating a new article
+
+When you are creating a new article, you should add a folder in the blog directory which is the author's name(Basically your name or any fake name is you like).
+
+Once you created an article, you are responsible for it's maintenance like:
+
+- Updated as per the software which is talked about in the article.
+- Dependencies updated as per latest version(If your article code examples require).
+
+If by any reason, you didn't updated your article as per the points above, your article will be removed from the site.
+
 ## Article requesting and changing
 
 At ezpie you can request a new article or make any changes to the existing articles.
