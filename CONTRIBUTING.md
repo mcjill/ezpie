@@ -22,6 +22,25 @@ Once you created an article, you are responsible for it's maintenance like:
 
 If by any reason, you didn't updated your article as per the points above, your article will be removed from the site.
 
+## important points
+
+You must at all times remember these points:
+
+- After creating your blog you must add json data about your blog in the _js/data/suitable_tag_ folder.
+- Your json data must be like this:
+
+```json
+[
+  {
+    "title": "Name of article",
+    "description": "A short description of the article",
+    "url": "../blog/youName/articleName",
+    "author": "You name",
+    "email": "your email address so readers can contact you just in case"
+  }
+]
+```
+
 ## Article requesting and changing
 
 At ezpie you can request a new article or make any changes to the existing articles.
