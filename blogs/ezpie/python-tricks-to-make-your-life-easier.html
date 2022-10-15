@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/profile.png">
+
+    <title>ezpie - Python tricks to make your life easier</title>
+</head>
+
+<body>
+
+    <div class="main-body">
+        <section class="intro">
+            <h1 class="head">Python tricks to make your life easier</h1>
+            <p class="text">
+                Everyone knows about Python, especially those who have just written their own first code. But no doubt
+                that, python is the most popular and very simple to understand. But like any other language, python also
+                have many tricks which I guess non of us knew(till now!).
+            </p>
+            <p class="text">
+                So here are the top 10 tricks that will help you code better rather than code more!
+            </p>
+        </section>
+        <hr>
+        <section class="trick-one">
+            <h2 class="head">Trick 1: more like golang</h2>
+            <p class="text">
+                If you have ever used <a href="https://go.dev" class="link">golang</a> then you may know about the
+                smallest way of defining a variable in it, using the <b>:=</b> operator.
+            </p>
+            <p class="text">
+                This operator is known as the walrus The latest version of python now have this operator used for
+                defining a variable in a conditions
+                statement, loop etc. Just like other normal languages we know about.
+            </p>
+            <script src="https://gist.github.com/ishaan010/cfe8374f54a4d6331f08096cad5ad531.js"></script>
+            <p class="text">
+                <b>NOTE:</b> your python version must be above 3.8 for this trick
+            </p>
+        </section>
+        <hr>
+        <section class="trick-two">
+            <h2 class="head">Trick 2: zip the code</h2>
+            <p class="text">
+                Imagin if you want to generate a dictionary using two list, how will you do that? By using the zip()
+                function!
+            </p>
+            <p class="text">
+                This function allows us to merge two list into one, cool way to combine things together.
+            </p>
+            <script src="https://gist.github.com/ishaan010/884623ba744feade6b046357141eab66.js"></script>
+            Output:
+            <div class="code">
+                Bill Gates <br>
+                Larry page <br>
+                Elon mask
+            </div>
+            <p class="text">
+                How about merging these two list into one dictionary?
+            </p>
+            <script src="https://gist.github.com/ishaan010/1ae763ca17f497644e04a5a7d0dd692a.js"></script>
+            <p class="text">
+                Output:
+            </p>
+            <div class="code">
+                {"Bill":"Gates", "Larry":"page", "Elon":"mask"}
+            </div>
+        </section>
+        <hr>
+        <section class="trick-three">
+            <h2 class="head">Trick 3: Remove the replica</h2>
+            <p class="text">
+                One list can have more than one replica of an item in it, therefore there are chances that you may not
+                get the results you what sometimes(Basically always) so to prevent this what you can do is store that
+                data using the <b>set()</b> function(set data type)
+            </p>
+            <script src="https://gist.github.com/ishaan010/fe21ff297588a8744c500b2019924faf.js"></script>
+            <p class="text">
+                Output:
+            </p>
+            <div class="code">
+                {64, 67, 36, 70, 40, 60}
+            </div>
+        </section>
+        <hr>
+        <section class="safty">
+            <h2 class="head">Trick 4: safety first</h2>
+            <p class="text">
+                Passwords can be hacked, so to prevent that you can use the <b>getpass()</b> function from the
+                <b>getpass</b> library.
+            </p>
+            <script src="https://gist.github.com/ishaan010/b2944350f2299a61d1690fbb2a15e8a2.js"></script>
+            <p class="text">
+                Output:
+            </p>
+            <div class="code">
+                password: <br>
+                You login was successful
+            </div>
+            <p class="text">
+                The fanny part is that, when you will type you wont get to know the password, as it does not shows!
+            </p>
+        </section>
+        <hr>
+        <section class="trick-five">
+            <h2 class="head">Trick 5: From the lest to the highest</h2>
+            <p class="text">
+                Try this, you have given a list of numbers like this <font class="code">[25,62,6,2,53,63,56]</font>. Now
+                try to return a list that contains these numbers in ascending order.
+            </p>
+            <p class="text">
+                To do this the easy way just use the <b>sorted()</b> function. This is a list method used to return a
+                list in a ascending order.
+            </p>
+            <script src="https://gist.github.com/ishaan010/96cc843df93f0cdd448f649d35a2ad73.js"></script>
+            <p class="text">
+                Output:
+            </p>
+            <div class="code">
+                [2,6,25,53,56,62,63]
+            </div>
+        </section>
+        <hr>
+        <section class="trick-six">
+            <h2 class="head">Trick 6: Slice it into a list</h2>
+            <p class="text">
+                Take a string and slice it into a list means that, each word is to be an item of the list. And I know
+                You will do it like this:
+            </p>
+            <script src="https://gist.github.com/ishaan010/71ae7c85114e54c05d9206f110f0765b.js"></script>
+            <p class="text">
+                Well here's what I think of this,'This is the most dumbest way of slicing a string!!' But here's how you
+                should really do it:
+            </p>
+            <script src="https://gist.github.com/ishaan010/be9f9185fe5531f2295e889c5b65c96c.js"></script>
+            <p class="text">
+                Output:
+            </p>
+            <div class="code">
+                ['This', 'is','sliced','into','a','list']
+            </div>
+            <p class="text">
+                Even they are both right, but when it comes to writing code you must go for the shortest path.
+            </p>
+        </section>
+        <hr>
+        <section class="end">
+            <p>
+                From these tricks you can easily create and write better code then you were doing before you read this
+                post. So surely why not share this right?
+            </p>
+        </section>
+        <section class="share">
+            <div class="options">
+                <p class="text">Like the article? share it &#128516</p>
+                <a href="https://twitter.com/intent/tweet" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/Twitter-logo.png" alt="tweet about a ezpie blog" width="30px">
+                </a>
+                <a href="https://dev.to/new" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/dev-logo.png" alt="blog about a ezpie blog at dev" width="30px">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tags">
+                <h3 class="Header">Top tags</h3>
+                <ul class="links">
+                    <li><a href="../../searcher/api.html" class="list-item">API</a></li>
+                    <li><a href="../../searcher/docker.html" class="list-item">Docker</a></li>
+                    <li><a href="../../searcher/python.html" class="list-item">Python</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="Header">challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python challenges</a></li>
+                    <li><a href="#" class="list-item">Java challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript challenges</a></li>
+                    <li><a href="#" class="list-item">Golang challenges</a></li>
+                </ul>
+            </div>
+            <div class="Company">
+                <h3 class="Header">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="company/about.html" class="list-item">About</a></li>
+                    <li><a href="company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="company/terms.html" class="list-item">Terms conditions</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010" target="_blank" class="link">
+                    <img class="net-icon" src="../../asset/logo/internet/github-logo.png" alt="Ezpie github page"
+                        width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
+                        class="net-icon">
+                </a>
+                <a href="https://dev.to/ishaan010" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
+                        width="30px">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
