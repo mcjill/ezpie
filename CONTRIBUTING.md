@@ -1,43 +1,58 @@
-Contributing to Ezpie
-====
-## table of content
+# Contributors guidelines
 
-- [terms of contributions]()
-- [Articles](#articles)
-    - [what kind of articles do we accept]()
-    - [add an article]()
-    - [requesting an icon]()
-    - [update an icon]()
+Thanks for your contribution in advance :smile:
 
+## Rules you must know
 
+At ezpie you must follow the following rules for making sure that your article is taken:
 
-## terms of contribution
-We're very happy if you want to contribute to ezpie
-- don't edit css files 
+- Do not create an custom css or edit the _.css files(basically the _.scss files)
+- Make sure your article contains proper formatting and no confusing text.
+- Make sure that the article is at least 16,000 words long.
+- Follow the [style guidelines](https://github.com/ishaan010/ezpie/blob/new-ezpie/docs/style-guide.md) so your article fits in.
 
-## articles
-### What kind of article do we accept
-Articles sould not be less than 1,600 words. Don't start counting them.
+## Creating a new article
 
-### Add article
-If you want to add a new article create, a pull request with the following label: <br>
-```new article:<name>```
-### Requesting an article
+When you are creating a new article, you should add a folder in the blog directory which is the author's name(Basically your name or any fake name is you like).
 
-If you want to suggest adding a new article create an issue with the following label:
-<br>
+Once you created an article, you are responsible for it's maintenance like:
 
-```new article:<name>```
+- Updated as per the software which is talked about in the article.
+- Dependencies updated as per latest version(If your article code examples require).
 
-### Update an article
+If by any reason, you didn't updated your article as per the points above, your article will be removed from the site.
 
-If you want to update an existing article create a pull request with the following label <br>
-```update article:<name>```  
-Editing of a file is allowed. You can do on python tutorial. Your name must be there as a comment. It would be good to add your email, too, but that is optional.
+## important points
 
+You must at all times remember these points:
 
+- After creating your blog you must add json data about your blog in the _js/data/suitable_tag_ folder.
+- Your json data must be like this:
 
+```json
+[
+  {
+    "title": "Name of article",
+    "description": "A short description of the article",
+    "url": "../blog/youName/articleName",
+    "author": "You name",
+    "email": "your email address so readers can contact you just in case"
+  }
+]
+```
 
-## contact us
-To contact us can use email: **ezpie.co@gmail.com**
+## Article requesting and changing
 
+At ezpie you can request a new article or make any changes to the existing articles.
+
+### Requesting a new article
+
+Create an issue with the new article template and fill all the required fields there, so that your request can be finished successfully.
+
+### Changing a existing article
+
+When you change an existing article, you can only change the following things:
+
+- The grammar
+- Mis-typing
+- links(if you find any link broken)

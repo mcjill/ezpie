@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/profile.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>ezpie - What is docker and how to use it</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <section class="intro">
+            <h1 class="head">What is docker and how to use it</h1>
+            <p class="text">In this article you will get to know a little about Docker and how to its used</p>
+        </section>
+        <hr>
+        <section class="what">
+            <h2 class="head">What is Docker?</h2>
+            <p class="text">
+                Docker is an open platform that allows us to develop, ship, and run apps with easily. It is packaged as
+                containers(basically docker's standard unit). Containers are like normal loptops, they have all the
+                requirements needed by a software.
+            </p>
+            <p class="text">
+                To explain this here's an example of how Docker can save your system from too much memory usage.
+            </p>
+            <p class="text">
+                Say, you have three apps, each using its own libraries and dependencies. Now if you were to use a
+                Virtual Machine(VM), then you could just say good bye to your laptop! As virtual machines use too much
+                of memory usage they will crash your computer, casing more problems for your apps to work with.
+            </p>
+            <p class="text">
+                Now lets use docker in place of virtual machines, docker can be customized so that it is small in size
+                and more easier to maintain. Therefore you can create 100s of apps use docker to run them and all you
+                need to do is customize docker and good bye to your memory protectors! Cause you don't need them now!
+            </p>
+        </section>
+        <hr>
+        <section class="difference">
+            <h2 class="head">In how many ways is docker better then virtual machine?</h2>
+            <p class="text">
+                Simple answer is, <b>in many ways!</b> Here's how docker is better then virtual machine:
+            </p>
+            <table>
+                <tr>
+                    <th>Difference</th>
+                    <th>Docker</th>
+                    <th>Virtual Machine</th>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td>Docker containers can start up quickly and result in less boot-up time</td>
+                    <td>Virtual machines do not start quickly and therefore leading to poor performance</td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td>
+                        The application in Docker containers starts with no delay becuase the operating system is
+                        already running
+                    </td>
+                    <td>Virtual machines takes a longer time to run applications</td>
+                </tr>
+                <tr>
+                    <td>OS support</td>
+                    <td>
+                        Docker containers use the host operating system(main computer), and therefore they are
+                        lightweight and less memory usage.
+                    </td>
+                    <td>
+                        Virtual machine's use guest operating systems, that is typically another operating system inside
+                        the computer, therefore they are a lot havy and memory usage.
+                    </td>
+                </tr>
+                <tr>
+                    <td>portable</td>
+                    <td>
+                        Docker containers are easily portable, becuase they don't use saperate OS. As of this we can
+                        share a linux app to a windows computer and it will run immediately as if running from linux!
+                    </td>
+                    <td>
+                        Since virtual machines use saperate OS, we cannot share an app created on a windows machine to a
+                        macOS machine.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Time in creating</td>
+                    <td>Docker being fast also creates a docker container in seconds</td>
+                    <td>To create a virtual machine it takes a lot of time, as recreating an OS is hard!</td>
+                </tr>
+            </table>
+            <p class="text">
+                So in simple terms, you can say that, 'Docker is a lot better than a virtual machine.'
+            </p>
+        </section>
+        <hr>
+        <section class="docker-image">
+            <h2 class="head">What's a docker image</h2>
+            <p class="text">
+                Like a totally normal image, which contains some details about the objects in it. The same way a docker
+                image is something that contains information about your project like:
+            </p>
+            <ul>
+                <li>required libraries</li>
+                <li>files to run the project</li>
+            </ul>
+            <p class="text">
+                In simple terms, a docker image just defines your project in a way which the docker engine can
+                understand and manipulate it.
+            </p>
+        </section>
+        <hr>
+        <section class="install">
+            <h2 class="head">How to install docker?</h2>
+            <p class="text">
+                Now you know what docker is and how its useful, so now we can install docker in our system and get
+                started
+            </p>
+            <p class="text">
+                Code used in this project is available at
+                <a href="https://github.com/ishaan010/what-is-docker/tree/master" class="link">github</a>
+            </p>
+            <p class="text">
+                <b>WARRING:</b> This article is for windows and if your on another machine then you should just search
+                google and youtube.
+            </p>
+            <p class="text">
+                First, we need to install docker desktop, its just basically the server engine which will start and run
+                docker. Head over to
+                <a href="https://www.docker.com/products/docker-desktop/" class="link">docker desktop</a> and install as
+                per your OS
+            </p>
+            <img src="../../asset/images/docker desktop image.png" alt="docker desktop home page" class="img"
+                width="100%">
+            <p class="text">
+                After installing Docker desktop you will need to login/sign to <a href="https://hub.docker.com"
+                    class="link">docker hub</a>
+            </p>
+            <p class="text">
+                After this you can start docker desktop(also sign in to docker desktop) and click on the <i>show hidden
+                    icons</i> button on the task bar. You can see that there is a icon on which when you hover will
+                show, 'Docker Desktop running'
+            </p>
+            <p class="text">
+                This means that we are all set to use docker!
+            </p>
+            <p class="text">
+                In this prosess you may see a dialog saying that you have to install the linux kernel, if so then just
+                click on the link which it displays. This dialog gets displayed, because docker can only be used in
+                linux, docker can only be used in windows use a windows-subsystem for linux
+            </p>
+            <p class="text">
+                After installing docker and it's required linux kernel, you can also, if using <a
+                    href="https://code.visualstudio.com" class="link">vs code</a>, then you can also install an
+                extension from which you can easily maintain your docker project.
+            </p>
+            <p class="text">
+                It's called
+                <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker" class="link">
+                    docker
+                </a>, it is developed by microsoft and is used to search for images and containers in your docker
+                desktop.
+            </p>
+        </section>
+        <hr>
+        <section class="example">
+            <h2 class="head">Docker in action</h2>
+            <p class="text">
+                Now lets see docker in action! For this I am using my old project which I explained in
+                <a href="how-to-create-a-rest-api-using-flask.html" class="link">
+                    How to create a rest api using flask</a>.
+            </p>
+            <p class="text">
+                You can clone the example from
+                <a href="https://github.com/ishaan010/what-is-docker/tree/master" class="link">github</a>. This article
+                will not focus on the explaination of the code, but on the code used for docker.
+            </p>
+            <p class="text">
+                After getting the code from github, you should add a file named <i>dockerfile</i>
+            </p>
+            <p class="text">
+                <b>NOTE:</b> Naming the file dockerfile is important because docker only supports understanding for
+                files that have the name dockerfile. There can be only one docker file in one folder.
+            </p>
+            <p class="text">
+                Add the following code to the dockerfile:
+            </p>
+            <div class="code">
+                <font class="keyword">FROM</font> python:alpine
+                <br><br>
+                <font class="keyword">COPY</font> requirements.txt . <br>
+                <font class="keyword">RUN</font> python -m pip install -r requirements.txt
+                <br><br>
+                <font class="keyword">WORKDIR</font> /app <br>
+                <font class="keyword">COPY</font> . /app
+                <br><br>
+                <font class="keyword">RUN</font> adduser -u 5678 --disabled-password --gecos "" appuser && chown -R
+                appuser /app <br>
+                <font class="keyword">USER</font> appuser
+                <br><br>
+                <font class="keyword">CMD</font> ["python", "api.py"]
+            </div>
+            <p class="text">
+                This is simple, only thing you need is to think, the first, as it says 'from the base image python' this
+                means that docker will create an image which will contain the python command, with that you can say that
+                the run command on the 3<sup>rd</sup> line basically means that install all that things in the
+                requirements.txt file.
+            </p>
+            <p class="text">
+                Next, the COPY command, this command just copies the file mention, in this case the requirements.txt
+                file. The WORKDIR command is just a command used to define the <i>working directory</i> of a Docker
+                container. All the commands like <b>RUN</b>, <b>CMD</b>, <b>COPY</b> etc will be executed in the given
+                working directory. But in simple terms, the command means combination of the <b>mkdir</b> and <b>cd</b>
+                command.
+            </p>
+            <p class="text">
+                Next, you can see is a simple command USER, let me explain this as a security threat:
+            </p>
+            <p class="text">
+                If this RUN and USER commands are not used docker by default, will create a user called root, if you
+                have ever used a linux OS you may have found this root quite often. That root is just the name of a
+                user, if it's just a name then why did I said it's a security threat? Well, because it gives malicious
+                code access in gaining permissions in the container host and distroying the container.
+            </p>
+            <p class="text">
+                So for safty reasons, you must always add these two lines of code, even if you don't have any idea of
+                what it does or means. You can change the <i>adduser</i> to anything and the <i>appuser</i> too.
+            </p>
+            <p class="tex">
+                Next and finally, there's the CMD, it's just a simple thing which runs the file api.py when we will run
+                the image and create a container. So basically it means 'python api.py'
+            </p>
+            <p class="text">
+                To create this even more quickly, you can use the extension which I told you to install, in your vs code
+                press <kbd>ctrl+shift+p</kbd>, then type <kbd>Docker: Add Docker File to Workspace</kbd>
+            </p>
+            <video width="100%" loop controls>
+                <source
+                    src="https://user-images.githubusercontent.com/104765117/195849781-47685152-98ff-4527-83aa-a4a5a2f89158.mp4">
+            </video>
+            <p class="text">
+                Now you can run this docker file by typing <kbd>docker build -t docker:api .</kbd>
+            </p>
+            <p class="text">
+                What this command does is, it tells docker to build an image using the dockerfile in this folder and
+                name it <i>docker</i> with the tag <i>api</i>. And yes, you can change the name and tag to anything you
+                want.
+            </p>
+            <p class="text">
+                Now just follow this video and see how you can check your docker image and run it in docker desktop.
+            </p>
+            <video width="100%" loop controls>
+                <source
+                    src="https://user-images.githubusercontent.com/104765117/195969725-1523e906-c00b-4355-92cc-ba8ecb2acdeb.mp4">
+            </video>
+            <p class="text">
+                As you can see in this video, we where using the test.py file to run and test the api. But I also
+                mensioned that there is a dockerignore file, but then what's a dockerignore file for? Like it says it is
+                used to <b>ignore</b> some files which are of no use in the project like, if the project is on github,
+                we don't want the readme, contributing, and other docs used only for github right? And plus it increases
+                the size of the docker image too!
+            </p>
+        </section>
+        <hr>
+        <section class="docker-hub">
+            <h2 class="head">Publish your code</h2>
+            <p class="text">
+                Like I said before while explaining the first line in the docker file, python in that line is a base
+                image available on docker hub. The same way you can also publish your code on docker hub as well!
+            </p>
+            <p class="text">
+                Lets try to publish our api in docker hub so others can use it too!
+            </p>
+            <p class="text">
+                First make sure your signed in to docker hub, next open a CLI and type this:
+            </p>
+            <div class="code">
+                > docker login
+            </div>
+            <p class="text">
+                This just basically logins us into docker hub. Next what need to do is create a same image of your app,
+                but it's name will be like this: <i>your Docker Username:tag name</i>. Which will give us this:
+            </p>
+            <div class="code">
+                > docker tag docker:api ishaan010/whatisdocker:api
+            </div>
+            <p class="text">
+                Next, we need to push this new image to docker hub like this:
+            </p>
+            <div class="code">
+                > docker push ishaan010/whatisdocker:api
+            </div>
+            <p class="text">
+                After this you can open <a href="https://hub.docker.com" class="link">docker hub</a>. Now click on the
+                repositories tab and see your new docker image is now in docker!
+            </p>
+            <img src="../../asset/images/docker hub publishing docker image.png"
+                alt="image of the repositories tab showing first docker image but in private" width="100%">
+            <p class="text">
+                For now you can see that your docker image is private, but you can change it to public like this:
+            </p>
+            <video width="100%" loop controls>
+                <source
+                    src="https://user-images.githubusercontent.com/104765117/195970871-9d397c77-2328-4cb6-8d2d-5415da7570ba.mp4">
+            </video>
+            <p class="text">
+                It's as simple as that and that's all for this article.
+            </p>
+            <p class="text">
+                This article may have been a bit off, if so then join ezpie in
+                <a href="https://gitter.im/EzpieCo/community" class="link">gitter</a> and if you have any problems, you
+                can ask there!
+            </p>
+        </section>
+        <section class="share">
+            <div class="options">
+                <p class="text">Like the article? share it &#128516</p>
+                <a href="https://twitter.com/intent/tweet" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/Twitter-logo.png" alt="tweet about a ezpie blog" width="30px">
+                </a>
+                <a href="https://dev.to/new" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/dev-logo.png" alt="blog about a ezpie blog at dev" width="30px">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tags">
+                <h3 class="Header">Top tags</h3>
+                <ul class="links">
+                    <li><a href="../../searcher/API.html" class="list-item">API</a></li>
+                    <li><a href="#" class="list-item">Flask</a></li>
+                    <li><a href="#" class="list-item">Tricks</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="Header">challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python challenges</a></li>
+                    <li><a href="#" class="list-item">Java challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript challenges</a></li>
+                    <li><a href="#" class="list-item">Golang challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="Header">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="company/about.html" class="list-item">About</a></li>
+                    <li><a href="company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="company/terms.html" class="list-item">Terms conditions</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010" target="_blank" class="link">
+                    <img class="net-icon" src="../../asset/logo/internet/github-logo.png" alt="Ezpie github page"
+                        width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
+                        class="net-icon">
+                </a>
+                <a href="https://dev.to/ishaan010" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
+                        width="30px">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

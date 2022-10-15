@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/profile.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>ezpie - how to create a rest api using flask</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <section class="intro">
+            <h1 class="head">How to create a rest api using flask</h1>
+            <p class="text">In this article you will get to know a little about rest APIs and how to make them</p>
+        </section>
+        <hr>
+        <section class="what">
+            <h2 class="head">What is a rest api?</h2>
+            <p class="text">
+                <b>REST API</b> is an application programming interface which is used for multiple clients to easily
+                communicate with the server. It is a kind of web-service which stores and retrieves data from the
+                server. It's widely used because, it does not need any dependent code libraries to access the
+                web-services!
+            </p>
+            <p class="text">
+                When a request is sent by the client using a HTTPRequest, a response is sent by the server using
+                HTTPResponse. The most widely used machine readable format supported for requests and responses is
+                <b>JSON</b> and <b>XML</b>
+            </p>
+            <p class="text">
+                There are 5 different ways to retrieve and send data to the server using <b>REST API</b>:
+            <ol>
+                <li class="list-important">
+                    <b>GET</b> - This method is used for <i>retrieving data from the server</i>.
+                </li>
+                <li class="list-important">
+                    <b>POST</b> - This method is used for <i>send or create a new data on the server</i>.
+                </li>
+                <li class="list-important">
+                    <b>DELETE</b> - This method is used for <i>deleting a data in the server</i>.
+                </li>
+                <li class="list-important">
+                    <b>PUT</b> - This method is used for <i>modifing the entire data in the server</i>.
+                </li>
+                <li class="list-important">
+                    <b>PATCH</b> - This method is used for <i>modifing a part of the data in the server</i>.
+                </li>
+            </ol>
+            </p>
+        </section>
+        <hr>
+        <section class="install">
+            <h2 class="head">How to create a rest api?</h2>
+            <p class="text">
+                For this article I will explain how to create a REST API using python(flask) but you can also do it
+                using another language as will.
+            </p>
+            <p class="text">
+                You can get the source code from
+                <a href="https://github.com/ishaan010/simple-rest-api-using-flask" class="link">here</a>
+            </p>
+            <h3 class="head">Installing dependencies</h3>
+            <p class="text">
+                First we will install the dependencies needed for this simple project. <br>
+                I personaly perfere using virtual environment, as it helps me use different packages of different
+                versions.
+            </p>
+            <p class="text">
+                First, lets install flask in our system.
+            </p>
+            <p class="text">
+                For which run this command:
+            </p>
+            <div class="code">> pip install flask</div>
+            <p class="text">
+                Now, lets install flask_restful.
+            </p>
+            <div class="code">> pip install flask_restful</div>
+            <p class="text">
+                <b>NOTE:</b> <i>flask_restful gets installed when you install flask, but if it doesn't, then
+                    install.</i>
+            </p>
+            <p class="text">Now, we need is requests, from which we will test our API</p>
+            <div class="code">> pip install requests</div>
+            <p class="text">
+                Now we have all we will be needing to create a simple flask rest api.
+            </p>
+        </section>
+        <hr>
+        <section class="create">
+            <h2 class="head">write some code</h2>
+            <p class="text">
+                Now lets write some code that will start a flask server.
+            </p>
+            <p class="text">
+                First, lets import the required modules for our api
+            </p>
+            <script src="https://gist.github.com/ishaan010/dac4db9abc43549145800bddef884a8c.js"></script>
+            <p class="text">
+                This is just the basic setup in every flask project you may see.
+            </p>
+            <p class="text">
+                Next, lets setup some objects of these classes.
+            </p>
+            <script src="https://gist.github.com/ishaan010/faef458b8e9f04b24bd043789ef05729.js"></script>
+            <p class="text">
+                Here we are just setting up the objects and making sure that the server runs when it have to. The line
+                <i>app = Flask(__name__)</i> tells the Flask class that the name of this file(given by python) will be
+                the name of this app. <i>Basically it doesn't matter at all!</i>
+            </p>
+            <p class="text">
+                Next, the if statement conforms that only when this file is run then only the flask server should be
+                created, not when it's imported. <i>Basically it doesn't matter if you know it or not</i>
+            </p>
+            <p class="text">
+                Now, lets create a simple <i>Hello world!</i> api.
+            </p>
+            <script src="https://gist.github.com/ishaan010/95a191e84e3153b54050ca415dfecace.js"></script>
+            <p class="text">
+                Here, we have created a simple class called <b>Hello_world</b>, which is inherits all the functions of
+                the <b>Resource</b> class. Next, if you know how browsers and servers work then you maybe knowing the
+                <b>get method</b>, but in simple terms, the <b>get method</b> is used to retrieve some data from the
+                server.
+            </p>
+            <p class="text">
+                Next, we are using the <b>api</b> object and adding the class <b>Hello_world</b> as a resource at the
+                endpoint of '/', this is just the main url basically. If you add any thing after the '/' then you will
+                have to type that too in the url to get a result.
+            </p>
+            <p class="text">
+                Now, lets see this in action. For this we will be needing to add a test file, which will send a request
+                to the server and the server will send it a response back. For this create a file called test.py and
+                type this.
+            </p>
+            <p class="text">
+                <b>test.py</b>
+            </p>
+            <script src="https://gist.github.com/ishaan010/4c4432044b02ff25459024e62bfe30ed.js"></script>
+            <p class="text">
+                First, we are importing the <i>requests moduels</i>, then we have the base url, which is mainly
+                127.0.0.1:5000, but you may need to check it once.
+            </p>
+            <p class="text">
+                Now, lets run our flask server on one CLI and our test.py on another.
+            </p>
+            <p class="text">
+                First run the flask server:
+            </p>
+            <div class="code">
+                > python server.py
+            </div>
+            <p class="text">
+                Next, on a new CLI run:
+            </p>
+            <div class="code">
+                > python test.py
+            </div>
+            <p class="text">
+                On running the flask server and the test.py file, you may get an output like this:
+            </p>
+            <div class="code">
+                'Hello world!'
+            </div>
+            <p class="text">
+                And if you we in the flask server CLI you may see something like this:
+            </p>
+            <div class="code">
+                127.0.0.1 - - [09/Oct/2022 10:57:01] "GET / HTTP/1.1" 200 -
+            </div>
+            <p class="text">
+                This here in simple terms means that the server responded to the request with a 200 status code(OK, all
+                well basically).
+            </p>
+            <p class="text">
+                This was just a simple example of the <b>get method</b> but lets say you want to send some data to the
+                server, but how? For that you will need to use the <b>post method</b>. With this method we can, send
+                data to the server and also get a response back to tell the client that thier sent data was retrieve by
+                the server.
+            </p>
+            <p class="text">
+                Now lets try to store names of some people and their age and net worth(Totally some rich people).
+            </p>
+            <script src="https://gist.github.com/ishaan010/2bd5b336b45a4881a9741f80668c7ade.js"></script>
+            <p class="text">
+                Here, we have a dictionary of 2 rich people(bill gates and larry page). Next you may have noticed that
+                we are also importing <b>request</b> from flask, request is just a simple variable from which we can
+                access json data send by the client. As you can see in the post method, we are using the request
+                variable to retrieve the value of <i>age</i> and <i>Net worth</i>.
+            </p>
+            <p class="text">
+                Next thing which may came into your
+                sight is the simple change done in the url endpoint(/&lt;string:name&gt;) but if you see we also have a
+                same parameter in the <b>get and post methods</b>, well in simple terms, we are letting the client type
+                the person's name at the end of the url and then using that name we are adding and sending data about
+                that person.
+            </p>
+            <p class="text">
+                Now lets make some changes to the test.py file:
+            </p>
+            <script src="https://gist.github.com/ishaan010/aa75b08320dbd5fc96e61016331f4d81.js"></script>
+            <p class="text">
+                Here I am adding another person(larry ellson) using the post method and by sending a json data to the
+                server.
+            </p>
+            <p class="text">
+                Now, lets run the server and see how this works.
+            </p>
+            <div class="code">
+                > python server.py
+            </div>
+            <p class="text">
+                Next, the test.py file:
+            </p>
+            <div class="code">
+                > python test.py
+            </div>
+            <p class="text">
+                On running this you will see the following output:
+            </p>
+            <div class="code">
+                {'age': '66', 'Net worth': '$114B'} <br>
+                {'bill': {'age': '66', 'Net worth': '$114B'}, 'larry': {'age': '49', 'Net worth': '$96B'}, 'larryE':
+                {'age': '78', 'net_worth': '$83B'}}
+            </div>
+            <p class="text">
+                Good, our flask server is working properly and we are getting results like expected. But now lets add
+                some more functionality to our api, like a delete method and in case a person is not in the people
+                list then the server will give error so to prevent it, we will add a function to abort if a person
+                doesn't exist and if a person exist then don't add another person with same data.
+            </p>
+            <p class="text">
+                First, lets add the delete functionality:
+            </p>
+            <script src="https://gist.github.com/ishaan010/8910d2de4f0614e857974296c05c313a.js"></script>
+            <p class="text">
+                Now, lets add the two functions to check if a person already exists or doesn't exist.
+            </p>
+            <script src="https://gist.github.com/ishaan010/7eed4956dfdee9ced6965c05b696cc85.js"></script>
+            <p class="text">
+                Here, you can see I have added the abort function, what the abort function does is it sends a json data
+                to the client with a message and the status code(Not sent to the client, used for understanding the
+                error)
+            </p>
+            <p class="text">
+                Now you can run this program and see how it works.
+            </p>
+            <p class="text">
+                Understanding rest api using flask is a lot more easier than using anyother library or language. Here
+                you have it, a simple example of how to create a rest api using flask.
+            </p>
+        </section>
+        <section class="share">
+            <div class="options">
+                <p class="text">Like the article? share it &#128516</p>
+                <a href="https://twitter.com/intent/tweet" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/Twitter-logo.png" alt="tweet about a ezpie blog" width="30px">
+                </a>
+                <a href="https://dev.to/new" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/dev-logo.png" alt="blog about a ezpie blog at dev" width="30px">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tags">
+                <h3 class="Header">Top tags</h3>
+                <ul class="links">
+                    <li><a href="../../searcher/API.html" class="list-item">API</a></li>
+                    <li><a href="#" class="list-item">Flask</a></li>
+                    <li><a href="#" class="list-item">Tricks</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="Header">challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python challenges</a></li>
+                    <li><a href="#" class="list-item">Java challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript challenges</a></li>
+                    <li><a href="#" class="list-item">Golang challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="Header">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="company/about.html" class="list-item">About</a></li>
+                    <li><a href="company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="company/terms.html" class="list-item">Terms conditions</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010" target="_blank" class="link">
+                    <img class="net-icon" src="../../asset/logo/internet/github-logo.png" alt="Ezpie github page"
+                        width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
+                        class="net-icon">
+                </a>
+                <a href="https://dev.to/ishaan010" target="_blank" class="link">
+                    <img src="../../asset/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
+                        width="30px">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

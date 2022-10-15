@@ -1,23 +1,31 @@
+$Primary_color: #ffffff;
+$Secondary_color: #61cbf2;
+$Font_family: "IBM Plex Mono", monospace;
+$Text_color: #000000;
+$link_color: #5322fd;
+$link_hovered: #9577ff;
+$code_background: #4c4c4c;
+$Main_border_color: #b9b9b9;
+
 body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: #ffffff;
+  font-family: $Font_family;
+  background-color: $Primary_color;
   margin: 0%;
 }
 
 .foot {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   padding-bottom: 50px;
 }
 
 .text {
-  color: #000000;
+  color: $Text_color;
 }
 
 .net-icon {
   margin-left: 10px;
   margin-top: 16px;
 }
-
 .me {
   display: flex;
   color: white;
@@ -29,7 +37,7 @@ body {
 }
 
 .why {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -54,12 +62,12 @@ body {
 }
 
 .link {
-  color: #5322fd;
+  color: $link_color;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #9577ff;
+  color: $link_hovered;
   text-decoration: underline;
 }
 
@@ -71,7 +79,7 @@ body {
 .list-item {
   margin: 0%;
   line-height: 25px;
-  color: #000000;
+  color: $Text_color;
   text-decoration: none;
 }
 
@@ -85,8 +93,8 @@ body {
 }
 
 .code {
-  background-color: #4c4c4c;
-  color: #ffffff;
+  background-color: $code_background;
+  color: $Primary_color;
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -94,7 +102,7 @@ body {
 }
 
 .share {
-  border: 1px solid #b9b9b9;
+  border: 1px solid $Main_border_color;
   border-radius: 5px;
   padding-left: 5%;
 }
@@ -106,24 +114,24 @@ table {
 }
 
 th {
-  border: 1px solid #b9b9b9;
+  border: 1px solid $Main_border_color;
   text-align: center;
   padding: 8px;
 }
 
 td {
-  border: 1px solid #b9b9b9;
+  border: 1px solid $Main_border_color;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  color: #ffffff;
-  background-color: #b9b9b9;
+  color: $Primary_color;
+  background-color: $Main_border_color;
 }
 
 .keyword {
-  color: #61cbf2;
+  color: $Secondary_color;
 }
 
 /* NOTE this is for tabs */
@@ -137,29 +145,35 @@ tr:nth-child(even) {
     color: black;
     margin-bottom: 60px;
   }
+
   .detail {
     text-align: center;
     border-bottom: 1px solid white;
   }
+
   .Header {
     margin-left: 40px;
   }
+
   .tags,
-.challenges,
-.Company {
+  .challenges,
+  .Company {
     text-align: center;
   }
+
   .info {
     display: flex;
     position: absolute;
     left: 10%;
   }
 }
+
 @media screen and (max-width: 530px) {
   .main-body {
     margin-right: 50px;
   }
 }
+
 @media screen and (max-width: 532px) {
   .info {
     display: block;
@@ -167,18 +181,23 @@ tr:nth-child(even) {
     text-align: center;
   }
 }
+
 /* NOTE this is for laptops */
+
 @media screen and (min-width: 1055px) {
   .net {
     margin-left: 200px;
   }
+
   .net-icon {
     text-decoration: none;
     margin-left: 10px;
   }
+
   .main-body {
     margin-right: 496px;
   }
+
   /* -------------- footer ----------------- */
   .foot-main {
     padding-top: 100px;
@@ -186,28 +205,34 @@ tr:nth-child(even) {
     padding-left: 180px;
     margin-bottom: 60px;
   }
+
   .tags {
     margin-left: 200px;
   }
+
   .challenges {
     margin-left: 20px;
   }
+
   /* ------------------------------------------- */
+
   .why-wrapper {
     margin-top: 50px;
     padding-left: 140px;
     padding-right: 140px;
     display: flex;
   }
+
   .after {
     margin-left: 170px;
   }
   #main {
     margin-bottom: 100px;
   }
+
   .info {
     display: flex;
     position: absolute;
     left: 10%;
   }
-}/*# sourceMappingURL=base.css.map */
+}

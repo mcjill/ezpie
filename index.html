@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="icon" type="image/x-icon" href="asset/logo/vector/isolated-monochrome-white.svg">
+    <link rel="icon" type="image/x-icon" href="asset/logo/profile.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
     <script>
@@ -17,76 +16,57 @@
 
         gtag('config', 'G-127HHJ286E');
     </script>
-    <title>ezpie Learn coding</title>
+    <title>ezpie Read tech blogs</title>
 </head>
 
 <body>
-    <!-- offscreen -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="tutorials/python/basic/intro.html">
-            <h2>Python</h2>
-        </a>
-    </div>
-    <!-- ------------------------------------------------- -->
     <section id="main">
-        <div class="beta">
-            <p class="text">
-                This is beta version of ezpie. Like it then
-                <a class="link"
-                    href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrKnMtccWvbnplvqTklpDFGqmgQlPQXVwdwZzGpcpcqCZWFBKhmwPtbSZzHspPsWQbqZg">give
-                    it</a>
-                a feedback
-            </p>
-        </div>
-        <nav class="nav">
+        <!-- <nav class="nav">
             <a href="index.html" class="nav-logo"><img src="asset/logo/vector/isolated-layout.svg" alt="Ezpie logo"
                     width="100px"></a>
-            <a href="#" align="right" class="nav-link Tutorials" onclick="openNav()">Tutorials</a>
-            <a href="#" class="nav-link" align="right">challenges</a>
-        </nav>
-        <div class="main2">
-            <div class="intro-part">
-                <h1 class="intro">
-                    Learn to Code <br>
-                    for totally FREE <br>
-                    from <font class="ezpie">ezpie</font>
-                </h1>
-                <p class="intro-text">
-                    Learn coding with this beginner-friendly website <br>
-                </p>
-            </div>
-            <div class="image"><img src="asset/logo/vector/default.svg" width="400px"></div>
-        </div>
+            <a href="#" align="right" class="nav-link Tutorials" onclick="openNav()">Read blog</a>
+        </nav> -->
+        <img src="asset/logo/cover.png" id="cover" alt="Ezpie cover image">
     </section>
 
-    <section class="why">
+    <section class=" why">
         <h2 class="head" align="center">Why Ezpie? you ask</h2>
-        <div class="wrapper" align="center">
+        <div class="why-wrapper" align="center">
             <div class="easy">
-                <h4 class="heads">Learn with ease</h4>
+                <h4 class="heads">Learn with challenges</h4>
                 <p class="text">
-                    Learn the right way with examples, <br>
-                    Real life problem and how I made <br>
-                    this website for you!
+                    Read a blog or do challenges,
+                    make programming easy and simple
                 </p>
             </div>
             <div class="trust after">
-                <h4 class="heads">You can trust Me</h4>
+                <h4 class="heads">Well written work</h4>
                 <p class="text">
-                    All content are written after <br>
-                    reading articles and wikipedia <br>
-                    about them.
+                    All pages are written after
+                    proper search and proof reading
                 </p>
             </div>
 
             <div class="doing after">
-                <h4 class="heads">Free learning</h4>
+                <h4 class="heads">Best and nothing else</h4>
                 <p class="text">
-                    Why waste money when you can learn for <br>
-                    free at ezpie, where everything is free!
+                    Always on the pick of right, not just doing
                 </p>
             </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-info">
+            <h2 class="about-head">About Us</h2>
+            <p class="text-black">
+                Ezpie is an <a href="https://github.com/ishaan010/ezpie" class="link" target="_blank">Open source</a>
+                website <br>
+                created to help begginers understand <br>
+                programming and master it
+            </p>
+        </div>
+        <div class="image">
+            <img src="asset/logo/profile.png" alt="Ezpie logo" class="logo" width="200px">
         </div>
     </section>
 
@@ -96,28 +76,32 @@
                 <h1 class="head">Ezpie</h1>
                 <p><strong>Email</strong>: ezpie.co@gmail.com</p>
             </div>
-            <div class="tutorials">
-                <h3 class="course">course</h3>
+            <div class="tags">
+                <h3 class="Header">Top tags</h3>
                 <ul class="links">
-                    <li><a href="tutorials/python/basic/intro.html" class="list-item">Python</a></li>
-
+                    <li><a href="searcher/api.html" class="list-item">API</a></li>
+                    <li><a href="searcher/docker.html" class="list-item">docker</a></li>
+                    <li><a href="searcher/python.html" class="list-item">python</a></li>
                 </ul>
             </div>
-            <div class="examples">
-                <h3 class="course">challenges</h3>
+            <div class="challenges">
+                <h3 class="Header">challenges</h3>
                 <!-- TODO add example links -->
                 <ul class="links">
                     <li><a href="#" class="list-item">Python challenges</a></li>
+                    <li><a href="#" class="list-item">Java challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript challenges</a></li>
+                    <li><a href="#" class="list-item">Golang challenges</a></li>
                 </ul>
             </div>
 
             <div class="Company">
-                <h3 class="course">Company</h3>
+                <h3 class="Header">Company</h3>
                 <ul class="links">
                     <!-- TODO add links -->
                     <li><a href="company/about.html" class="list-item">About</a></li>
                     <li><a href="company/privacy.html" class="list-item">Privacy Policy</a></li>
-                    <li><a href="company/terms.html" class="list-item">Terms and Conditions</a></li>
+                    <li><a href="company/terms.html" class="list-item">Terms conditions</a></li>
                 </ul>
             </div>
         </section>
@@ -125,23 +109,21 @@
         <section class="info">
             <p class="copyright">Copyright (c) 2022 Ezpie</p>
             <div class="net">
-                <a href="https://github.com/ishaan010">
-                    <img class="net-icon" src="asset/logo/internet/GitHub-Mark-Light-32px.png"
-                        alt="my github page for ezpie" width="30px">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100082135591250">
-                    <img class="net-icon" src="asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                <a href="https://github.com/ishaan010" target="_blank" class="link">
+                    <img class="net-icon" src="asset/logo/internet/github-logo.png" alt="Ezpie github page"
                         width="30px">
                 </a>
-                <a href="https://twitter.com/EzpieCo">
-                    <img src="asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
+                    <img src="asset/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
                         class="net-icon">
+                </a>
+                <a href="https://dev.to/ishaan010" target="_blank" class="link">
+                    <img src="asset/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon" width="30px">
                 </a>
             </div>
         </section>
     </footer>
 
-    <script src="js/nav.js"></script>
 </body>
 
 </html>
