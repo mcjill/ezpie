@@ -5,6 +5,7 @@ $Text_color: #000000;
 $link_color: #5322fd;
 $link_hovered: #9577ff;
 $code_background: #4c4c4c;
+$Main_border_color: #b9b9b9;
 
 body {
   font-family: $Font_family;
@@ -101,9 +102,36 @@ body {
 }
 
 .share {
-  border: 1px solid rgb(185, 185, 185);
+  border: 1px solid $Main_border_color;
   border-radius: 5px;
   padding-left: 5%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid $Main_border_color;
+  text-align: center;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid $Main_border_color;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  color: $Primary_color;
+  background-color: $Main_border_color;
+}
+
+.keyword {
+  color: $Secondary_color;
 }
 
 /* NOTE this is for tabs */

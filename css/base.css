@@ -94,9 +94,36 @@ body {
 }
 
 .share {
-  border: 1px solid rgb(185, 185, 185);
+  border: 1px solid #b9b9b9;
   border-radius: 5px;
   padding-left: 5%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid #b9b9b9;
+  text-align: center;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #b9b9b9;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  color: #ffffff;
+  background-color: #b9b9b9;
+}
+
+.keyword {
+  color: #61cbf2;
 }
 
 /* NOTE this is for tabs */
