@@ -1,13 +1,19 @@
 <div align="center">
 <img src="https://user-images.githubusercontent.com/104765117/182629208-891d16bf-a180-4d38-8091-7ac38785adec.png" width="200">
 <p><b>Read, play challenges and master programming</b></p>
-<img src="https://img.shields.io/github/license/ishaan010/ezpie?style=flat-square">
-<img src="https://img.shields.io/github/forks/ishaan010/ezpie?style=flat-square">
-<img src="https://img.shields.io/github/stars/ishaan010/ezpie?style=flat-square">
+<img src="https://img.shields.io/github/license/ishaan010/ezpie?style=for-the-badge">
+<img src="https://img.shields.io/github/forks/ishaan010/ezpie?style=for-the-badge">
+<img src="https://img.shields.io/github/stars/ishaan010/ezpie?style=for-the-badge">
 <a href="https://gitter.im/EzpieCo/community">
-  <img alt="Gitter" src="https://img.shields.io/gitter/room/ishaan010/ezpie?style=flat-square">
+  <img alt="Gitter" src="https://img.shields.io/gitter/room/ishaan010/ezpie?style=for-the-badge">
 </a>
-<img src="https://img.shields.io/badge/PRs-accepted-limegreen?style=flat-square">
+<a href="https://gitter.im/EzpieCo/community">
+  <img alt="Discord link" src="https://img.shields.io/discord/1031092931408441344?logo=discord&style=for-the-badge">
+</a>
+<img src="https://img.shields.io/badge/PRs-accepted-limegreen?style=for-the-badge">
+<a href="https://www.firsttimersonly.com/">
+  <img alt="first timers label" src="https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=for-the-badge">
+</a>
 </div>
 
 ---
