@@ -7,7 +7,7 @@
 <a href="https://gitter.im/EzpieCo/community">
   <img alt="Gitter" src="https://img.shields.io/gitter/room/ishaan010/ezpie?style=for-the-badge">
 </a>
-<a href="https://discord.com/channels/1031092931408441344/1031092990254518322">
+<a href="https://discord.gg/5wW26ADa">
   <img alt="Discord link" src="https://img.shields.io/discord/1031092931408441344?logo=discord&style=for-the-badge">
 </a>
 <img src="https://img.shields.io/badge/PRs-accepted-limegreen?style=for-the-badge">
