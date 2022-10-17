@@ -6,36 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../asset/logo/vector/isolated-monochrome-white.svg">
-    <link rel="stylesheet" href="../css/company.css">
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/base.css">
     <title>About</title>
 </head>
 
 <body>
-    <!-- offscreen -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../python/intro.html">Python</a>
+    <div class="container">
+        <section class="welcome" align="left">
+            <div class="welcome-wrapper">
+                <h1 class="head">Read more code less</h1>
+                <p class="text">
+                    Best way of learning to code!
+                </p>
+            </div>
+        </section>
+        <section class="ezpie-info">
+            <section class="about">
+                <div class="about-header">
+                    <h2 class="header">About Ezpie</h2>
+                </div>
+                <div class="about-text">
+                    <h3 class="head">Learn programming, play challenges and write blog posts</h3>
+                    <p class="text">
+                        In Ezpie you can do a lot of things, from reading a blog post to writing one yourself, but the
+                        most greatest thing of all is doing challenges! In ezpie you can do challenges with other
+                        learners once in every week! And get results ever next week with rankings!
+                    </p>
+                </div>
+            </section>
+            <section class="mission">
+                <div class="mission-header">
+                    <h2 class="header">Ezpie's Mission</h2>
+                </div>
+                <div class="mission-text">
+                    <h3 class="head">Help new developers get the hang of programming</h3>
+                    <p class="text">
+                        Ezpie is made to help you learn programming by reading, sharing and playing challenges. Here at
+                        ezpie the simplest example is considered the best example.
+                    </p>
+                </div>
+            </section>
+            <section class="future-idea">
+                <div class="future-header">
+                    <h2 class="header">Ezpie's upcomming plans</h2>
+                </div>
+                <div class="future-text">
+                    <h3 class="head">Make ezpie reach ever developer</h3>
+                    <p class="text">
+                        For the future ezpie have plans of creating an vscode extension to help vscode users to
+                        easily search for blog posts, create easy chrome extension for the same and a lot more!
+                    </p>
+                </div>
+            </section>
+        </section>
     </div>
-    <!-- ------------------------------------------------- -->
-    <section id="main">
-        <nav class="nav">
-            <a href="../index.html" class="nav-logo">
-                <img src="../asset/logo/vector/isolated-layout.svg" alt="ezpie logo" width="100px">
-            </a>
-            <a href="#" class="nav-link Tutorials" onclick="openNav()">Tutorials</a>
-            <a href="#" class="nav-link">Examples</a>
-        </nav>
-
-        <div class="about" align="center">
-            <!-- add about me -->
-            <p class="text">
-                This is the <b>Beta</b> version therefore information may not be right. <br>
-                Like the Beta version? then give a
-                <a class="link" href="https://gmail.com">feedback to ezpie.co@gmail.com</a>
-            </p>
-        </div>
-    </section>
 
     <footer class="foot">
         <section class="foot-main">
@@ -43,31 +67,32 @@
                 <h1 class="head">Ezpie</h1>
                 <p><strong>Email</strong>: ezpie.co@gmail.com</p>
             </div>
-            <div class="tutorials">
-                <h3 class="course">course</h3>
+            <div class="tags">
+                <h3 class="Header">Top tags</h3>
                 <ul class="links">
-                    <li><a href="../python/intro.html" class="list-item">Python</a></li>
-
+                    <li><a href="api.html" class="list-item">API</a></li>
+                    <li><a href="docker.html" class="list-item">Docker</a></li>
+                    <li><a href="python.html" class="list-item">Python</a></li>
                 </ul>
             </div>
-            <div class="examples">
-                <h3 class="course">Examples</h3>
+            <div class="challenges">
+                <h3 class="Header">challenges</h3>
                 <!-- TODO add example links -->
                 <ul class="links">
-                    <li><a href="#" class="list-item">Python Examples</a></li>
-                    <li><a href="#" class="list-item">Javascript Examples</a></li>
-                    <li><a href="#" class="list-item">HTML Examples</a></li>
-                    <li><a href="#" class="list-item">CSS Examples</a></li>
+                    <li><a href="#" class="list-item">Python challenges</a></li>
+                    <li><a href="#" class="list-item">Java challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript challenges</a></li>
+                    <li><a href="#" class="list-item">Golang challenges</a></li>
                 </ul>
             </div>
 
             <div class="Company">
-                <h3 class="course">Company</h3>
+                <h3 class="Header">Company</h3>
                 <ul class="links">
                     <!-- TODO add links -->
-                    <li><a href="about.html" class="list-item">About</a></li>
-                    <li><a href="privacy.html" class="list-item">Privacy Policy</a></li>
-                    <li><a href="terms.html" class="list-item">Terms and Conditions</a></li>
+                    <li><a href="../company/about.html" class="list-item">About</a></li>
+                    <li><a href="../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="../company/terms.html" class="list-item">Terms conditions</a></li>
                 </ul>
             </div>
         </section>
@@ -75,23 +100,22 @@
         <section class="info">
             <p class="copyright">Copyright (c) 2022 Ezpie</p>
             <div class="net">
-                <a href="https://github.com/ishaan010">
-                    <img class="net-icon" src="../asset/logo/internet/GitHub-Mark-Light-32px.png"
-                        alt="my github page for ezpie" width="30px">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100082135591250">
-                    <img class="net-icon" src="../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                <a href="https://github.com/ishaan010" target="_blank" class="link">
+                    <img class="net-icon" src="../asset/logo/internet/github-logo.png" alt="Ezpie github page"
                         width="30px">
                 </a>
-                <a href="https://twitter.com/EzpieCo">
-                    <img src="../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
+                    <img src="../asset/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
                         class="net-icon">
+                </a>
+                <a href="https://dev.to/ishaan010" target="_blank" class="link">
+                    <img src="../asset/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
+                        width="30px">
                 </a>
             </div>
         </section>
     </footer>
 
-    <script src="../js/nav.js"></script>
 </body>
 
 </html>

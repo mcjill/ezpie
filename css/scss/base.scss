@@ -63,12 +63,15 @@ body {
 
 .link {
   color: $link_color;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
+  transition: border-bottom 0.5s;
+  transition: color 0.5s;
 }
 
 .link:hover {
+  border-bottom: 2px solid $link_hovered;
   color: $link_hovered;
-  text-decoration: underline;
 }
 
 .main-body {
@@ -132,6 +135,46 @@ tr:nth-child(even) {
 
 .keyword {
   color: $Secondary_color;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.welcome {
+  background-image: url("../../asset/logo/profile.png");
+  height: 500px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.welcome > .welcome-wrapper {
+  position: absolute;
+  top: 203px;
+}
+
+.about, .mission, .future-idea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ezpie-info .header{
+  border-bottom: 4px solid black;
+  width: fit-content;
+}
+
+.about-text, .mission-text, .future-text {
+  width: 60%;
+}
+
+
+/* NOTE This is for about us page */
+@media screen and (max-width: 1024px) {
+  .about, .mission, .future-idea {
+    display: block;
+  }
 }
 
 /* NOTE this is for tabs */
