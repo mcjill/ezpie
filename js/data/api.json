@@ -5,5 +5,12 @@
     "url": "../blogs/ezpie/how-to-create-a-rest-api-using-flask",
     "author": "Ezpie",
     "email": "ezpie.co@gmail.com"
+  },
+  {
+    "title": "Using javascript fetch API",
+    "description": "In this article you will get to know a little about Javascript's fetch API",
+    "url": "../blogs/ezpie/using-javascript-fetch-api",
+    "author": "Ezpie",
+    "email": "ezpie.co@gmail.com"
   }
 ]
