@@ -1,26 +1,9 @@
-# Description
+# What changes I made
+What kind of change did you made? Was it fixing typo or was it adding a blog psot?
 
-Please include a summary of the change and which issue you fixed. Also include relevant motivation and context.
+## Check list(blog added if)
+Please make sure your blog have these:
 
-Fixes # (issue)
-
-## Type of change
-
-Please mark the option(s) which you have done.
-
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Breaking change
-- [ ] This change requires a documentation update
-
-# Checklist:
-
-Please mark the option(s) which you have done right
-
-- [ ] My added file(s) are as pre other files design
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-
-
-Template by [Embedded Artistry](https://embeddedartistry.com)
+- [ ] Does your blog follows rul given in [ezpie's contributing file](https://github.com/ishaan010/ezpie/blob/master/CONTRIBUTING.md)
+- [ ] Does your blog have some code examples?
+- [ ] Does you blog have a source code link?
