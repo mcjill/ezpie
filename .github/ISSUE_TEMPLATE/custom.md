@@ -1,17 +1,18 @@
 ---
-name: help wanted
-about: Tell me what you need help in.
+name: Help in writting blog
+about: What problem are you facing while writting blog.
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**What's the problem**
-Tell what the problem is about.
+**What kind of problem are you facing**
+What is your problem about?
 
-**How it happened**
-Tell how the problem happen and how do I make it happen again to see what went wrong.
+- Is it where should I put my blog files?
+- Why is the css styling my working?
+- Are the links broken?
 
-**Screenshots**
-Give screenshots so it's easy to solve
+**What did you tried to do**
+Did you tried to solve the problem? What did you did that it still not working?
