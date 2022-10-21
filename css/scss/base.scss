@@ -65,8 +65,7 @@ body {
   color: $link_color;
   border-bottom: 2px solid transparent;
   text-decoration: none;
-  transition: border-bottom 0.5s;
-  transition: color 0.5s;
+  transition: border-bottom 0.5s, color 0.5s;
 }
 
 .link:hover {
@@ -155,24 +154,29 @@ tr:nth-child(even) {
   top: 203px;
 }
 
-.about, .mission, .future-idea {
+.about,
+.mission,
+.future-idea {
   display: flex;
   justify-content: space-between;
 }
 
-.ezpie-info .header{
+.ezpie-info .header {
   border-bottom: 4px solid black;
   width: fit-content;
 }
 
-.about-text, .mission-text, .future-text {
+.about-text,
+.mission-text,
+.future-text {
   width: 60%;
 }
 
-
 /* NOTE This is for about us page */
 @media screen and (max-width: 1024px) {
-  .about, .mission, .future-idea {
+  .about,
+  .mission,
+  .future-idea {
     display: block;
   }
 }
