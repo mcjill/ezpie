@@ -1,14 +1,15 @@
 # Ezpie style guidelines
 
-You must follow the style guidelines to make sure that your article fits within the site.
+You must follow the style guidelines to make sure that your blog fits within the site.
 
-To get started with writing your first article in ezpie, copy and paste the given code below:
+To get started with writing your first blog in ezpie, copy and paste the given code below:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!--Code by google -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQB1SJPPPD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -17,6 +18,7 @@ To get started with writing your first article in ezpie, copy and paste the give
 
         gtag('config', 'G-SQB1SJPPPD');
     </script>
+    <!------------------------------------------------------->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,19 +109,54 @@ To get started with writing your first article in ezpie, copy and paste the give
 </html>
 ```
 
-- **intro section**: There must be a section(class as intro) with the title of the article and a small description about it.
+## All classes you can use at ezpie
 
-  - **Title**: The title of the article should be inside the intro section with the _h1 tag with class as head_.
-  - **Description**: The description of the article should be inside the intro section below the title, and it must be with the _p tag with class as text_.
+Ezpie uses custom css therefore you need to know what class is used for what. Here are the important classes that you may use in your blog:
 
-- **End line**: At the end of every section, there must be a **hr tag**.
+- **Text class** : In your blog you will be needing to write text, for which you will need to use the _p tag_, but you must also include the **text class** in the p tag.
 
-- **Explanation**: There must be an explanation of the topic(if needed) _inside another section with class **what**_
+  **Demo** :
 
-- **Code Examples**: You can use code examples in your articles too. For which, you must use [github gists](https://gist.github.com)
+  Code:
 
-- **Article dependency**: If your article's code example requires some dependencies then you must mention and how to install these dependencies as will.
+  ```html
+  <p class="text">This is a text with the text class.</p>
+  ```
 
-## Contact if required
+  Output :
 
-In case you have any questions or what to ask something, you can contacte ezpie using [gmail](gmail.com) at ezpie.co@gmail.com or you can create an issue.
+  ![Text with text class](https://user-images.githubusercontent.com/104765117/198814337-d6633814-75b4-473d-b904-9153a838c01a.png)
+
+  And as you can see with the text class the text is a bit more gray.
+
+- **Code output**- all code's or terminal cammands are to be inside a div with the **class code**
+
+  **Demo** :
+
+  Code:
+
+  ```html
+  <div class="code">> Output at the terminal</div>
+  ```
+
+  output :
+
+  ![Div with class code](https://user-images.githubusercontent.com/104765117/198814473-7981cfaa-8ade-43b7-baa6-c7a813239534.png)
+
+  This is how you must show terminal outputs
+
+- **Code examples**- Your blog may contain code examples, rather than adding images of the code you can just use [github gist](https://gist.github.com)
+
+---
+
+## Dividing the blog
+
+Your blog must also be divided into sections using the **section** tag in html. At the end of each section you must add the **hr tag**.
+
+Each section must contain a head, which is just the **h2** tag with **class head**
+
+---
+
+## Any problem?
+
+If you have any problem you can create an issue and we will help you out.
