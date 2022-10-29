@@ -10,7 +10,7 @@ body {
 }
 
 .text {
-  color: #000000;
+  color: #666666;
 }
 
 .net-icon {
@@ -73,7 +73,7 @@ body {
 .list-item {
   margin: 0%;
   line-height: 25px;
-  color: #000000;
+  color: #666666;
   text-decoration: none;
 }
 
