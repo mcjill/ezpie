@@ -22,6 +22,35 @@
 </head>
 
 <body>
+    <!-- Side nav -->
+    <div class="side-nav">
+        <input type="text" class="search-fild" onkeyup="search()" placeholder="Search for top tags">
+        <ul class="tag-list">
+            <li>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+            </li>
+            <li>
+                <a href="searcher/api.html" class="nav-link">API</a>
+            </li>
+            <li>
+                <a href="searcher/docker.html" class="nav-link">Docker</a>
+            </li>
+            <li>
+                <a href="searcher/javascript.html" class="nav-link">Javascript</a>
+            </li>
+            <li>
+                <a href="searcher/python.html" class="nav-link">Python</a>
+            </li>
+        </ul>
+    </div>
+    <!-- -------------------------------------------------------------------------------- -->
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="company/about.html" class="nav-link">ABOUT</a>
+        <span class="nav-link" onclick="openSideNav()">SEARCH</span>
+    </nav>
+
     <section id="main">
         <img src="asset/logo/cover.png" id="cover" alt="Ezpie cover image">
     </section>
@@ -123,6 +152,8 @@
         </section>
     </footer>
 
+    <script src="javascript/sideNav.js"></script>
+    <script src="javascript/search.js"></script>
 </body>
 
 </html>

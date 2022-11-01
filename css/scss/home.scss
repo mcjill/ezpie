@@ -58,8 +58,8 @@ body {
 }
 
 #main {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .Header {
@@ -114,6 +114,72 @@ body {
 .article-link {
   text-decoration: none;
 }
+
+// Navbar Style
+.navbar {
+  // overflow: hidden;
+  background-color: $Secondary_color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+
+.nav-link:hover {
+  color: $link_hovered;
+  text-decoration: underline;
+}
+
+/*  --------------  */
+
+// Side nav
+.side-nav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: $Secondary_color;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: block;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*   ------------  */
+// Search results
+.search-fild {
+  background-image: url("/css/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid transparent;
+  margin-bottom: 12px;
+  margin-left: 5px;
+}
+.tag-list {
+  list-style-type: none;
+}
+/*  ------------  */
 
 /* NOTE this is for tabs */
 @media screen and (max-width: 1055px) {
