@@ -39,11 +39,6 @@ body {
   list-style-type: none;
 }
 
-#main {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .Header {
   margin-left: 37px;
 }
@@ -68,6 +63,7 @@ body {
 .main-body {
   margin-left: 10%;
   margin-bottom: 10px;
+  margin-top: 60px;
 }
 
 .list-item {
@@ -166,6 +162,80 @@ tr:nth-child(even) {
   width: 60%;
 }
 
+.navbar {
+  background-color: #61cbf2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.5s, -webkit-text-decoration 0.5s;
+  transition: color 0.5s, text-decoration 0.5s;
+  transition: color 0.5s, text-decoration 0.5s, -webkit-text-decoration 0.5s;
+}
+
+.nav-link:hover {
+  color: #9577ff;
+  text-decoration: underline;
+}
+
+/*  --------------  */
+.side-nav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: #61cbf2;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: block;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.closebtn:hover {
+  color: gray;
+}
+
+/*   ------------  */
+.search-fild {
+  background-image: url("../../asset/logo/internet/search icon.svg");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid transparent;
+  margin-bottom: 12px;
+  margin-left: 5px;
+}
+
+.tag-list {
+  list-style-type: none;
+}
+
+/*  ------------  */
 /* NOTE This is for about us page */
 @media screen and (max-width: 1024px) {
   .about,

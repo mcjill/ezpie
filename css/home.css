@@ -115,6 +115,7 @@ body {
   top: 0;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 .nav-link {
@@ -139,7 +140,7 @@ body {
   height: 100%;
   width: 0%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   background-color: #61cbf2;
   overflow-x: hidden;
