@@ -1,6 +1,27 @@
 ---
 title: TEST PAGE
 layout: base
+type : tag
+tags : python
 ---
 
-<section class="main"></section>
+<section class="main">
+{% for tag in site.tags %}
+
+  {% endfor %}
+
+  {% for tag in site.tags %}
+    {% for post in tag[1] %}
+    <a href="{{ post.url }}" class="article-link">
+        <div class="article">
+            <h1>{{post.title}}</h1>
+            <p>{{post.description}} </p>
+            <b>{{post.author}}</b>
+        </div>
+        </a>
+    {% endfor %}
+{% endfor %}
+
+  
+
+</section>
