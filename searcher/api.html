@@ -8,10 +8,6 @@ tags : api
 <section class="main">
 
 
-    {% for tag in site.tags %}
-
-  {% endfor %}
-
   {% for tag in site.tags %}
     {% for post in tag[1] %}
     <a href="{{ post.url }}" class="article-link">
