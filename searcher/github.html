@@ -13,7 +13,7 @@ tags : github
 
   {% for tag in site.tags %}
   {{tag[0]}}
-    {% for post in tag[1] %}
+    {% for post in site.tags.python %}
     <a href="{{ post.url }}" class="article-link">
         <div class="article">
             <h1>{{post.title}}</h1>
