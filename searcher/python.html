@@ -6,12 +6,7 @@ tags : python
 ---
 
 <section class="main">
-{% for tag in site.tags %}
-
-  {% endfor %}
-
-  {% for tag in site.tags %}
-    {% for post in tag[1] %}
+    {% for post in site.tags.python %}
     <a href="{{ post.url }}" class="article-link">
         <div class="article">
             <h1>{{post.title}}</h1>
@@ -20,8 +15,5 @@ tags : python
         </div>
         </a>
     {% endfor %}
-{% endfor %}
-
-  
 
 </section>

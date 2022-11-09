@@ -6,21 +6,14 @@ tags : javascript
 ---
 
 <section class="main">
-    {% for tag in site.tags %}
-
+    {% for post in site.tags.javascript %}
+    <a href="{{ post.url }}" class="article-link">
+        <div class="article">
+            <h1>{{post.title}}</h1>
+            <p>{{post.description}} </p>
+            <b>{{post.author}}</b>
+        </div>
+        </a>
     {% endfor %}
-  
-    {% for tag in site.tags %}
-      {% for post in tag[1] %}
-      <a href="{{ post.url }}" class="article-link">
-          <div class="article">
-              <h1>{{post.title}}</h1>
-              <p>{{post.description}} </p>
-              <b>{{post.author}}</b>
-          </div>
-          </a>
-      {% endfor %}
-  {% endfor %}
-  
 
 </section>

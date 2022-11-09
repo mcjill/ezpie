@@ -7,13 +7,8 @@ tags : github
 
 <section class="main">
 
-    {% for tag in site.tags %}
-
-  {% endfor %}
-
-  {% for tag in site.tags %}
-  {{tag[0]}}
-    {% for post in site.tags.python %}
+ 
+    {% for post in site.tags.github %}
     <a href="{{ post.url }}" class="article-link">
         <div class="article">
             <h1>{{post.title}}</h1>
@@ -22,6 +17,6 @@ tags : github
         </div>
         </a>
     {% endfor %}
-{% endfor %}
+
 
 </section>
