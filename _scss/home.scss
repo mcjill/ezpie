@@ -1,23 +1,29 @@
+$Primary_color: #ffffff;
+$Secondary_color: #61cbf2;
+$Font_family: "IBM Plex Mono", monospace;
+$Text_color: #000000;
+$link_color: #5322fd;
+$link_hovered: #9577ff;
+
 body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: #ffffff;
+  font-family: $Font_family;
+  background-color: $Primary_color;
   margin: 0%;
 }
 
 .foot {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   padding-bottom: 50px;
 }
 
 .text {
-  color: #000000;
+  color: $Text_color;
 }
 
 .net-icon {
   margin-left: 10px;
   margin-top: 16px;
 }
-
 .me {
   display: flex;
   color: white;
@@ -29,7 +35,7 @@ body {
 }
 
 .why {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -38,7 +44,7 @@ body {
 .list-item {
   margin: 0%;
   line-height: 25px;
-  color: #000000;
+  color: $Text_color;
   text-decoration: none;
 }
 
@@ -61,7 +67,7 @@ body {
 }
 
 .about {
-  color: #000000;
+  color: $Text_color;
   margin-left: 10%;
   display: flex;
 }
@@ -72,16 +78,16 @@ body {
 }
 
 .text-black {
-  color: #000000;
+  color: $Text_color;
 }
 
 .link {
-  color: #5322fd;
+  color: $link_color;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #9577ff;
+  color: $link_hovered;
   text-decoration: underline;
 }
 
@@ -109,8 +115,9 @@ body {
   text-decoration: none;
 }
 
+// Navbar Style
 .navbar {
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   position: fixed;
   top: 0;
   width: 100%;
@@ -125,24 +132,24 @@ body {
   margin-right: 5%;
   text-decoration: none;
   font-size: 25px;
-  transition: color 0.5s, -webkit-text-decoration 0.5s;
   transition: color 0.5s, text-decoration 0.5s;
-  transition: color 0.5s, text-decoration 0.5s, -webkit-text-decoration 0.5s;
 }
 
 .nav-link:hover {
-  color: #9577ff;
+  color: $link_hovered;
   text-decoration: underline;
 }
 
 /*  --------------  */
+
+// Side nav
 .side-nav {
   height: 100%;
   width: 0%;
   position: fixed;
   z-index: 2;
   top: 0;
-  background-color: #61cbf2;
+  background-color: $Secondary_color;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -163,10 +170,10 @@ body {
 .closebtn:hover {
   color: gray;
 }
-
 /*   ------------  */
+// Search results
 .search-fild {
-  background-image: url("../../asset/logo/internet/search icon.svg");
+  background-image: url("../../asset/logo/internet/search\ icon.svg");
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -177,12 +184,11 @@ body {
   margin-bottom: 12px;
   margin-left: 5px;
 }
-
 .tag-list {
   list-style-type: none;
 }
-
 /*  ------------  */
+
 /* NOTE this is for tabs */
 @media screen and (max-width: 1055px) {
   /* -------------- Footer ------------------ */
@@ -191,33 +197,40 @@ body {
     color: black;
     margin-bottom: 60px;
   }
+
   .detail {
     text-align: center;
     border-bottom: 1px solid white;
   }
+
   .Header {
     margin-left: 40px;
   }
+
   .tags,
-.challenges,
-.Company {
+  .challenges,
+  .Company {
     text-align: center;
   }
+
   .list-item {
     margin: 0%;
     line-height: 25px;
-    color: #000000;
+    color: $Text_color;
     text-decoration: none;
   }
+
   .list-item:hover {
     color: white;
   }
+
   .info {
     display: flex;
     position: absolute;
     left: 10%;
   }
 }
+
 @media screen and (max-width: 532px) {
   .info {
     display: block;
@@ -225,15 +238,19 @@ body {
     text-align: center;
   }
 }
+
 /* NOTE this is for laptops */
+
 @media screen and (min-width: 1055px) {
   .net {
     margin-left: 200px;
   }
+
   .net-icon {
     text-decoration: none;
     margin-left: 10px;
   }
+
   /* -------------- footer ----------------- */
   .foot-main {
     padding-top: 100px;
@@ -241,28 +258,34 @@ body {
     padding-left: 180px;
     margin-bottom: 60px;
   }
+
   .tags {
     margin-left: 200px;
   }
+
   .challenges {
     margin-left: 20px;
   }
+
   /* ------------------------------------------- */
+
   .why-wrapper {
     margin-top: 50px;
     padding-left: 140px;
     padding-right: 140px;
     display: flex;
   }
+
   .after {
     margin-left: 170px;
   }
   #main {
     margin-bottom: 100px;
   }
+
   .info {
     display: flex;
     position: absolute;
     left: 10%;
   }
-}/*# sourceMappingURL=home.css.map */
+}
