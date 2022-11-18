@@ -1,23 +1,27 @@
-$Primary_color: #ffffff;
-$Secondary_color: #61cbf2;
-$Font_family: "IBM Plex Mono", monospace;
-$Text_color: #000000;
-$link_color: #5322fd;
-$link_hovered: #9577ff;
+:root {
+  --Primary_color: #ffffff;
+  --Secondary_color: #61cbf2;
+  --Font_family: "IBM Plex Mono", monospace;
+  --Text_color: #666666;
+  --link_color: #5322fd;
+  --link_hovered: #9577ff;
+  --code_background: #4c4c4c;
+  --Main_border_color: #b9b9b9;
+}
 
 body {
-  font-family: $Font_family;
-  background-color: $Primary_color;
+  font-family: var(--Font_family);
+  background-color: var(--Secondary_color);
   margin: 0%;
 }
 
 .foot {
-  background-color: $Secondary_color;
+  background-color: var(--Secondary_color);
   padding-bottom: 50px;
 }
 
 .text {
-  color: $Text_color;
+  color: var(--Text_color);
 }
 
 .net-icon {
@@ -35,16 +39,47 @@ body {
 }
 
 .why {
-  background-color: $Secondary_color;
+  background-color: var(--Secondary_color);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
+.links {
+  list-style-type: none;
+}
+
+.Header {
+  margin-left: 37px;
+}
+
+.image {
+  position: absolute;
+  right: 1%;
+}
+
+.link {
+  color: var(--link_color);
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  transition: border-bottom 0.5s, color 0.5s;
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--link_hovered);
+  color: var(--link_hovered);
+}
+
+.main-body {
+  margin-left: 10%;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
 .list-item {
   margin: 0%;
   line-height: 25px;
-  color: $Text_color;
+  color: var(--Text_color);
   text-decoration: none;
 }
 
@@ -53,71 +88,91 @@ body {
   text-decoration: underline;
 }
 
-.links {
-  list-style-type: none;
+.list-important {
+  line-height: 25px;
 }
 
-#main {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.code {
+  background-color: var(--code_background);
+  color: var(--Primary_color);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
 }
 
-.Header {
-  margin-left: 37px;
+.share {
+  border: 1px solid var(--Main_border_color);
+  border-radius: 5px;
+  padding-left: 5%;
 }
 
-.about {
-  color: $Text_color;
-  margin-left: 10%;
-  display: flex;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.image {
-  position: absolute;
-  right: 1%;
+th {
+  border: 1px solid var(--Main_border_color);
+  text-align: center;
+  padding: 8px;
 }
 
-.text-black {
-  color: $Text_color;
+td {
+  border: 1px solid var(--Main_border_color);
+  text-align: left;
+  padding: 8px;
 }
 
-.link {
-  color: $link_color;
-  text-decoration: none;
+tr:nth-child(even) {
+  color: var(--Primary);
+  background-color: var(--Main_border_color);
 }
 
-.link:hover {
-  color: $link_hovered;
-  text-decoration: underline;
+.keyword {
+  color: var(--Secondary_color);
 }
 
-.main {
+.container {
   margin-left: 5%;
-  margin-top: 10px;
   margin-right: 5%;
 }
 
-.article {
-  border: 1px solid rgb(198, 198, 198);
-  border-radius: 5px;
-  color: black;
-  margin-bottom: 10px;
-  padding-left: 2%;
+.welcome {
+  background-image: url("../../assets/logo/profile.png");
+  height: 500px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.article:hover {
-  color: gray;
-  border: 1px solid rgb(158, 158, 158);
-  margin: 2%;
+.welcome > .welcome-wrapper {
+  position: absolute;
+  top: 203px;
 }
 
-.article-link {
-  text-decoration: none;
+.about,
+.mission,
+.future-idea {
+  display: flex;
+  justify-content: space-between;
 }
 
-// Navbar Style
+.ezpie-info .header {
+  border-bottom: 4px solid black;
+  width: fit-content;
+}
+
+.about-text,
+.mission-text,
+.future-text {
+  width: 60%;
+}
+
+/* Navbar Style */
 .navbar {
-  background-color: $Secondary_color;
+  background-color: var(--Secondary_color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -136,20 +191,20 @@ body {
 }
 
 .nav-link:hover {
-  color: $link_hovered;
+  color: var(--link_hovered);
   text-decoration: underline;
 }
 
 /*  --------------  */
 
-// Side nav
+/* Side nav */
 .side-nav {
   height: 100%;
   width: 0%;
   position: fixed;
   z-index: 2;
   top: 0;
-  background-color: $Secondary_color;
+  background-color: var(--Secondary_color);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -171,9 +226,9 @@ body {
   color: gray;
 }
 /*   ------------  */
-// Search results
+/* Search results */
 .search-fild {
-  background-image: url("../../asset/logo/internet/search\ icon.svg");
+  background-image: url("../../assets/logo/internet/search\ icon.svg");
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -189,8 +244,20 @@ body {
 }
 /*  ------------  */
 
+/* NOTE This is for about us page */
+@media screen and (max-width: 1024px) {
+  .about,
+  .mission,
+  .future-idea {
+    display: block;
+  }
+}
+
 /* NOTE this is for tabs */
 @media screen and (max-width: 1055px) {
+  .main-body {
+    margin-right: 204px;
+  }
   /* -------------- Footer ------------------ */
   .foot-main {
     padding-top: 100px;
@@ -213,21 +280,16 @@ body {
     text-align: center;
   }
 
-  .list-item {
-    margin: 0%;
-    line-height: 25px;
-    color: $Text_color;
-    text-decoration: none;
-  }
-
-  .list-item:hover {
-    color: white;
-  }
-
   .info {
     display: flex;
     position: absolute;
     left: 10%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main-body {
+    margin-right: 50px;
   }
 }
 
@@ -249,6 +311,10 @@ body {
   .net-icon {
     text-decoration: none;
     margin-left: 10px;
+  }
+
+  .main-body {
+    margin-right: 496px;
   }
 
   /* -------------- footer ----------------- */
