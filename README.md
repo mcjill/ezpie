@@ -98,7 +98,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
+ all-contributors/add-Bhavil-13
+      <td align="center"><a href="https://github.com/Bhavil-13"><img src="https://avatars.githubusercontent.com/u/98340959?v=4?s=100" width="100px;" alt="Bhavil-13"/><br /><sub><b>Bhavil-13</b></sub></a><br /><a href="#content-Bhavil-13" title="Content">🖋</a> <a href="https://github.com/ishaan010/ezpie/commits?author=Bhavil-13" title="Documentation">📖</a> <a href="#translation-Bhavil-13" title="Translation">🌍</a></td>
+
       <td align="center"><a href="https://ngdream.github.io/ngdream/"><img src="https://avatars.githubusercontent.com/u/96875506?v=4?s=100" width="100px;" alt="ngdream"/><br /><sub><b>ngdream</b></sub></a><br /><a href="https://github.com/ishaan010/ezpie/commits?author=ngdream" title="Code">💻</a> <a href="#content-ngdream" title="Content">🖋</a> <a href="#maintenance-ngdream" title="Maintenance">🚧</a></td>
+
     </tr>
   </tbody>
 </table>
