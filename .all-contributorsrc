@@ -7,6 +7,7 @@
   "commitConvention": "angular",
   "contributors": [
     {
+      all-contributors/add-Bhavil-13
       "login": "Bhavil-13",
       "name": "Bhavil-13",
       "avatar_url": "https://avatars.githubusercontent.com/u/98340959?v=4",
@@ -15,6 +16,15 @@
         "content",
         "doc",
         "translation"
+
+      "login": "ngdream",
+      "name": "ngdream",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96875506?v=4",
+      "profile": "https://ngdream.github.io/ngdream/",
+      "contributions": [
+        "code",
+        "content",
+        "maintenance"
       ]
     }
   ],
