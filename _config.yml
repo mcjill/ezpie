@@ -13,8 +13,4 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - LICENSE
   - .gitignore
-  - .all-contrbutorsrc
-  - .github
