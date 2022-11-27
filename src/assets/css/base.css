@@ -11,7 +11,6 @@
 
 body {
   font-family: var(--Font_family);
-  background-color: var(--Secondary_color);
   margin: 0%;
 }
 
@@ -74,6 +73,7 @@ body {
   margin-left: 10%;
   margin-bottom: 10px;
   margin-top: 60px;
+  width: clamp(45ch, 50%, 75ch);
 }
 
 .list-item {
@@ -134,6 +134,7 @@ tr:nth-child(even) {
   color: var(--Secondary_color);
 }
 
+/* About Us page */
 .container {
   margin-left: 5%;
   margin-right: 5%;
@@ -169,6 +170,7 @@ tr:nth-child(even) {
 .future-text {
   width: 60%;
 }
+/* ---------------------------------------- */
 
 /* Navbar Style */
 .navbar {
@@ -177,7 +179,8 @@ tr:nth-child(even) {
   top: 0;
   width: 100%;
   text-align: center;
-  z-index: 1;
+  /* z-index: 1; */
+  margin-bottom: 100px;
 }
 
 .nav-link {
@@ -194,55 +197,6 @@ tr:nth-child(even) {
   color: var(--link_hovered);
   text-decoration: underline;
 }
-
-/*  --------------  */
-
-/* Side nav */
-.side-nav {
-  height: 100%;
-  width: 0%;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  background-color: var(--Secondary_color);
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-  display: block;
-}
-
-.closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: black;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.closebtn:hover {
-  color: gray;
-}
-/*   ------------  */
-/* Search results */
-.search-fild {
-  background-image: url("../../assets/logo/internet/search\ icon.svg");
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  width: 50%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid transparent;
-  margin-bottom: 12px;
-  margin-left: 5px;
-}
-.tag-list {
-  list-style-type: none;
-}
-/*  ------------  */
 
 /* NOTE This is for about us page */
 @media screen and (max-width: 1024px) {
@@ -287,12 +241,6 @@ tr:nth-child(even) {
   }
 }
 
-@media screen and (max-width: 530px) {
-  .main-body {
-    margin-right: 50px;
-  }
-}
-
 @media screen and (max-width: 532px) {
   .info {
     display: block;
@@ -311,10 +259,6 @@ tr:nth-child(even) {
   .net-icon {
     text-decoration: none;
     margin-left: 10px;
-  }
-
-  .main-body {
-    margin-right: 496px;
   }
 
   /* -------------- footer ----------------- */

@@ -47,12 +47,14 @@ body {
   margin: 0%;
   line-height: 25px;
   color: var(--Text_color);
+  border-bottom: 2px solid transparent;
   text-decoration: none;
+  transition: color 0.5s, border-bottom 0.5s;
 }
 
 .list-item:hover {
   color: white;
-  text-decoration: underline;
+  border-bottom: 2px solid white;
 }
 
 .links {
@@ -85,12 +87,14 @@ body {
 
 .link {
   color: var(--Link_color);
+  border-bottom: 2px solid transparent;
   text-decoration: none;
+  transition: color 0.5s, border-bottom 0.5s;
 }
 
 .link:hover {
   color: var(--Link_hovered);
-  text-decoration: underline;
+  border-bottom: 2px solid var(--Link_hovered);
 }
 
 .main {
@@ -142,54 +146,11 @@ body {
   text-decoration: underline;
 }
 
-/*  --------------  */
-
-/* Side nav */
-.side-nav {
-  height: 100%;
-  width: 0%;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  background-color: var(--Secondary_color);
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-  display: block;
+/* Blogs page */
+.blog-body {
+  margin-left: 10%;
+  margin-top: 5%;
 }
-
-.closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: black;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.closebtn:hover {
-  color: gray;
-}
-/*   ------------  */
-/* Search results */
-.search-fild {
-  background-image: url("../../assets/logo/internet/search\ icon.svg");
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  width: 50%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid transparent;
-  margin-bottom: 12px;
-  margin-left: 5px;
-}
-.tag-list {
-  list-style-type: none;
-}
-/*  ------------  */
 
 /* NOTE this is for tabs */
 @media screen and (max-width: 1055px) {

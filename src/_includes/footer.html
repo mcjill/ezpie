@@ -1,18 +1,10 @@
+<!-- This is for the main page and blogs page -->
+{% if page.type == "main" %}
 <footer class="foot">
     <section class="foot-main">
         <div class="detail">
             <h1 class="head">Ezpie</h1>
             <p><strong>Email</strong>: ezpie.co@gmail.com</p>
-        </div>
-        <div class="tags">
-            <h3 class="Header">Top tags</h3>
-            <ul class="links">
-                <li><a href="searcher/api.html" class="list-item">API</a></li>
-                <li><a href="searcher/docker.html" class="list-item">docker</a></li>
-                <li><a href="searcher/python.html" class="list-item">python</a></li>
-                <li><a href="searcher/javascript.html" class="list-item">javascript</a></li>
-                <li><a href="searcher/github.html" class="list-item">GitHub</a></li>
-            </ul>
         </div>
         <div class="challenges">
             <h3 class="Header">challenges</h3>
@@ -54,3 +46,53 @@
         </div>
     </section>
 </footer>
+
+<!-- This is for posts, documents etc -->
+{% elsif page.type == "dictionary" %}
+<footer class="foot">
+    <section class="foot-main">
+        <div class="detail">
+            <h1 class="head">Ezpie</h1>
+            <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+        </div>
+        <div class="challenges">
+            <h3 class="Header">challenges</h3>
+            <!-- TODO add example links -->
+            <ul class="links">
+                <li><a href="#" class="list-item">Python challenges</a></li>
+                <li><a href="#" class="list-item">Java challenges</a></li>
+                <li><a href="#" class="list-item">Javascript challenges</a></li>
+                <li><a href="#" class="list-item">Golang challenges</a></li>
+            </ul>
+        </div>
+
+        <div class="Company">
+            <h3 class="Header">Company</h3>
+            <ul class="links">
+                <!-- TODO add links -->
+                <li><a href="../../../company/about.html" class="list-item">About</a></li>
+                <li><a href="../../../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                <li><a href="../../../company/terms.html" class="list-item">Terms conditions</a></li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="info">
+        <p class="copyright">Copyright (c) 2022 Ezpie</p>
+        <div class="net">
+            <a href="https://github.com/ishaan010" target="_blank" class="link">
+                <img class="net-icon" src="../../../assets/images/logo/internet/github-logo.png" alt="Ezpie github page"
+                    width="30px">
+            </a>
+            <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
+                <img src="../../../assets/images/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
+                    class="net-icon">
+            </a>
+            <a href="https://dev.to/ishaan010" target="_blank" class="link">
+                <img src="../../../assets/images/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
+                    width="30px">
+            </a>
+        </div>
+    </section>
+</footer>
+{% endif %}

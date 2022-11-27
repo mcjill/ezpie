@@ -1,5 +1,13 @@
 <nav class="navbar">
+    <!-- This is for posts, documents etc -->
+    {% if page.type == "dictionary" %}
+    <a href="../../../index" class="nav-link">HOME</a>
+    <a href=".../../../../../company/about" class="nav-link">ABOUT</a>
+    <a href=".../../../../../blogs" class="nav-link">Blogs</a>
+    <!-- This is for the main page and blog page -->
+    {% elsif page.type == "main" %}
     <a href="index" class="nav-link">HOME</a>
     <a href="company/about" class="nav-link">ABOUT</a>
     <a href="blogs" class="nav-link">Blogs</a>
+    {% endif %}
 </nav>
