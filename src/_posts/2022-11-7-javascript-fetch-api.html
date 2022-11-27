@@ -1,0 +1,140 @@
+---
+layout: post
+author: ngdream
+type: dictionary
+---
+
+
+<section class="intro">
+    <h1 class="head">Javascript fetch API</h1>
+    <p class="text">In this article you will get to know about the Javascript's fetch API</p>
+</section>
+<hr>
+<section class="what">
+    <h2 class="head">What is fetch API?</h2>
+    <p class="text">
+        The Fetch API is the modern way of making <b>HTTP</b> requests to servers from a web browsers.
+        The Fetch API is quite simpler and understandable, plus you may have used the <b>XMLHttpRequest</b>,
+        which is al lot longer and less understandable than the fetch API. More on, the fetch API can do things
+        the same way the XMLHttpRequest does.
+    </p>
+</section>
+<hr>
+<section class="sending">
+    <h2 class="head">Sending a request to the server</h2>
+    <p class="text">
+        The code used in this article is available in <a href="https://github.com/ishaan010/understanding-fetch-api"
+            class="link">GitHub</a>
+    </p>
+    <p class="text">
+        The <b>fetch()</b> requires only one parameter which is just the URL of the api/resource that you
+        want to fetch. The fetch() method returns a promise so that we can use the <b>then()</b> and
+        <b>catch()</b> methods to handle the system:
+    </p>
+    <script src="https://gist.github.com/ishaan010/edab8352abefe46349da297b9c1a533b.js"></script>
+</section>
+<hr>
+<section class="reading">
+    <h2 class="head">How to read the responce?</h2>
+    <p class="text">
+        If the data is in text form you can use the <b>text()</b> method. This method returns the data in a
+        simple text format.
+    </p>
+    <script src="https://gist.github.com/ishaan010/056c444d2fb13c8c207cb780ba8fba8e.js"></script>
+    <p class="text">
+        But the best practice is to use the <b>async</b> and <b>await</b>, we use this becuase this provides us
+        an alternative syntax for handling the responce of the Fetch request and other methods.
+    </p>
+    <script src="https://gist.github.com/ishaan010/d7447c188d1e9edbaed5e28dc7dc3f4e.js"></script>
+    <p class="text">
+        For this time we are using the <b>text()</b> method, but this is not possible for <b>json</b>,
+        <b>form data</b>, etc. For them the fetch() method have <b>json()</b>,
+        <b>formData()</b>,<b>arrayBuffer()</b> and more.
+    </p>
+</section>
+<hr>
+<section class="status-code">
+    <h2 class="head">Handling status code</h2>
+    <p class="text">
+        This is one of the most known responce you may have seen on typing a wrong url on a site: <br>
+        <strong>404</strong>
+    </p>
+    <p class="text">
+        But have you ever though what this is? Well if no then here's your answer
+    </p>
+    <p class="text">
+        This is called a status code, what this means is that, while you send a request to the server of a site
+        there was some error on your side, but there was no error on the server side, so basically this means
+        that you typed the url wrong.
+    </p>
+    <p class="text">
+        In requesting APIs from the server you should always tell the status code, because it helps us to do
+        actions as per the situation.
+    </p>
+    <p class="text">
+        Say, you got a status code of <i>200/OK</i>, that would mean that you should display a message telling
+        the client that their action was successful and if it gives a status code of <i>404/page not found</i>
+        then the other way round.
+    </p>
+    <p class="text">
+        Here's how you can handle status code using the <b>status</b> and <b>statusText</b> methods of the
+        Responce object.
+    </p>
+    <script src="https://gist.github.com/ishaan010/84d8dd3237060a8e47a139e6e951fd56.js"></script>
+    <p class="text">
+        As you can see here, we are fetching some text and then we check the status code to see if it's
+        successful or not if yes then send a text to the user telling them their action was a success.
+    </p>
+    <p class="text">
+        <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" class="link">Here</a> you can get to
+        know more about status code.
+    </p>
+</section>
+<hr>
+<section class="full-example">
+    <h2 class="head">Example of using it in a website</h2>
+    <p class="text">
+        Now lets try to make a site that renders three people with their Name, age and net worth.
+    </p>
+    <p class="text">
+        First lets make a simple html skeleton, if you don't know about html don't worry you won't need to
+        memorize anything
+    </p>
+    <script src="https://gist.github.com/ishaan010/a0d419c94ace19f3af3830f68838555a.js"></script>
+    <p>
+        As you can see here in the index.html we are just getting the main.js file and using it. Now lets add
+        some javascript to it.
+    </p>
+    <p class="text">
+        Before that we will be needing some json to play with.
+    </p>
+    <script src="https://gist.github.com/ishaan010/31684d1d74fb0f93b181686c34c54fc2.js"></script>
+    <p class="text">
+        As you can see from this, we have data about three people- their name, age and net worth.
+        Now lets add some json and see this in action.
+    </p>
+    <script src="https://gist.github.com/ishaan010/9dca25b9e38d35c0debb61c8760283bd.js"></script>
+    <p class="text">
+        If you like you can also add some css to it. Here's how it will look like:
+    </p>
+    <video src="https://user-images.githubusercontent.com/104765117/196686974-c9961666-4a41-4e85-a623-96c8bfddfa87.mp4"
+        width="100%" autoplay loop></video>
+    <p class="text">
+        As you can see using just few lines of javascript code helped us in such a big way. It reduced the use
+        of html code by just writting 4-5 line of html code. By the way this is how I keep all the tag pages up
+        and running &#128521
+    </p>
+</section>
+<section class="share">
+    <div class="options">
+        <p class="text">Like the article? share it &#128516</p>
+        <a href="https://twitter.com/intent/tweet" target="_blank" class="link">
+            <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" alt="tweet about a ezpie blog"
+                width="30px">
+        </a>
+        <a href="https://dev.to/new" target="_blank" class="link">
+            <img src="https://cdn1.iconfinder.com/data/icons/logos-and-brands-3/512/84_Dev_logo_logos-512.png"
+                alt="blog about a ezpie blog at dev" width="30px">
+        </a>
+    </div>
+</section>
