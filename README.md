@@ -39,7 +39,7 @@
   </p>
 </div>
 <div>
-  <h1> :thinking: Why only ezpie?</h1>
+  <h1>:thinking: Why only ezpie?</h1>
   <p>
     Ezpie is ads free, so no to distractions! With simple and easy to follow examples created to help new developers understand what they are doing. With each and every line of code explanation, you can easily learn programming!
   </p>
