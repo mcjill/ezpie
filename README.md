@@ -33,13 +33,13 @@
 - [**License**](https://github.com/ishaan010/ezpie#license)
 
 <div id="what">
-  <h1> :confused: What is ezpie?</h1>
+  <h1>:confused: What is ezpie?</h1>
   <p>
     Ezpie is a blog reading site created to help you learn programming and get a better understanding of how tech works.
   </p>
 </div>
 <div>
-  <h1> :thinking: Why only ezpie?</h1>
+  <h1>:thinking: Why only ezpie?</h1>
   <p>
     Ezpie is ads free, so no to distractions! With simple and easy to follow examples created to help new developers understand what they are doing. With each and every line of code explanation, you can easily learn programming!
   </p>
