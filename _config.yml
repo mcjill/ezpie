@@ -1,16 +1,12 @@
-title: Ezpie Read tech blogs
+title: Ezpie
 email: ezpie.co@gmail.com
-description: >-
-  Ezpie Read blogs do challenges and a hole lot more. With just one click
-  you can learn all about python, javascript, go, and other programming languages
-baseurl: "/ezpie"
-url: "https://ishaan010.github.io"
-twitter_username: EzpieCo
-github_username: ishaan010
+description: Ezpie learn programming for free with challenges
+baseurl: "ezpie/"
+url: "https://ishaan010.github.io/"
+twitter_username: jekyllrb
+github_username: jekyll
 
-exclude:
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - .gitignore
+markdown: kramdown
+
+sass:
+  sass_dir: _sass

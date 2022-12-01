@@ -1,5 +1,13 @@
-<!-- This is for the main page and blogs page -->
-{% if page.type == "main" %}
+<!-- company links -->
+{%- assign about_page = "company/about" -%}
+{%- assign privacy_page = "company/privacy" -%}
+{%- assign terms_page = "company/terms" -%}
+
+<!-- logo images -->
+{%- assign github_logo = "/assets/images/logo/internet/github-logo.png" -%}
+{%- assign twitter_logo = "/assets/images/logo/internet/Twitter-logo.png" -%}
+{%- assign dev_logo = "/assets/images/logo/internet/dev-logo.png" -%}
+
 <footer class="foot">
     <section class="foot-main">
         <div class="detail">
@@ -21,9 +29,9 @@
             <h3 class="Header">Company</h3>
             <ul class="links">
                 <!-- TODO add links -->
-                <li><a href="company/about.html" class="list-item">About</a></li>
-                <li><a href="company/privacy.html" class="list-item">Privacy Policy</a></li>
-                <li><a href="company/terms.html" class="list-item">Terms conditions</a></li>
+                <li><a href="{{ about_page | relative_url }}" class="list-item">About</a></li>
+                <li><a href="{{ privacy_page | relative_url }}" class="list-item">Privacy Policy</a></li>
+                <li><a href="{{ terms_page | relative_url }}" class="list-item">Terms conditions</a></li>
             </ul>
         </div>
     </section>
@@ -32,67 +40,14 @@
         <p class="copyright">Copyright (c) 2022 Ezpie</p>
         <div class="net">
             <a href="https://github.com/ishaan010" target="_blank" class="link">
-                <img class="net-icon" src="assets/images/logo/internet/github-logo.png" alt="Ezpie github page"
-                    width="30px">
+                <img class="net-icon" src="{{ github_logo | relative_url }}" alt="Ezpie github page" width="30px">
             </a>
             <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
-                <img src="assets/images/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
-                    class="net-icon">
+                <img src="{{ twitter_logo | relative_url }}" alt="Ezpie twitter page" width="30px" class="net-icon">
             </a>
             <a href="https://dev.to/ishaan010" target="_blank" class="link">
-                <img src="assets/images/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
-                    width="30px">
+                <img src="{{ dev_logo | relative_url }}" alt="Ezpie dev.to page" class="net-icon" width="30px">
             </a>
         </div>
     </section>
 </footer>
-
-<!-- This is for posts, documents etc -->
-{% elsif page.type == "dictionary" %}
-<footer class="foot">
-    <section class="foot-main">
-        <div class="detail">
-            <h1 class="head">Ezpie</h1>
-            <p><strong>Email</strong>: ezpie.co@gmail.com</p>
-        </div>
-        <div class="challenges">
-            <h3 class="Header">challenges</h3>
-            <!-- TODO add example links -->
-            <ul class="links">
-                <li><a href="#" class="list-item">Python challenges</a></li>
-                <li><a href="#" class="list-item">Java challenges</a></li>
-                <li><a href="#" class="list-item">Javascript challenges</a></li>
-                <li><a href="#" class="list-item">Golang challenges</a></li>
-            </ul>
-        </div>
-
-        <div class="Company">
-            <h3 class="Header">Company</h3>
-            <ul class="links">
-                <!-- TODO add links -->
-                <li><a href="../../../company/about.html" class="list-item">About</a></li>
-                <li><a href="../../../company/privacy.html" class="list-item">Privacy Policy</a></li>
-                <li><a href="../../../company/terms.html" class="list-item">Terms conditions</a></li>
-            </ul>
-        </div>
-    </section>
-    <hr>
-    <section class="info">
-        <p class="copyright">Copyright (c) 2022 Ezpie</p>
-        <div class="net">
-            <a href="https://github.com/ishaan010" target="_blank" class="link">
-                <img class="net-icon" src="../../../assets/images/logo/internet/github-logo.png" alt="Ezpie github page"
-                    width="30px">
-            </a>
-            <a href="https://twitter.com/EzpieCo" target="_blank" class="link">
-                <img src="../../../assets/images/logo/internet/Twitter-logo.png" alt="Ezpie twitter page" width="30px"
-                    class="net-icon">
-            </a>
-            <a href="https://dev.to/ishaan010" target="_blank" class="link">
-                <img src="../../../assets/images/logo/internet/dev-logo.png" alt="Ezpie dev.to page" class="net-icon"
-                    width="30px">
-            </a>
-        </div>
-    </section>
-</footer>
-{% endif %}
