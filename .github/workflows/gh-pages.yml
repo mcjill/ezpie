@@ -1,30 +1,47 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Build and deploy site
 
 on:
   push:
     branches:
-    - master
+      - master
 
+env:
+  RUBY_VERSION: 2.7
 
 jobs:
-  jekyll:
-    runs-on: ubuntu-16.04
+  deploy_ezpie:
+    runs-on: "ubuntu-latest"
+    env:
+      BUNDLE_PATH: "vendor/bundle"
+      BUNDLE_JOBS: 4
+      BUNDLE_RETRY: 3
     steps:
-    - uses: actions/checkout@v2
-
-    - uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-
-    - uses:  helaili/jekyll-action@2.0.1
-      env:
-        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-
-    - uses: helaili/jekyll-action@2.0.1
-      env:
-        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-      with:
-        jekyll_src: '_site'
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+          bundler-cache: true
+      - name: Clone target branch
+        run: |
+          REMOTE_BRANCH="${REMOTE_BRANCH:-gh-pages}"
+          REMOTE_REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          echo "Publishing to ${GITHUB_REPOSITORY} on branch ${REMOTE_BRANCH}"
+          rm -rf _site/
+          git clone --depth=1 --branch="${REMOTE_BRANCH}" --single-branch --no-checkout \
+            "${REMOTE_REPO}" _site/
+      - name: Build site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        run: |
+          SOURCE_COMMIT="$(git log -1 --pretty="%an: %B" "$GITHUB_SHA")"
+          pushd _site &>/dev/null
+          : > .nojekyll
+          git add --all
+          git -c user.name="ishaan010" -c user.email="ezpie.co@gmail.com" \
+            commit --quiet \
+            --message "Deploy site from ${GITHUB_SHA}" \
+            --message "$SOURCE_COMMIT"
+          git push
+          popd &>/dev/null
