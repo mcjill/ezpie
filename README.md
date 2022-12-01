@@ -33,7 +33,7 @@
 - [**License**](https://github.com/ishaan010/ezpie#license)
 
 <div id="what">
-  <h1> :confused: What is ezpie?</h1>
+  <h1>:confused: What is ezpie?</h1>
   <p>
     Ezpie is a blog reading site created to help you learn programming and get a better understanding of how tech works.
   </p>
