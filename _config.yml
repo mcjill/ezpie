@@ -3,8 +3,6 @@ email: ezpie.co@gmail.com
 description: Ezpie learn programming for free with challenges
 baseurl: "/ezpie"
 url: "https://ishaan010.github.io/"
-twitter_username: jekyllrb
-github_username: jekyll
 
 markdown: kramdown
 
@@ -19,3 +17,4 @@ exclude: -README.md
   -Gemfile.lock
   -.github/
   -.gitignore
+  -vendor
