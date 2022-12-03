@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Requirement: html-proofer, jekyll
 
 set -eu
 
@@ -16,6 +15,16 @@ _no_pages_branch=false
 _backup_dir="$(mktemp -d)"
 
 _baseurl=""
+
+init() {
+  if [[ -z ${GITHUB_ACTION+x} && $_opt_dry_run == 'false' ]]; then
+    echo "ERROR: It is not allowed to deploy outside of the GitHub Action envrionment."
+    echo "Type option '-h' to see the help information."
+    exit -1
+  fi
+
+  _baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
+}
 
 build() {
   # clean up
@@ -53,13 +62,33 @@ setup_gh() {
   fi
 }
 
+backup() {
+  mv "$SITE_DIR"/* "$_backup_dir"
+  mv .git "$_backup_dir"
+
+  # When adding custom domain from Github website,
+  # the CANME only exist on `gh-pages` branch
+  if [[ -f CNAME ]]; then
+    mv CNAME "$_backup_dir"
+  fi
+}
+
+flush() {
+  rm -rf ./*
+  rm -rf .[^.] .??*
+
+  shopt -s dotglob nullglob
+  mv "$_backup_dir"/* .
+  [[ -f ".nojekyll" ]] || echo "" >".nojekyll"
+}
+
 deploy() {
-  git config --global user.name "ishaan010"
-  git config --global user.email "ezpie.co@gmail.com"
+  git config --global user.name "GitHub Actions"
+  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
   git update-ref -d HEAD
   git add -A
-  git commit -m "deployed site to github pages"
+  git commit -m "[Automation] Site update No.${GITHUB_RUN_NUMBER}"
 
   if $_no_pages_branch; then
     git push -u origin "$PAGES_BRANCH"
@@ -69,6 +98,7 @@ deploy() {
 }
 
 main() {
+  init
   build
   test
   resume_site_dir
@@ -78,6 +108,8 @@ main() {
   fi
 
   setup_gh
+  backup
+  flush
   deploy
 }
 

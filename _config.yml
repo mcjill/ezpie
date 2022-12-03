@@ -9,12 +9,13 @@ markdown: kramdown
 sass:
   sass_dir: _sass
 
-exclude: -README.md
-  -LICENSE
-  -CODE_OF_CONDUCT.md
-  -CONTRIBUTING.md
-  -Gemfile
-  -Gemfile.lock
-  -.github/
-  -.gitignore
-  -vendor
+exclude:
+  - README.md
+  - LICENSE
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - .github/
+  - .gitignore
+  - vendor
