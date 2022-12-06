@@ -144,4 +144,26 @@ a:hover { border-bottom: 2px solid #9577ff; color: #9577ff; }
 
 p { color: #666666; }
 
+div.highlight { background-color: #282A36; width: fit-content; border: 2px solid #626264; border-radius: 5px; color: #ffffff; }
+
+div.highlight pre { padding: 12px; }
+
+div.highlight .c1 { color: #6272A4; }
+
+div.highlight .n { color: #ffffff; }
+
+div.highlight .o, div.highlight .ow { color: #FF79C6; }
+
+div.highlight .p { color: #ffffff; }
+
+div.highlight .mi { color: #BD93F9; }
+
+div.highlight .k, div.highlight .kn { color: #FF79C6; }
+
+div.highlight .nb, div.highlight .n, div.highlight .nf { color: #8BE9FD; }
+
+div.highlight .gp { color: #50FA7B; }
+
+div.highlight .s { color: #F1FA8C; }
+
 /*# sourceMappingURL=styles.css.map */
