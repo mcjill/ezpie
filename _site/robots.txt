@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /.sass-cache/
+Sitemap: https://ishaan010.github.io/ezpie/sitemap.xml
