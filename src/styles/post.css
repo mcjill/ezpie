@@ -31,3 +31,7 @@ h6 {
   border-radius: 0.375rem;
   padding: 0.375rem;
 }
+
+article > ol {
+  list-style-type: decimal;
+}

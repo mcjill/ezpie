@@ -5,7 +5,7 @@ import "../styles/post.css";
 
 const { frontmatter } = Astro.props;
 const { title, description, image = "/favicon.svg", permalink } = frontmatter;
-const tweet = `https://twitter.com/intent/tweet?text=I%20learned%20${title}%20from&url=https://ezpieco.github.io/ezpie${permalink}&via=ezpieco&hashtags=developers,ezpie,coding,programmer`;
+const tweet = `https://twitter.com/intent/tweet?text=I%20learned%20${title}%20from&url=https://ezpie.vercel.app${permalink}&via=ezpieco&hashtags=developers,ezpie,coding,programmer`;
 ---
 
 <MainLayout title={title} description={description}>
@@ -19,11 +19,17 @@ const tweet = `https://twitter.com/intent/tweet?text=I%20learned%20${title}%20fr
         <slot />
       </article>
     </main>
-    <a href={tweet}>
-      <img
-        src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
-        alt="Tweet about your learning"
-      />
-    </a>
+    <div class="mt-10 p-5 border-4 border-slate-500 rounded-lg">
+      <p>
+        Did you learn something? If you did and you think it can help others too
+        then share it!
+      </p>
+      <a href={tweet}>
+        <img
+          src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
+          alt="Tweet about your learning"
+        />
+      </a>
+    </div>
   </div>
 </MainLayout>
