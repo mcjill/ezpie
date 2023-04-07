@@ -1,0 +1,29 @@
+---
+import MainLayout from "./MainLayout.astro";
+
+import "../styles/post.css";
+
+const { frontmatter } = Astro.props;
+const { title, description, image = "/favicon.svg", permalink } = frontmatter;
+const tweet = `https://twitter.com/intent/tweet?text=I%20learned%20${title}%20from&url=https://ezpieco.github.io/ezpie${permalink}&via=ezpieco&hashtags=developers,ezpie,coding,programmer`;
+---
+
+<MainLayout title={title} description={description}>
+  <div class="mx-5 my-5 sm:w-3/4">
+    <header>
+      <h1>{title}</h1>
+      <img src={image} alt="ezpie blog post image" class="rounded-md" />
+    </header>
+    <main class="mt-5">
+      <article>
+        <slot />
+      </article>
+    </main>
+    <a href={tweet}>
+      <img
+        src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
+        alt="Tweet about your learning"
+      />
+    </a>
+  </div>
+</MainLayout>

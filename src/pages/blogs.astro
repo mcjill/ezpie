@@ -1,0 +1,28 @@
+---
+import PostCard from "../components/postCard.astro";
+import MainLayout from "../layout/MainLayout.astro";
+
+const posts = (await Astro.glob("./blogs/*.{md, mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.published).valueOf() -
+    new Date(a.frontmatter.published).valueOf()
+);
+---
+
+<MainLayout title="Ezpie - Blogs">
+  <h1 class="text-center text-6xl my-24 font-bold">Blogs</h1>
+  <div class="grid grid-cols-1 mb-5 justify-items-center sm:grid-cols-2">
+    {
+      posts.map((post) => (
+        <PostCard
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          author={post.frontmatter.author}
+          published={post.frontmatter.published}
+          image={post.frontmatter.image}
+          permalink={post.frontmatter.permalink}
+        />
+      ))
+    }
+  </div>
+</MainLayout>
