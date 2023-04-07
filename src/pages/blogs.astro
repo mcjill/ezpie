@@ -3,9 +3,9 @@ import PostCard from "../components/postCard.astro";
 import MainLayout from "../layout/MainLayout.astro";
 
 const posts = (await Astro.glob("./blogs/*.{md, mdx}")).sort(
-  (a, b) =>
-    new Date(b.frontmatter.published).valueOf() -
-    new Date(a.frontmatter.published).valueOf()
+  (b, a) =>
+    new Date(a.frontmatter.published).valueOf() -
+    new Date(b.frontmatter.published).valueOf()
 );
 ---
 
