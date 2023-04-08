@@ -1,6 +1,7 @@
 {
     "name": "Ezpie - Learn programming",
     "short_name": "Ezpie",
+    "description": "Learn programming in a fun way with challenges every",
     "start_url": "/",
     "shortcuts": [
         {
@@ -43,6 +44,6 @@
     ],
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "portrait"
 }
