@@ -25,6 +25,7 @@ If you have any idea or just a fun idea to write a post, you can write it down h
 1. create a file in the `src/page/blogs/{name-something.md}`
 2. Copy the content of a existing blog and paste it in your's
 3. Start writing some cool content!!
+4. Or just follow with the [contributing guide](https://github.com/EzpieCo/ezpie/blob/master/CONTRIBUTING.md)
 
 ## Licence
 Ezpie is licenced under the MIT Licence
