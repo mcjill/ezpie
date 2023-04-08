@@ -1,0 +1,28 @@
+---
+import vercelServerless from "@astrojs/vercel/serverless";
+
+const { title, description, image } = Astro.props;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="description" content={description} />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
+  <!-- twitter card -->
+  <meta name="twitter:card" content={title} />
+  <meta name="twitter:site" content="@EzpieCo" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={`https://ezpie.vercel.app${image}`} />
+  <!-- og meta tags -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={`https://ezpie.vercel.app${image}`} />
+  <meta property="og:type" content="article" />
+  <title>{title}</title>
+</head>

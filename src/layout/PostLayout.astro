@@ -1,35 +1,48 @@
 ---
-import MainLayout from "./MainLayout.astro";
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/footer.astro";
 
 import "../styles/post.css";
+import PostHeader from "../components/postHeader.astro";
 
 const { frontmatter } = Astro.props;
 const { title, description, image = "/favicon.svg", permalink } = frontmatter;
 const tweet = `https://twitter.com/intent/tweet?text=I%20learned%20${title}%20from&url=https://ezpie.vercel.app${permalink}&via=ezpieco&hashtags=developers,ezpie,coding,programmer`;
 ---
 
-<MainLayout title={title} description={description}>
-  <div class="mx-5 my-5 sm:w-3/4">
-    <header>
-      <h1>{title}</h1>
-      <img src={image} alt="ezpie blog post image" class="rounded-md" />
-    </header>
-    <main class="mt-5">
-      <article>
-        <slot />
-      </article>
-    </main>
-    <div class="mt-10 p-5 border-4 border-slate-500 rounded-lg">
-      <p>
-        Did you learn something? If you did and you think it can help others too
-        then share it!
-      </p>
-      <a href={tweet}>
-        <img
-          src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
-          alt="Tweet about your learning"
-        />
-      </a>
+<html lang="en">
+  <PostHeader title={title} description={description} image={image} />
+  <body>
+    <Navbar />
+    <div class="mx-5 my-5 sm:w-3/4">
+      <header>
+        <h1>{title}</h1>
+        <img src={image} alt="ezpie blog post image" class="rounded-md" />
+      </header>
+      <main class="mt-5">
+        <article>
+          <slot />
+        </article>
+      </main>
+      <div class="mt-10 p-5 border-4 border-slate-500 rounded-lg">
+        <p>
+          Did you learn something? If you did and you think it can help others
+          too then share it!
+        </p>
+        <a href={tweet}>
+          <img
+            src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
+            alt="Tweet about your learning"
+          />
+        </a>
+      </div>
     </div>
-  </div>
-</MainLayout>
+    <Footer />
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
+  </body>
+</html>
