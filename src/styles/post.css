@@ -35,3 +35,8 @@ h6 {
 article > ol {
   list-style-type: decimal;
 }
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
