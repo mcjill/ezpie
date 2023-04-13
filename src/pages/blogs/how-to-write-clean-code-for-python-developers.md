@@ -5,7 +5,7 @@ description: Writing clean, maintainable code is important for any software proj
 published: 4/9/2023
 author: ezpie
 permalink: /blogs/how-to-write-clean-code-for-python-developers
-image: /images/clean-code-for-python.svg
+image: /images/thumbnail/clean-code-for-python.svg
 ---
 
 Writing clean, maintainable code is important for any software project, whether it's a small script or a large-scale application. In this post, we'll cover some tips and best practices for writing clean, maintainable code in Python, including how to use docstrings, comments, and type hints.

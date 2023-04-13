@@ -5,7 +5,7 @@ description: Python is a versatile and powerful programming language that is use
 published: 4/8/2023
 author: ezpie
 permalink: /blogs/python-tricks
-image: /images/python-tricks.svg
+image: /images/thumbnail/python-tricks.svg
 ---
 
 Python is a versatile and powerful programming language that is used by developers around the world. Here are ten Python tricks that can help you write more efficient and elegant code:

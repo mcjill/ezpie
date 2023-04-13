@@ -5,7 +5,7 @@ description: If you've ever needed to search through a large dataset or list of 
 published: 4/7/2023
 author: ezpie
 permalink: /blogs/binary-search
-image: /images/binary-search.svg
+image: /images/thumbnail/binary-search.svg
 ---
 
 If you've ever needed to search through a large dataset or list of items, you may have come across the term "binary search". Binary search is a fundamental algorithm used in computer science to efficiently search through a sorted dataset. In this guide, we'll explain the concept of binary search and provide code examples in Python and JavaScript.

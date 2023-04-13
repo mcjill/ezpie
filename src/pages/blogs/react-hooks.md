@@ -5,7 +5,7 @@ description: React hooks are a powerful feature introduced in React 16.8 that al
 published: 4/7/2023
 author: ezpie
 permalink: /blogs/react-hooks
-image: /images/react-hooks.svg
+image: /images/thumbnail/react-hooks.svg
 ---
 
 React hooks are a powerful feature introduced in React 16.8 that allow you to use state and other React features in functional components. In this blog post, we'll cover 7 of the most commonly used React hooks and provide code examples for each one.
