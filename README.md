@@ -1,5 +1,5 @@
 <div align=center>
-<h1>Ezpie - Learn Programming</h1>
+<h1>Ezpie(pronounced eazy pie) - Learn Programming</h1>
 <div>
 <img src="https://img.shields.io/badge/PRs-Welcome-green">
 <img src="https://img.shields.io/badge/First%20timers%20only-Friendly-blue">
