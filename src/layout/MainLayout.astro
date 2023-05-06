@@ -17,6 +17,11 @@ const { title, description } = Astro.props as Props;
     <Navbar />
     <slot />
     <Footer />
+    
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"
+    ></script>
 
     <script>
       if ("serviceWorker" in navigator) {
