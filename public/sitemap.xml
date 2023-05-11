@@ -9,27 +9,62 @@
 
 <url>
   <loc>https://ezpie.vercel.app/</loc>
-  <lastmod>2023-04-08T11:05:26+00:00</lastmod>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs</loc>
-  <lastmod>2023-04-08T11:05:26+00:00</lastmod>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://ezpie.vercel.app/privacy</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/terms</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/blogs/better-ways-to-create-react-app</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/blogs/ultimate-beginner-react-course</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/blogs/this-post-is-made-by-an-ai</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/blogs/python-for-data-science</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/blogs/how-to-write-clean-code-for-python-developers</loc>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://ezpie.vercel.app/blogs/python-tricks</loc>
-  <lastmod>2023-04-08T11:05:26+00:00</lastmod>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/binary-search</loc>
-  <lastmod>2023-04-08T11:05:26+00:00</lastmod>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/react-hooks</loc>
-  <lastmod>2023-04-08T11:05:26+00:00</lastmod>
+  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
