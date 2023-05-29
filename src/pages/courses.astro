@@ -1,0 +1,17 @@
+---
+import CourseCard from "../components/CourseCard.astro";
+import MainLayout from "../layout/MainLayout.astro";
+
+---
+
+<MainLayout title="ezpie - courses">
+    <div class="text-center my-10">
+        <h1 class="text-6xl font-bold">COURSES</h1>
+        <p>Learn anything with the help of these courses made just for you</p>
+        <div class="mx-auto w-96 h-1 bg-gray-600 rounded-full mt-5"></div>
+    </div>
+
+    <div class="grid grid-cols-1 mb-5 justify-items-center md:grid-cols-2 gap-10">
+        <CourseCard title="Pytorch Machine Learning" description="Learn machine learning with python machine learning framework pytorch" permalink="/courses/machine-learning" image="/images/courses/ml/thumbnail.svg"/>
+    </div>
+</MainLayout>

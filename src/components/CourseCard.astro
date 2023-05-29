@@ -1,0 +1,26 @@
+---
+const {
+  title = "Ezpie",
+  description,
+  image = "/favicon.svg",
+  permalink,
+} = Astro.props;
+---
+
+<a href={permalink}>
+    <article
+      class="max-w-sm rounded-lg bg-gray-800 border-gray-700 mb-5 hover:scale-110 hover:rotate-6 duration-200"
+    >
+      <img class="rounded-t-lg" src={image} alt="Image for the post in ezpie" />
+      <div class="p-5">
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-white"
+        >
+          {title}
+        </h5>
+        <p class="mb-3 font-normal text-gray-400">
+          {description}
+        </p>
+      </div>
+    </article>
+</a>
