@@ -1,0 +1,51 @@
+---
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/footer.astro";
+
+import "../styles/post.css";
+import Header from "../components/header.astro";
+
+const { frontmatter } = Astro.props;
+const { title, permalink } = frontmatter;
+const tweet = `https://twitter.com/intent/tweet?text=I%20am%20learning%20about%20${title}%20from&url=https://ezpie.vercel.app${permalink}&via=ezpieco&hashtags=developers,ezpie,coding,programmer`;
+---
+
+<html lang="en">
+  <Header title={title} />
+  <body>
+    <Navbar />
+    <div class="my-5 mx-5 max-w-5xl">
+      <header>
+        <h1>{title}</h1>
+      </header>
+      <main class="mt-5">
+        <article>
+          <slot />
+        </article>
+      </main>
+      <div class="mt-10 p-5 border-4 border-slate-500 rounded-lg">
+        <p>
+          Did you learn something? If you did and you think it can help others
+          too then share it!
+        </p>
+        <a href={tweet}>
+          <img
+            src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
+            alt="Tweet about your learning"
+          />
+        </a>
+        <p>Questions? Lets talk it out!</p>
+        <a href="https://discord.gg/NTYsQM92vA">
+          <img alt="Discord" src="https://img.shields.io/discord/1031092931408441344?logo=discord&style=for-the-badge">
+        </a>
+      </div>
+    </div>
+    <Footer />
+
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"
+    ></script>
+
+  </body>
+</html>
