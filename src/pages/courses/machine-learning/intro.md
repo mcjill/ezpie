@@ -1,6 +1,6 @@
 ---
 layout: ../../../layout/CourseLayout.astro
-title: "Pytorch Machine Learning: Chapter 1"
+title: "Introduction of PyTorch Machine Learning Crash Course"
 permalink: /courses/machine-learning
 ---
 
