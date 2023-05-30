@@ -7,6 +7,7 @@
 <img src="https://img.shields.io/discord/1031092931408441344?logo=discord">
 </a>
 <img src="https://img.shields.io/github/license/ezpieco/ezpie">
+<img src="https://www.codetriage.com/ezpieco/ezpie/badges/users.svg">
 <a href="https://twitter.com/intent/tweet?text=I%20found%20a%20fun%20and%20cool%20site%20to%20learn%20programming&url=https://ezpie.vercel.app&via=ezpieco&hashtags=developers,ezpie,coding,programmer">
 <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social">
 </a>
