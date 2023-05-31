@@ -40,17 +40,17 @@ It is critical to remember that neural networks learn from examples. The more ex
 
 # Problem makers
 
-**But there will be problems in the network!** Neural networks can sometimes give wrong results or make mistakes, especially when they encounter something unexpected or outside of their training experience.
+**However, there will be an issues in the network!** Neural networks can occasionally produce incorrect findings or make blunders, particularly when confronted with something unexpected or outside of their training experience.
 
-Let's say we trained the neural network to recognize cats by showing it lots of pictures of cats. It learned to identify certain features that are common in cats, such as pointy ears, whiskers, and a certain body shape. Based on these features, it can make predictions about whether an image is likely to be a cat or not.
+Assume we taught the neural network to recognize cats by giving it a lot of cat photographs. It learned to recognize common cat characteristics such as sharp ears, whiskers, and a specific body shape. Based on these characteristics, it can determine whether an image is likely to be of a cat or not.
 
-However, if we show the network an image of a dog dressed as a cat, it might get confused. The network has never seen a dog dressed as a cat during training, so it doesn't have any specific rules or examples to handle this situation. It will try to identify the features it knows about cats, but it might also pick up on other features that are more dog-like, such as the shape of the snout or the size of the paws.
+However, if we show the network an image of a dog masquerading as a cat, it may become perplexed. Because the network has never seen a dog dressed as a cat during training, it has no explicit rules or examples for dealing with this situation. It will attempt to recognize the qualities it is familiar with in cats, but it may also detect features that are more dog-like, such as the form of the nose or the size of the paws.
 
-As a result, the network may give a wrong result and classify the image as a cat when it's actually a dog dressed as a cat. This happens because the network is relying on patterns and characteristics it has learned from its training data, and it doesn't have the ability to understand context or use common sense reasoning like humans do.
+As a result, the network may misclassify the image and categorize it as a cat when it is actually a dog dressed as a cat. This is because to the network's reliance on patterns and characteristics gained from training data, and it lacks the ability to interpret context or employ common sense reasoning as people do.
 
-It's important to note that neural networks are not inherently intelligent or capable of understanding the world in the same way humans do. They excel at recognizing patterns in the data they were trained on, but they can struggle with situations that deviate significantly from their training examples. This is known as a lack of generalization.
+It is critical to stress that neural networks are not inherently intelligent or capable of comprehending the world in the same way that people do. They excel at spotting patterns in the data on which they were trained, but they fail when confronted with circumstances that differ greatly from their training examples. This is referred to as a lack of generalization.
 
-To improve the network's performance, we would need to provide it with more diverse training examples that include a wider range of scenarios, including dogs dressed as cats. By exposing the network to more varied and unexpected situations, it can learn to generalize better and make more accurate predictions in different contexts.
+To boost the network's performance, we would need to offer it with more different training instances, such as canines dressed as cats. By exposing the network to increasingly diverse and unexpected scenarios, it can learn to generalize more effectively and produce more accurate predictions in many contexts.
 
 Here's another video to explain what a neural networks can learn:
 
