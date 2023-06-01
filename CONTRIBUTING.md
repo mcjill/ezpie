@@ -14,12 +14,24 @@ If you want to help, but don't know react, now you can use vue components instea
 
 ---
 
+# Setting up your system for better development
+
+To make development easy you can install the vscode extension [astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
+
+After that fork this repository and clone it into your system, then run the `setup.sh` script in order to install the node modules and run the dev server
+
+```
+git clone <your-fork>
+
+cd script
+chmod +x setup.sh
+./setup.sh
+```
+
 ## How to contribute?
 
-To get started you can follow these steps:
+To get started you can follow any of these steps:
 
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo
-2. Clone it into your local machine from the master branch
 3. If you have a post for [Pull Request follow these steps](#blog-pr)
 4. If have discovered an issue with the style or with any other thing you can [follow these steps to report](#issue-filling)
 
