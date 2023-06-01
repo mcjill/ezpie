@@ -37,6 +37,18 @@ programmers looking to expand their knowledge.
 
 # Contributors always welcome
 
+If you want to help you will first need to fork and clone this repository. Fork this repo by clicking the fork button on the top right, then clone your fork of this repository, and then run the setup script:
+
+```
+git clone <your fork>
+
+cd script
+chmod +x setup.sh
+./setup.sh
+```
+
+The setup script will install the required modules and run the dev server, which you can view at [localhost:3000](http://localhost:300)
+
 If you have any idea or just a fun idea to write a post, you can write it down here in ezpie with just one simple step:
 
 1. create a file in the `src/page/blogs/{name-something.md}`
