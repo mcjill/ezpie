@@ -1,89 +1,48 @@
 ---
+import ChapterLink from "../../../components/CourseComponents/ChapterLink.astro";
 import MainLayout from "../../../layout/MainLayout.astro";
 
 ---
 
 <MainLayout title="machine learning crash course">
-    <div  class="text-center my-10 max-w-3xl mx-auto">
-        <div class="my-10">
-            <h1 class="text-6xl font-bold mb-5">
-                Pytorch Machine Learning
-            </h1>
-            <p>
-                Learn machine learning with python machine learning framework pytorch
-            </p>
-            <div class="mx-auto w-96 h-1 bg-gray-600 rounded-full mt-5"></div>
-        </div>
-        <div class="my-10">
-            <span class="flex flex-col ml-2">
-                <span class="text-lg">
-                    Taught by <a href="https://github.com/ezpieco" class="text-blue-600 hover:text-blue-400 hover:underline">Ezpie</a>
+    <div  class="text-center my-10">
+        <div class="max-w-3xl  mx-auto">
+            <div class="my-10">
+                <h1 class="text-6xl font-bold mb-5">
+                    Pytorch Machine Learning
+                </h1>
+                <p>
+                    Learn machine learning with python machine learning framework pytorch
+                </p>
+                <div class="mx-auto w-96 h-1 bg-gray-600 rounded-full mt-5"></div>
+            </div>
+            <div class="my-10">
+                <span class="flex flex-col ml-2">
+                    <span class="text-lg">
+                        Taught by <a href="https://github.com/ezpieco" class="text-blue-600 hover:text-blue-400 hover:underline">Ezpie</a>
+                    </span>
+                    <span class="text-sm">
+                        Creator and founder of ezpie
+                    </span>
                 </span>
-                <span class="text-sm">
-                    Creator and founder of ezpie
-                </span>
-            </span>
+            </div>
+            <div class="mx-auto w-24 h-1 bg-blue-600 rounded-full mt-5"></div>
+            <div class="my-10">
+                <p>
+                    <b>Pytorch Machine Learning Course</b>
+                    is a simple and easy to follow course, which teaches you the basics of machine learning and how to use the python machine learning framework pytorch.
+                </p>
+            </div>
         </div>
-        <div class="mx-auto w-24 h-1 bg-blue-600 rounded-full mt-5"></div>
-        <div class="my-10">
-            <p>
-                <b>Pytorch Machine Learning Course</b>
-                is a simple and easy to follow course, which teaches you the basics of machine learning and how to use the python machine learning framework pytorch.
-            </p>
-        </div>
-        <div class="my-10" id="chapters">
+        <div class="my-10 max-w-7xl mx-auto" id="chapters">
             <h2 class="text-5xl">CHAPTERS</h2>
-            <section class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 mt-10">
-                <a href="machine-learning/intro">
-                    <div class="max-w-sm bg-gray-600 p-6 rounded-xl hover:scale-105 duration-500">
-                        <h3 class="text-white text-xl">
-                            Course Intro
-                        </h3>
-                        <p class="text-gray-300">
-                            All to know before taking this course
-                        </p>
-                    </div>
-                </a>
-                <a href="machine-learning/what-is-ml">
-                    <div class="max-w-sm bg-gray-600 p-6 rounded-xl hover:scale-105 duration-500">
-                        <h3 class="text-white text-xl">
-                            What is Machine Learning
-                        </h3>
-                        <p class="text-gray-300">
-                            A brefe intro to what machine learning really is
-                        </p>
-                    </div>
-                </a>
-                <a href="machine-learning/what-is-a-neural-network">
-                    <div class="max-w-sm bg-gray-600 p-6 rounded-xl hover:scale-105 duration-500">
-                        <h3 class="text-white text-xl">
-                            What is a Neural Network
-                        </h3>
-                        <p class="text-gray-300">
-                            A deep dive into what neural networks are.
-                        </p>
-                    </div>
-                </a>
-                <a href="machine-learning/what-is-pytorch">
-                    <div class="max-w-sm bg-gray-600 p-6 rounded-xl hover:scale-105 duration-500">
-                        <h3 class="text-white text-xl">
-                            What is PyTorch
-                        </h3>
-                        <p class="text-gray-300">
-                            Knowing about the framework we will use.
-                        </p>
-                    </div>
-                </a>
-                <a href="machine-learning/getting-started">
-                    <div class="max-w-sm bg-gray-600 p-6 rounded-xl hover:scale-105 duration-500">
-                        <h3 class="text-white text-xl">
-                            Getting started
-                        </h3>
-                        <p class="text-gray-300">
-                            Writing some code with pytorch using google colab.
-                        </p>
-                    </div>
-                </a>
+            <section class="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mt-10">
+                <ChapterLink link="machine-learning/intro" title="Course Intro" description="All to know before taking this course" />
+                <ChapterLink link="machine-learning/what-is-ml" title="What is Machine Learning" description="A brefe intro to what machine learning really is" />
+                <ChapterLink link="machine-learning/what-is-a-neural-network" title="What is a Neural Network" description="A deep dive into what neural networks are." />
+                <ChapterLink link="machine-learning/what-is-pytorch" title="What is PyTorch" description="Knowing about the framework we will use." />
+                <ChapterLink link="machine-learning/getting-started" title="Getting started" description="Writing some code with pytorch using google colab." />
+                <ChapterLink link="machine-learning/what-are-tensors" title="What and how to make Tensors" description="Getting to know what Tensors are, and how to make with PyTorch." />
             </section>
         </div>
         <div class="mx-auto w-24 h-1 bg-red-600 rounded-full mt-5"></div>
