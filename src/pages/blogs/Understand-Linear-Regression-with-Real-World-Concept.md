@@ -1,4 +1,4 @@
-     ---
+    ---
      layout: ../../layout/PostLayout.astro
       title: Understand Linear Regression with Real World Concept
       description:  Learn about linear regression, a powerful statistical technique used to predict outcomes. Discover the core concepts, explore real-world applications in real estate and sales forecasting, and see practical code snippets in Python.
